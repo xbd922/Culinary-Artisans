@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+@media only screen and (max-width: 600px) {
+    .login,.search{
+        visibility: hidden;
+    }
+}
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+
+}
+@media only screen and (min-width: 768px) {
+
+}
+
+
+body {
+    background-color: #FFF2EB;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    overflow-x:hidden;
+}
+header{
+    padding-left:150px;
+    padding-right:150px;
+    padding-top: 40px;
+    padding-bottom:20px;
+    display:flex;
+    position: relative;
+    color:#000;
+}
+.login{
+    position:absolute;
+    right: 100px;
+}
+.login a{
+    color:black;
+    text-decoration: none;
+}
+.top,.two{
+    position:absolute;
+    list-style: none;
+    display: flex;
+    padding:0;
+}
+.top li{
+    margin-left:20px;
+    margin-right:20px;
+    font-size:25px;
+}
+.top li a{
+    color:#000;
+    text-decoration: none;
+}
+.top{
+    bottom:60px;
+    right:160px;
+}
+.two{
+    bottom:130px;
+    right:180px;
+}
+.two li{
+    margin:10px;
+}
+.search{
+    position:absolute;
+    bottom:155px;
+    right:280px;
+}
+.content{
+    color:white;
+    background-color:rgb(248, 238, 201);
+    display:none;
+    position:absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px black;
+    z-index: 1;
+}
+.content a {
+    font-size: 18px;
+    color: black;
+    padding: 12px 12px;
+    text-decoration: none;
+    display: block;
+}
+.top li:hover,.top li a:hover, .two li a:hover {
+    color: #A79277; 
+    text-decoration: none; 
+}
+.Cuisine:hover .content, .Recipe:hover .content {
+    display: block;
+    background-color: #F9E8D9; 
+    transition: background-color ease; 
+}
+
+
+main{
+    margin-top: 40px;
+    padding-left:150px;
+    padding-right:150px;
+    padding-bottom:80px;
+}
+#path{
+    text-decoration: none;
+    color:rgb(80, 80, 80);
+    position:relative;
+    left:5%;
+}
+#path a{
+    color:rgb(158, 157, 157);
+}
+#title{
+    text-align: center;
+    font-size: 44px;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    text-shadow: 4px 4px 6px gray;
+}
+.country-cuisines,.other-country-cuisines{
+    margin-bottom:100px;
+}
+.country-cuisines-list-3-column{
+    grid-template-columns: repeat(3,1fr);
+    display: grid;
+    margin: 0;
+    padding:20px;
+    justify-items: center;
+}
+.country-cuisines-item{
+    border:1px solid #ddd;
+    border-radius: 5px;
+    padding:15px;
+}
+#country-cuisines-item a{
+    text-decoration: none;
+}
+#country-cuisines-item a img{
+   box-shadow: 4px 4px 6px #505050;
+}
+#country-cuisines-item a h3{
+    color:black;
+    text-align: center;
+    margin-top: 5px;
+    font-family: "Poppins", sans-serif;
+}
+
+
+
+
+
+footer{
+    border-left:150px;
+    border-right:150px;
+    background-color: #f99d9d;
+}
+.selection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:10px;
+    padding-top: 20px;
+
+}
+.selection a{
+    text-decoration: none;
+    color:white;
+    font-size: 17px;
+    margin-left: 20px;
+}
+.flw{
+    position:relative;
+    list-style: none;
+    display: flex;
+    padding:0;
+    left:47%
+}
+.flw li{
+    margin-left: 10px;
+    margin-right:10px;
+}
+.bar2{
+    display: flex;
+    justify-content: space-between;
+    color:#fff;
+    background-color: #000;
+    align-items: center;
+    padding-left:150px;
+    padding-right:150px;
+    margin-bottom:0;
+}
+.bar2 p,.bar2 .tnc{
+    margin:10px;
+}
+.bar2,.tnc a{
+    color:white;
+}
+.fixed-nav{
+    position: fixed;
+    bottom:130px;
+    right:20px;
+    padding: 10px 20px;
+}
