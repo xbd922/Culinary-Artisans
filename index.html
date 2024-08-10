@@ -3,167 +3,212 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website</title>
+    <title>Homepage</title>
+    <!--bootstrap-->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!--Custom css-->
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="hnf.css">
 </head>
 <body>
     <header>
+
         <div class="login">
             <a href="#">
-                <p>Log in <img src="Picture/login_icon.png" width="40" height="30" alt="login"></p>
+                Log in <img src="Pictures/login_icon.png" width="40" height="30" alt="login">
             </a>
         </div>
-        <div class="logo">
-            <a href="homepage.html">
-                <img src="Picture/logotran.png" width="300px" height="300px" alt="homepage">
-            </a>
-        </div>
-        <div class="FollowUS">
-            <ul class="two">
-                <li>
-                    <a href="https://www.instagram.com/culinary.artisans?igsh=OG5qbXI2OHgyMTZp">
-                        <img src="Picture/insta_icon.png" width="20" height="20" alt="instagram">
-                 </a>
-               </li>
-                <li>
-                    <a href="email.html">
-                        <img src="Picture/email-icon.png" width="25" height="25" alt="email">
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <!--search bar designed from bootstraop-->
-        <form class="search">
-            <input class="searchinput" type="search" placeholder="Search" aria-label="Search">
-            <button class="searchsubmit" type="submit">Search</button>
-        </form>
-        <div class="menu">
-            <ul class="top">
-                <li class="Cuisine"><p>Cuisine</p>
-                    <div class="content">
-                        <a href="#">Japan</a>
-                        <a href="#">Italy</a>
-                        <a href="#">Malaysia</a>
-                        <a href="#">Unknown</a>
-                    </div>
-                </li>
-                <li class="Recipe"><p>Recipe</p> 
-                    <div class="content">
-                        <a href="#">Japan</a>
-                        <a href="#">Italy</a>
-                        <a href="#">Malaysia</a>
-                        <a href="#">Unknown</a>
-                    </div>
-                </li>
-                <li class="Saved Recipe"><a href="#">Saved Recipe</a></li>
-                <li class="About Us"> <a href="#">About Us</a></li>
-                <li class=""><a href="#">Comment</a></li>
-            </ul>
-        </div>
-    </header>
-    <main>
-        <section class="Recipes">
-            <h2>Recipes</h2>
-            <div class="recipe-list">
-                <article class="recipe-item">
-                    <h3>Feature</h3>
-                    <p>Paragraph</p>
-                    <a href="recipe1.html">Learn more <span>→</span></a>
-                </article>
-                <article class="recipe-item">
-                    <h3>Feature</h3>
-                    <p>Paragraph</p>
-                    <a href="recipe2.html">Learn more <span>→</span></a>
-                </article>
-                <article class="recipe-item">
-                    <h3>Feature</h3>
-                    <p>Paragraph</p>
-                    <a href="recipe3.html">Learn more <span>→</span></a>
-                </article>
-                <article class="recipe-item">
-                    <h3>Feature</h3>
-                    <p>Paragraph</p>
-                    <a href="recipe4.html">Learn more <span>→</span></a>
-                </article>
-            </div>
-            <a class="moreabout" href="recipe.html">MORE ABOUT RECIPES</a>
-        </section>
-        <section class="Cuisines">
-            <h2>Cuisines</h2>
-            <div class="cuisine-list">
-                <article class="cuisine-item">
-                    <h3>Feature</h3>
-                    <p>Paragraph</p>
-                    <a href="cuisine1.html">Learn more <span>→</span></a>
-                </article>
-                <article class="cuisine-item">
-                    <h3>Feature</h3>
-                    <p>Paragraph</p>
-                    <a href="cuisine2.html">Learn more <span>→</span></a>
-                </article>
-                <article class="cuisine-item">
-                    <h3>Feature</h3>
-                    <p>Paragraph</p>
-                    <a href="cuisine3.html">Learn more <span>→</span></a>
-                </article>
-                <article class="cuisine-item">
-                    <h3>Feature</h3>
-                    <p>Paragraph</p>
-                    <a href="cuisine4.html">Learn more <span>→</span></a>
-                </article>
-            </div>
-            <a class="moreabout" href="cuisine.html">MORE ABOUT CUISINES</a>
-        </section>
-        <section class="AboutUs">
-            <div class="aboutusimg">
-                <img src="Picture/Bubu!.png" width="300px" height="300px">
-            </div>
-            <div class="textabout">
-                <h2>About us </h2>
-                <p>This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.</p>
-                <a class="moreabout" href="aboutus.html">MORE ABOUT US</a>
-            </div>
-        </section>
-    </main>
+        
+        <nav class="navbar navbar-expand-lg navbar-light">
 
-    <footer>
-        <section class="bar1">
-            <div class="selection">
-                <a href="homepage.html">Home</a>
-                <a href="AboutUs.html">About Us</a>
-                <a href="ContactUs.html">Contact Us</a>
-                <a href="SavedRecipe.html">Saved Recipes</a>
-            </div>
-            <div class="FollowLink">
-                <ul class="flw">
+            <a class="navbar-brand" href="homepage.html">
+                <img src="Pictures/logotran.png" alt="homepage">
+            </a>
+
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button><!--When screen small enough will appear-->
+
+            <div class="d-flex justify-content-end align-item-center">
+                <ul class="follow d-flex mb-0">
                     <li>
                         <a href="https://www.instagram.com/culinary.artisans?igsh=OG5qbXI2OHgyMTZp">
-                            <img src="Picture/insta_icon.png" width="20" height="20" alt="instagram">
-                        </a>
+                            <img src="Pictures/insta_icon.png" width="20" height="20" alt="instagram">
+                     </a>
                    </li>
                     <li>
-                        <a href="email.html">
-                            <img src="Picture/email-icon.png" width="25" height="25" alt="email">
+                        <a href="mailto:culinary.artisans.utar@gmail.com">
+                            <img src="Pictures/email-icon.png" width="25" height="25" alt="email">
                         </a>
                     </li>
                 </ul>
-            </div>
-        </section>
-        <section class="bar2">
-            <p>Copyright &copy; 2024 <strong>Website.</strong> All rights reserved.</p>
-            <div class="tnc">
-                <a href="tnc.html">Terms & conditions</a>
-                <a href="privacy.html">Privacy Policy</a>
-            </div>
-        </section>
-    </footer>
+            </div><!--end of follow-->
 
-    <!--navigation-->
+            <form class="search form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form><!--end of search-->
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+
+
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item Cuisine"><p class="nav-link" >Cuisine</p>
+                        <div class="content">
+                            <a class="cn nav-link" href="#">Japan</a>
+                            <a class="cn nav-link" href="#">Italy</a>
+                            <a class="cn nav-link" href="#">Malaysia</a>
+                            <a class="cn nav-link" href="#">Unknown</a>
+                        </div>
+                    </li>
+                    <li class="nav-item Recipe"><p class="nav-link" >Recipe</p>
+                        <div class="content">
+                            <a class="cn nav-link" href="#">Japan</a>
+                            <a class="cn nav-link" href="#">Italy</a>
+                            <a class="cn nav-link" href="#">Malaysia</a>
+                            <a class="cn nav-link" href="#">Unknown</a>
+                        </div>
+                    </li>
+                    <li class="nav-item Saved Recipe">
+                        <a class="nav-link" href="#">Saved Recipe</a>
+                    </li>
+                    <li class="nav-item About Us">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item Comment">
+                        <a class="nav-link" href="#">Comment</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="Recipes py-5">
+            <div class="container-fluid">
+                <h2 class="mb-4">Recipes</h2>
+                <div class="row colu">
+                    <div class="col-lg-3 mb-4">
+                        <article class="recipe-item text-center">
+                            <h3>Feature</h3>
+                            <a href="recipe1.html" class="text-primary">Learn more <span>→</span></a>
+                        </article>
+                    </div>
+                    <div class="col-lg-3 mb-4">
+                        <article class="recipe-item">
+                            <h3>Feature</h3>
+                            <a href="recipe2.html" class="text-primary">Learn more <span>→</span></a>
+                        </article>
+                    </div>
+                    <div class="col-lg-3 mb-4">
+                        <article class="recipe-item">
+                            <h3>Feature</h3>
+                            <a href="recipe3.html" class="text-primary">Learn more <span>→</span></a>
+                        </article>
+                    </div>
+                    <div class="col-lg-3 mb-4">
+                        <article class="recipe-item">
+                            <h3>Feature</h3>
+                            <a href="recipe4.html" class="text-primary">Learn more <span>→</span></a>
+                        </article>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <a class="btn moreabout" href="recipe.html">MORE ABOUT RECIPES</a>
+                </div>
+            </div>
+        </section>
+        
+        <section class="Cuisines py-5">
+            <div class="container-fluid">
+                <h2 class="text-end mb-4">Cuisines</h2>
+                <div class="row colu">
+                    <div class="col-lg-3">
+                        <article class="cuisine-item text-center">
+                            <h3>Feature</h3>
+                            <a href="cuisine1.html" class="text-primary">Learn more <span>→</span></a>
+                        </article>
+                    </div>
+                    <div class="col-lg-3">
+                        <article class="cuisine-item text-center">
+                            <h3>Feature</h3>
+                            <a href="cuisine2.html" class="text-primary">Learn more <span>→</span></a>
+                        </article>
+                    </div>
+                    <div class="col-lg-3">
+                        <article class="cuisine-item text-center">
+                            <h3>Feature</h3>
+                            <a href="cuisine3.html" class="text-primary">Learn more <span>→</span></a>
+                        </article>
+                    </div>
+                    <div class="col-lg-3">
+                        <article class="cuisine-item text-center">
+                            <h3>Feature</h3>
+                            <a href="cuisine4.html" class="text-primary">Learn more <span>→</span></a>
+                        </article>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <a class="btn moreabout" href="cuisine.html">MORE ABOUT CUISINES</a>
+                </div>
+            </div>
+        </section>
+        
+        <section class="AboutUs py-5">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-12 col-md-6 text-center">
+                        <img src="#" class="img-fluid rounded" alt="About Us">
+                    </div>
+                    <div class="textabout col-12 col-md-6">
+                        <h2>About Us</h2>
+                        <p>This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph.</p>
+                        <a class="btn text-center moreabout" href="aboutus.html">MORE ABOUT US</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    
+    <div class="foot container-fluid">
+        <footer class="pt-3">
+            <ul class="nav justify-content-center mb-3">
+                <li class="nav-item"><a href="homepage.html" class="nax-link px-2 text-body-secondary"></a>Home</a></li>
+                <li class="nav-item"><a href="#" class="nax-link px-2 text-body-secondary"></a>About Us</a></li>
+                <li class="nav-item"><a href="#" class="nax-link px-2 text-body-secondary"></a>Contact Us</a></li>
+                <li class="nav-item"><a href="#" class="nax-link px-2 text-body-secondary"></a>Saved Recipes</a></li>
+            </ul>
+            <ul class="flw nav justify-content-center pb-3 mb-3">
+                <li>
+                    <a href="#"><img src="Pictures/insta_icon.png" width="20px" height="20px" alt="insta_icon"></a>
+                </li>
+                <li >
+                    
+                    <a href="#"><img src="Pictures/email-icon.png" width="25px" height="25px" alt="email"></a>
+                </li>
+            </ul>
+            <div class="end d-flex flex-wrap justify-content-between align-item-center py-3 my-4">
+                <p class="col-md-4 align-item-center">Copyright &copy; 2024 <strong>Website.</strong> All rights reserved.</p>
+                <ul class="link nav col-md-4 justify-content-end">
+                    <li class="nav-item"><a href="#">Terms & Conditions</a></li>
+                    <li class="nav-item"><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+    
+
+    <!--navigation back to top-->
     <div class="fixed-nav">
         <a href="homepage.html">
-            <img src="Picture/Bubu!.png" width="20px" height="20px" alt="Back to top">
+            <img src="Pictures/arrow-up-icon.png" width="20px" height="10px" alt="Back to top">
         </a>
     </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
