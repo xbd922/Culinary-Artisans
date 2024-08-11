@@ -1,0 +1,267 @@
+/*Extra small devices*/
+@media only screen and (max-width: 576px) {
+    .recipe-item,.cuisine-item{
+        width:100px;
+        height:100px;
+        background-size: cover;
+        box-sizing: border-box;
+        padding:20px;
+        box-shadow: 0 0 10px #000;
+        border-radius: 8px;
+        margin-bottom: 20px;
+    }
+    .recipe-item h3,.cuisine-item h3{
+        font-size: 15px;
+        bottom:30%;
+        left: 12%;
+        position: absolute;
+    }
+    .recipe-item a,.cuisine-item a{
+        font-size: 9px;
+        bottom:20%;
+        left: 12%;
+        position: absolute;
+    }
+    .Recipes h2,.Cuisines h2,.AboutUs .textabout h2{
+        font-size: 25px;
+    }
+    .textabout p{
+        font-size: 12px;
+        text-align: center;
+    }
+    .AboutUs .textabout .moreabout{
+        position:absolute;
+        text-decoration: none;
+        font-size: 20px;
+        left:20%;
+    }
+    .Recipes h2::after,.AboutUs .textabout h2::after{
+        display: block;
+        content:"";
+        border-bottom:3px solid #000000;
+        margin-left: 120px;
+        position: relative;
+        top:-20px;
+    }
+    .Cuisines h2:after{
+        display: block;
+        content:"";
+        border-bottom:3px solid #000000;
+        margin-right: 120px;
+        position: relative;
+        top:-20px;  
+    }
+    .colu{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+/*Small devices*/
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+    .recipe-item,.cuisine-item{
+        width:140px;
+        height:140px;
+        background-size: cover;
+        box-sizing: border-box;
+        padding:20px;
+        box-shadow: 0 0 10px #000;
+        border-radius: 8px;
+        margin-bottom: 20px;
+    }
+    .recipe-item h3,.cuisine-item h3{
+        font-size: 20px;
+        bottom:30%;
+        left: 8%;
+        position: absolute;
+    }
+    .recipe-item p,.cuisine-item p,.recipe-item a,.cuisine-item a{
+        font-size: 12px;
+        bottom:20%;
+        left: 8%;
+        position: absolute;
+    }
+    .Recipes h2,.Cuisines h2,.AboutUs .textabout h2{
+        font-size: 30px;
+    }
+    .textabout p{
+        font-size: 15px;
+        text-align: center;
+    }
+    .AboutUs .textabout .moreabout{
+        position:absolute;
+        text-decoration: none;
+        font-size: 20px;
+        left:28%;
+    }
+    .Recipes h2::after,.AboutUs .textabout h2::after{
+        display: block;
+        content:"";
+        border-bottom:3px solid #000000;
+        margin-left: 150px;
+        position: relative;
+        top:-20px;
+    }
+    .Cuisines h2:after{
+        display: block;
+        content:"";
+        border-bottom:3px solid #000000;
+        margin-right: 150px;
+        position: relative;
+        top:-20px;  
+    }
+    .colu{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+/*Large devices*/
+@media only screen and (min-width: 768px) and (max-width:1200px) {
+    .recipe-item,.cuisine-item{
+        width:180px;
+        height:180px;
+        background-size: cover;
+        box-sizing: border-box;
+        padding:20px;
+        box-shadow: 0 0 10px #000;
+        border-radius: 8px;
+        margin-bottom: 20px;
+        position: relative;
+    }
+    .recipe-item h3,.cuisine-item h3{
+        font-size: 30px;
+        bottom:30%;
+        left: 10%;
+        position: absolute;
+    }
+    .recipe-item p,.cuisine-item p,.recipe-item a,.cuisine-item a{
+        font-size: 20px;
+        bottom:15%;
+        left: 10%;
+        position: absolute;
+    }
+    .Recipes h2,.Cuisines h2,.AboutUs .textabout h2{
+        font-size: 44px;
+    }
+
+    .textabout p{
+        font-size: 15px;
+        text-align: center;
+    }
+    .AboutUs .textabout .moreabout{
+        position:absolute;
+        text-decoration: none;
+        font-size: 20px;
+        left:30%;
+    }
+    .Recipes h2::after,.AboutUs .textabout h2::after{
+        display: block;
+        content:"";
+        border-bottom:3px solid #000000;
+        margin-left: 200px;
+        position: relative;
+        top:-20px;
+    }
+    .Cuisines h2:after{
+        display: block;
+        content:"";
+        border-bottom:3px solid #000000;
+        margin-right: 200px;
+        position: relative;
+        top:-20px;  
+    }
+}
+/*Extra large devices*/
+@media only screen and (min-width: 1200px) {
+    .recipe-item,.cuisine-item{
+        width:280px;
+        height:280px;
+        background-size: cover;
+        box-shadow: 0 0 10px #000;
+        border-radius: 8px;
+        margin-bottom: 20px;
+    }
+    .recipe-item h3,.cuisine-item h3{
+        font-size: 30px;
+        bottom:30%;
+        left: 10%;
+        position: absolute;
+    }
+    .recipe-item p,.cuisine-item p,.recipe-item a,.cuisine-item a{
+        font-size: 20px;
+        bottom:15%;
+        left: 10%;
+        position: absolute;
+    }
+    .Recipes h2,.Cuisines h2,.AboutUs .textabout h2{
+        font-size: 44px;
+    }
+    .textabout p{
+        font-size: 18px;
+        text-align: center;
+    }
+    .AboutUs .textabout .moreabout{
+        position:absolute;
+        text-decoration: none;
+        font-size: 20px;
+        left:40%;
+    }
+    .Recipes h2::after,.AboutUs .textabout h2::after{
+        display: block;
+        content:"";
+        border-bottom:3px solid #000000;
+        margin-left: 200px;
+        position: relative;
+        top:-20px;
+    }
+    .Cuisines h2:after{
+        display: block;
+        content:"";
+        border-bottom:3px solid #000000;
+        margin-right: 200px;
+        position: relative;
+        top:-20px;  
+    }
+}
+
+.Cuisines h2{
+    text-align:right;
+}
+.Recipes .moreabout,.Cuisines .moreabout{
+    font-size: 20px;
+}
+article p,article h3{
+    color:white;
+}
+article a{
+    bottom:10%;
+    text-decoration: none;
+}
+.AboutUs{
+    align-items: center;
+    position: relative;
+    margin-top:40px;
+    display: flex;
+    padding:10px;
+    margin-bottom:20px;
+}
+.AboutUs img{
+    box-shadow: 0 0 10px #000;
+    padding:20px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.recipe-item a span,.cuisine-item a span{
+    margin-left:5px;
+    font-size: 12px;
+    transition:margin-left 0.3s;
+}
+.recipe-item a:hover span,.cuisine-item a:hover span{
+    margin-left:10px;
+}
+.moreabout:hover{
+    color:rgb(54, 4, 204);
+}
+
+
+
