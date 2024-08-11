@@ -1,7 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
-
-@media only screen and (max-width: 600px) {
+/*Extra small devices*/
+@media only screen and (max-width: 576px) {
+    header,main {
+        padding-left:10px;
+        padding-right:10px;
+        padding-top: 2px;
+        padding-bottom:2px;
+    }
+    .navbar-brand img {
+        width: 100px;
+        height: 100px;
+    }
+    .login{
+        visibility: hidden;
+    }
+    .follow{
+        visibility: hidden;
+    }
+    .search{
+        visibility: hidden;
+    }
+    .end{
+        text-align: center;
+    }
+}
+/*Small devices*/
+@media only screen and (min-width: 576px) and (max-width: 768px) {
     header,main {
         padding-left:15px;
         padding-right:15px;
@@ -25,7 +50,8 @@
         text-align: center;
     }
 }
-@media only screen and (min-width: 600px) and (max-width: 1200px) {
+/*Large devices*/
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
     header,main{
         padding-left:75px;
         padding-right:75px;
@@ -40,6 +66,7 @@
         font-size: 20px;
     }
 }
+/*Extra large devices*/
 @media only screen and (min-width: 1200px) {
     header, main{
         padding-left:150px;
@@ -55,7 +82,7 @@
         font-size: 24px;
     }
 }
-
+/*Header properties*/
 body{
     background-color: #FFF2EB;
     font-family: "Poppins", sans-serif;
@@ -89,14 +116,12 @@ body{
     font-size: 18px;
     padding-right: 20px;
 }
-
 .navbar-light .navbar-nav .nav-link:hover {
     color: #A79277;
 }
 .navbar-toggler {
     border-color: transparent;
 }
-
 .navbar-toggler-icon {
     color: #000;
 }
@@ -131,7 +156,7 @@ body{
     transition: background-color ease; 
 }
 
-
+/*Footer properties*/
 .foot{
     background-color: #f99d9d;
 }
@@ -146,9 +171,21 @@ body{
     text-decoration: none;
 
 }
-.fixed-nav{
+/*Navigation fixed at the bottom right*/
+#Btn{
     position: fixed;
-    bottom:130px;
-    right:20px;
-    padding: 10px 20px;
+    right: 20px;
+    bottom:20%;
+    background-color: transparent;
+    border:none;
+    outline: none;
+}
+#Btn p{
+    display: none;
+    font-size: 12px;
+}
+#Btn:hover p{
+    display:block;
+    border:none;
+    outline: none;
 }
