@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage</title>
+    <title>Header and Footer</title>
     <!--bootstrap-->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <!--Custom css-->
@@ -11,6 +11,7 @@
 </head>
 <body>
     <header>
+
         <div class="login">
             <a href="#">
                 Log in <img src="Pictures/login_icon.png" width="40" height="30" alt="login">
@@ -51,28 +52,35 @@
 
 
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Cuisine</a>
+                    <li class="nav-item Cuisine"><p class="nav-link" >Cuisine</p>
+                        <div class="content">
+                            <a class="cn nav-link" href="#">Japan</a>
+                            <a class="cn nav-link" href="#">Italy</a>
+                            <a class="cn nav-link" href="#">Malaysia</a>
+                            <a class="cn nav-link" href="#">Unknown</a>
+                        </div>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Recipe</a>
+                    <li class="nav-item Recipe"><p class="nav-link" >Recipe</p>
+                        <div class="content">
+                            <a class="cn nav-link" href="#">Japan</a>
+                            <a class="cn nav-link" href="#">Italy</a>
+                            <a class="cn nav-link" href="#">Malaysia</a>
+                            <a class="cn nav-link" href="#">Unknown</a>
+                        </div>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item Saved Recipe">
                         <a class="nav-link" href="#">Saved Recipe</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item About Us">
                         <a class="nav-link" href="#">About Us</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item Comment">
                         <a class="nav-link" href="#">Comment</a>
                     </li>
                 </ul>
-
             </div>
         </nav>
     </header>
-
-    
     
     <div class="foot container-fluid">
         <footer class="pt-3">
@@ -84,11 +92,11 @@
             </ul>
             <ul class="flw nav justify-content-center pb-3 mb-3">
                 <li>
-                    <a href="#"><img src="Pictures/insta_icon.png" width="20px" height="20px" alt="insta_icon"></a>
+                    <a href="https://www.instagram.com/culinary.artisans?igsh=OG5qbXI2OHgyMTZp"><img src="Pictures/insta_icon.png" width="20px" height="20px" alt="insta_icon"></a>
                 </li>
                 <li >
                     
-                    <a href="#"><img src="Pictures/email-icon.png" width="25px" height="25px" alt="email"></a>
+                    <a href="mailto:culinary.artisans.utar@gmail.com"><img src="Pictures/email-icon.png" width="25px" height="25px" alt="email"></a>
                 </li>
             </ul>
             <div class="end d-flex flex-wrap justify-content-between align-item-center py-3 my-4">
@@ -104,11 +112,10 @@
     
 
     <!--navigation back to top-->
-    <div class="fixed-nav">
-        <a href="homepage.html">
-            <img src="Pictures/arrow-up-icon.png" width="20px" height="10px" alt="Back to top">
-        </a>
-    </div>
+    <button onclick="backtotop()" id="Btn" title="Back to top"><img src="Pictures/arrow-up-icon.png" width="20px" height="15px"><p>Back to Top</p></button>
+
+    <script src="backtotop.js"></script>
+    <script src="https://kit.fontawesome.com/7e002fabbc.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
