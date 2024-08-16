@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Japan-Cuisine-Food</title>
+    <!--bootstrap-->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!--Custom css and js-->
+    <link rel="stylesheet" href="headfoot.css">
+    <link rel="stylesheet" href="cuisine.css">
+</head>
+<body>
+    <!--Start of Header-->
+    <header class="site-header">
+        <div class="container-fluid d-flex flex-wrap justify-content-between align-item-center">
+            <div class="header-left">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <!--When screen small enough will appear-->
+                    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse menu-container" id="navbarNav">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item Cuisine"><p class="nav-link" >Cuisine</p>
+                                <div class="content">
+                                    <a class="cn nav-link" href="japanese.html">Japan</a>
+                                    <a class="cn nav-link" href="#">Italy</a>
+                                    <a class="cn nav-link" href="#">Malaysia</a>
+                                    <a class="cn nav-link" href="#">Unknown</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Saved Recipe</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Comment</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+            </div>
+            <div class="header-center">
+                <div class="logo">
+                    <img src="Pictures/logoword.png" alt="Culinary Artisans">
+                </div>
+
+            </div>
+
+            <div class="header-right">
+                <div class="search-container">
+                    <input type="text" placeholder="Search">
+                    <button type="submit" >Search</button>
+                </div>
+                <a href="#" class="btn login-btn"><i class="fa-duotone fa-solid fa-user"></i></a>
+            </div>
+        </div>
+    </header>
+    <!--End of Header-->
+
+    <main>
+        <div class="row">
+            <p id="path"><a href="homepage.html">Home</a> >> <a href="japanese.html">Japan</a> >> <a href="#">Curry Katsu</a></p>
+            <button type="button" class="btn save">
+                <a href="#"><i class="fa-solid fa-bookmark" style="color: #000000;"></i></a>  
+            </button>
+            <button type="button" class="btn download">
+                <a href="#" download><i class="fa-solid fa-download fa-bounce" style="color:black"></i></a>  
+            </button>
+        </div>
+
+        <div class="row justify-content-center mb-3">
+            <img src="japanpic/Chicken-Katsu-Curry.jpg" alt="food">
+        </div>
+        <section class="rcontent">
+            <p class="description">
+                <span class="word"><i><b>Curry Katsu</b></i></span> 
+                made of crispy fried pork chops served in a spicy sweet curry sauce with carrots and potatoes. Chef can also cook with 
+                different meats, such as chicken breast or even ham.
+            </p>
+        </section>
+        <section class="rcontent">
+            <h2>History of Curry Katsu</h2>
+            <p class="history">Curry was colonized in Japan at the end of the 19th century and introduced by the British who colonized India. 
+                After that, the Japanese transformed curry and created the Japanese curry we are familiar with today. 
+                Katsu is derived from the English word "Cutlet". Curry Katsu has a special origin. 
+                In the past, there was a Western-style restaurant in Asakusa specializing in fried pork cutlets and Japanese curry. 
+                A regular customer asked the shopkeeper to add Japanese curry to the fried pork cutlets, 
+                which became what we know today as the curry katsu.
+            </p>  
+        </section>
+        <section class="rcontent">
+            <h2>Ingredient</h2>
+            <ul class="ingredient">
+                <li>400g cooked japanese rice</li>
+                <li>Tonkatsu sauce</li>
+                <li>Fukujinzuke pickled radish</li>
+                <li>Salt</li>
+                <li>Pepper</li>
+                <li>Boiled eggs</li>
+                <br>
+                For curry sauce:
+                <li>4-5 cubes of Japanese curry</li>
+                <li>1 large onion</li>
+                <li>1 large potato</li>
+                <li>1 carrot</li>
+                <li>800ml water</li>
+                <br>
+                For Katsu:
+                <li>80g panko breadcrumbs</li>
+                <li>4tbsp plain flour</li>
+                <li>4 pork tenderloin/chicken breasts</li>
+                <li>1 slightly beaten egg</li>
+                <li>Vegetable oil for deep-frying</li>
+            </ul>
+        </section>
+        <section class="rcontent">
+            <h2>Instruction</h2>
+            <ol class="instruction">
+                <li>Prepare vegetables</li>
+                    <ol type="a">
+                        <li>Cut onion, potato, and carrot into chunks</li>
+                        <li>put them in a large pan and fill half with water</li>
+                        <li>simmer until the vegetables are soft (20 minutes)</li>
+                    </ol>
+                <li>Cook the rice</li>
+                <li>Add Japanese curry cubes to the pot with vegetables
+                    <ol type="a">
+                        <li>Turn on the heat to low and simmer for 10 minutes.</li>
+                        <li>Keep mixing until the curry sauce is thick and smooth.</li>
+                </ol>
+                <li>Prepare the Katsu</li>
+                    <ol type="a">
+                        <li>Season the meat with salt and pepper</li>
+                        <li>Covering with flour and raw egg</li>
+                        <li>Covering with panko breadcrumbs</li>
+                </ol>
+                <li>Deep fry the katsu</li>
+                    <ol type="a">
+                        <li>Cook until they become a golden brown color.</li>
+                    </ol>
+                <li>Ready to serve</li>
+            </ol>
+        </section>
+    </main>
+    <!--References from [8][15][16]-->
+
+
+    <!--Start of Footer-->
+    <footer class="site-footer">
+        <div class="container">
+                <div class="footer-logo">
+                    <img src="Pictures/logotran.png" alt="Logo" class="logo-img">
+
+                    <p>Culinary Artisans</p>
+                    <p>World Taste, Amazing Recipes, Unforgettable Flavors, Global Cuisine, Culinary Masterpieces.</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=61564199515388&mibextid=ZbWKwL"><i class="fab fa-facebook-f"></i></a>
+                        <a href="mailto:culinary.artisans.utar@gmail.com"><i class="fas fa-envelope"></i></a>
+                        <a href="https://www.instagram.com/culinary.artisans?igsh=OG5qbXI2OHgyMTZp"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+        </div>
+    </footer>
+    <!--End of Footer-->
+
+    <!--Back to top-->
+    <button onclick="backtotop()" id="Btn" title="Back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+        </span><p>Back to Top</p>
+    </button>
+    
+    <script src="backtotop.js"></script>
+    <script src="https://kit.fontawesome.com/7e002fabbc.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

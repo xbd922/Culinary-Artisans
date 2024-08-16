@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Japan-Cuisine-Food</title>
+    <!--bootstrap-->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!--Custom css and js-->
+    <link rel="stylesheet" href="headfoot.css">
+    <link rel="stylesheet" href="cuisine.css">
+</head>
+<body>
+    <!--Start of Header-->
+    <header class="site-header">
+        <div class="container-fluid d-flex flex-wrap justify-content-between align-item-center">
+            <div class="header-left">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <!--When screen small enough will appear-->
+                    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse menu-container" id="navbarNav">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item Cuisine"><p class="nav-link" >Cuisine</p>
+                                <div class="content">
+                                    <a class="cn nav-link" href="japanese.html">Japan</a>
+                                    <a class="cn nav-link" href="#">Italy</a>
+                                    <a class="cn nav-link" href="#">Malaysia</a>
+                                    <a class="cn nav-link" href="#">Unknown</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Saved Recipe</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Comment</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+            </div>
+            <div class="header-center">
+                <div class="logo">
+                    <img src="Pictures/logoword.png" alt="Culinary Artisans">
+                </div>
+
+            </div>
+
+            <div class="header-right">
+                <div class="search-container">
+                    <input type="text" placeholder="Search">
+                    <button type="submit" >Search</button>
+                </div>
+                <a href="#" class="btn login-btn"><i class="fa-duotone fa-solid fa-user"></i></a>
+            </div>
+        </div>
+    </header>
+    <!--End of Header-->
+
+    <main>
+        <div class="row">
+            <p id="path"><a href="homepage.html">Home</a> >> <a href="japanese.html">Japan-Cuisine</a> >> <a href="#">Ramen</a></p>
+            <button type="button" class="btn save">
+                <a href="#"><i class="fa-solid fa-bookmark" style="color: #000000;"></i></a>  
+            </button>
+            <button type="button" class="btn download">
+                <a href="#" download><i class="fa-solid fa-download" style="color:black"></i></a>  
+            </button>
+        </div>
+
+        <div class="row justify-content-center mb-3">
+            <img src="japanpic/ramen.jpg" alt="food">
+        </div>
+        <section class="rcontent">
+            <p class="description">
+                <span class="word"><i><b>Ramen</b></i></span> 
+                is noodle soup consisting of wheat noodles or egg noodles, soup, meat, vegetables, and other ingredients. 
+                The soup stock(dashi) is usually made from pork bones until thick. In some areas, other ingredients such as chicken bones and seafood are also used to 
+                serve as broth. The sauce(tare) is the essence of ramen. It is made from concentrated extracts of spices from meat or fish. 
+                Some chefs will add their own secret sauce. The thick broth is combined with the sauce as seasoning to create what we all know of the ramen. 
+                Nowadays, various regions in Japan have different styles of ramen. Common ramen include soy sauce ramen, salt ramen, tonkatsu ramen, miso ramen, seafood ramen, and so on.
+            </p>
+        </section>
+        <section class="rcontent">
+            <h2>History of Ramen</h2>
+            <p class="history">Ramen originated from Chinese noodles soup. Since Japan was originally closed to foreign trade, 
+                and began to accept foreign tourists and traders, Chinese traders arrived in Yokohama and established Chinatown 
+                to open Chinese restaurants to attract customers. The most popular one is ramen, and ramen has become a household name. 
+                In some areas, you may notice people calling instant noodles as ramen. This is because it was invented by an entrepreneur 
+                named Momofuku Ando after he realized that ramen is a popular noodle dish. This alleviated the food scarcity faced by Japan after World War II.
+            </p>  
+        </section>
+        <section class="rcontent">
+            <h2>Ingredient</h2>
+            <ul class="ingredient">
+                <li>Ramen noodles</li>
+                <li>Garlic and ginger</li>
+                <li>Broth (chicken/ pork bones/ Vege)</li>
+                <li>Dried shiitake mushrooms</li>
+                <li>Vegetables</li>
+                <li>Soft-boiled egg</li>
+                <li>Toppings: chili oil, Nori</li>
+            </ul>
+        </section>
+        <section class="rcontent">
+            <h2>Instruction</h2>
+            <ol class="instruction">
+                <li>Stir-fry garlic and ginger</li>
+                <li>Make broth - Simmering garlic, ginger, dried mushrooms with chicken broth</li>
+                <li>Add Noddles</li>
+                <li>Add Vegetables</li>
+                <li>Add toppings</li>
+                <li>Ready to serve</li>
+            </ol>
+        </section>
+    </main>
+    <!--References from [8][13][14][22]-->
+
+
+    <!--Start of Footer-->
+    <footer class="site-footer">
+        <div class="container">
+                <div class="footer-logo">
+                    <img src="Pictures/logotran.png" alt="Logo" class="logo-img">
+
+                    <p>Culinary Artisans</p>
+                    <p>World Taste, Amazing Recipes, Unforgettable Flavors, Global Cuisine, Culinary Masterpieces.</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=61564199515388&mibextid=ZbWKwL"><i class="fab fa-facebook-f"></i></a>
+                        <a href="mailto:culinary.artisans.utar@gmail.com"><i class="fas fa-envelope"></i></a>
+                        <a href="https://www.instagram.com/culinary.artisans?igsh=OG5qbXI2OHgyMTZp"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+        </div>
+    </footer>
+    <!--End of Footer-->
+
+    <!--Back to top-->
+    <button onclick="backtotop()" id="Btn" title="Back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+        </span><p>Back to Top</p>
+    </button>
+    <script src="backtotop.js"></script>
+    <script src="https://kit.fontawesome.com/7e002fabbc.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

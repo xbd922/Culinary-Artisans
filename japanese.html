@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Japanese Recipe</title>
+    <!--bootstrap-->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!--Custom css-->
+    <link rel="stylesheet" href="headfoot.css">
+    <link rel="stylesheet" href="japanese.css"> 
+
+</head>
+<body>
+    <!--Start of Header-->
+    <header class="site-header">
+        <div class="container-fluid d-flex flex-wrap justify-content-between align-item-center">
+            <div class="header-left">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <!--When screen small enough will appear-->
+                    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse menu-container" id="navbarNav">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item Cuisine"><p class="nav-link" >Cuisine</p>
+                                <div class="content">
+                                    <a class="cn nav-link" href="japanese.html">Japan</a>
+                                    <a class="cn nav-link" href="italian.html">Italy</a>
+                                    <a class="cn nav-link" href="#">Malaysia</a>
+                                    <a class="cn nav-link" href="#">Unknown</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Saved Recipe</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Comment</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+            </div>
+            <div class="header-center">
+                <div class="logo">
+                    <a href="homepage.html"><img src="Pictures/logoword.png" alt="Culinary Artisans"></a>
+                </div>
+
+            </div>
+
+            <div class="header-right">
+                <div class="search-container">
+                    <input type="text" placeholder="Search">
+                    <button type="submit" >Search</button>
+                </div>
+                <a href="#" class="btn login-btn"><i class="fa-duotone fa-solid fa-user"></i></a>
+            </div>
+        </div>
+    </header>
+    <!--End of Header-->
+
+    <div class="jumbotron text-center">
+        <h1>Japanese</h1>
+    </div>
+    <p id="path"><a href="homepage.html">Home</a> >> <a href="italian.html">Japanese</a></p>
+   
+<!--AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA-->
+<br>
+<br>
+<h2 class="title-with-underline">Popular Recipes</h2>
+
+<div id="myCarousel" class="carousel slide">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <!--PAGE ONE-->
+            <div class="row">
+                <!-- Content for the first page -->
+                <div class="col-md-3">
+                    <div class="card small-card">
+                        <img src="japanpic/sushireciple.jpg" class="card-img-top" alt="Recipe 1">
+                        <div class="card-body">
+                            <h5 class="card-title small-card-title">Sushi</h5>
+                            <p class="card-text small-card-text">
+                                <i class="fa fa-clock-o"></i> 25 mins &emsp;
+                                <i class="fa fa-user"></i> 3 people
+                            </p>
+                        </div>
+                        <a href="japan-sushi.html" class="btn check-recipe-btn">Check Out Recipe</a>
+                        <a href="#" class="btn heart-btn">♡</a>
+                    </div>
+                </div>
+                <!-- 2nd card -->
+                <div class="col-md-3">
+                    <div class="card small-card">
+                        <img src="japanpic/ramenrecipe.jpg" class="card-img-top" alt="Recipe 1">
+                        <div class="card-body">
+                            <h5 class="card-title small-card-title">Ramen</h5>
+                            <p class="card-text small-card-text">
+                                <i class="fa fa-clock-o"></i> 25 mins &emsp;
+                                <i class="fa fa-user"></i> 1 people
+                            </p>
+                        </div>
+                        <a href="japan-ramen.html" class="btn check-recipe-btn">Check Out Recipe</a>
+                        <a href="#" class="btn heart-btn">♡</a>
+                    </div>
+                </div>
+                <!-- 3rd card -->
+                <div class="col-md-3">
+                    <div class="card small-card">
+                        <img src="japanpic/donburirecipe.jpg" class="card-img-top" alt="Recipe 1">
+                        <div class="card-body">
+                            <h5 class="card-title small-card-title">Donburi</h5>
+                            <p class="card-text small-card-text">
+                                <i class="fa fa-clock-o"></i> 25 mins &emsp;
+                                <i class="fa fa-user"></i> 2 people
+                            </p>
+                        </div>
+                        <a href="japan-donburi.html" class="btn check-recipe-btn">Check Out Recipe</a>
+                        <a href="#" class="btn heart-btn">♡</a>
+                    </div>
+                </div>
+                <!-- 4th card -->
+                <div class="col-md-3">
+                    <div class="card small-card">
+                        <img src="japanpic/currykatsu.jpg" class="card-img-top" alt="Recipe 1">
+                        <div class="card-body">
+                            <h5 class="card-title small-card-title">Curry Katsu</h5>
+                            <p class="card-text small-card-text">
+                                <i class="fa fa-clock-o"></i> 25 mins &emsp;
+                                <i class="fa fa-user"></i> 4 people
+                            </p>
+                        </div>
+                        <a href="japan-currykatsu.html" class="btn check-recipe-btn">Check Out Recipe</a>
+                        <a href="#" class="btn heart-btn">♡</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <!--PAGE TWO-->
+            <div class="row">
+                <!-- Content for the second page -->
+                <div class="col-md-3">
+                    <div class="card small-card">
+                        <img src="japanpic/gyozarecipe.jpg" class="card-img-top" alt="Recipe 1">
+                        <div class="card-body">
+                            <h5 class="card-title small-card-title">Gyoza</h5>
+                            <p class="card-text small-card-text">
+                                <i class="fa fa-clock-o"></i> 25 mins &emsp;
+                                <i class="fa fa-user"></i> 2 people
+                            </p>
+                        </div>
+                        <a href="japan-gyoza.html" class="btn check-recipe-btn">Check Out Recipe</a>
+                        <a href="#" class="btn heart-btn">♡</a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card small-card">
+                        <img src="japanpic/shrimp_tempurarecipe.jpg" class="card-img-top" alt="Recipe 1">
+                        <div class="card-body">
+                            <h5 class="card-title small-card-title">Tempura</h5>
+                            <p class="card-text small-card-text">
+                                <i class="fa fa-clock-o"></i> 25 mins &emsp;
+                                <i class="fa fa-user"></i> 2 people
+                            </p>
+                        </div>
+                        <a href="japan-tempura.html" class="btn check-recipe-btn">Check Out Recipe</a>
+                        <a href="#" class="btn heart-btn">♡</a>
+                    </div>
+                </div>
+                <!-- Add more columns here as needed -->
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <!--PAGE THREE-->
+            <div class="row">
+                <!-- Content for the third page -->
+                <div class="col-md-3">
+                    <div class="card small-card">
+                        <img src="Pictures/abbacchio.jpg" class="card-img-top" alt="Recipe 3">
+                        <div class="card-body">
+                            <h5 class="card-title small-card-title">Recipe Name 3</h5>
+                            <p class="card-text small-card-text">
+                                <i class="fa fa-clock-o"></i> 25 mins &emsp;
+                                <i class="fa fa-user"></i> 2 people
+                            </p>
+                        </div>
+                        <a href="recipe3.html" class="btn check-recipe-btn">Check Out Recipe</a>
+                        <a href="#" class="btn heart-btn">♡</a>
+                    </div>
+                </div>
+                <!-- Add more columns here as needed -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Controls -->
+    <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+
+<br>
+<br>
+<!--NO CAROUSELL SECTION-->
+<h2 class="title-with-underline">Other Recipes</h2>
+<div class="row">
+    <!-- Content for the first page -->
+    <div class="col-md-3">
+        <div class="card small-card">
+            <img src="Pictures/placeholder.jpg" class="card-img-top" alt="Recipe 1">
+            <div class="card-body">
+                <h5 class="card-title small-card-title">Recipe Name 1</h5>
+                <p class="card-text small-card-text">
+                    <i class="fa fa-clock-o"></i> 25 mins &emsp;
+                    <i class="fa fa-user"></i> 2 people
+                </p>
+            </div>
+            <a href="Pictures/placeholder.jpg" class="btn check-recipe-btn">Check Out Recipe</a>
+            <aclass="btn heart-btn">♡</a>
+        </div>
+    </div>
+    <!-- 2nd card -->
+    <div class="col-md-3">
+        <div class="card small-card">
+            <img src="Pictures/placeholder.jpg" class="card-img-top" alt="Recipe 1">
+            <div class="card-body">
+                <h5 class="card-title small-card-title">Recipe Name 1</h5>
+                <p class="card-text small-card-text">
+                    <i class="fa fa-clock-o"></i> 25 mins &emsp;
+                    <i class="fa fa-user"></i> 2 people
+                </p>
+            </div>
+            <a href="italianR1.html" class="btn check-recipe-btn">Check Out Recipe</a>
+            <a href="#" class="btn heart-btn">♡</a>
+        </div>
+    </div>
+    <!-- 3rd card -->
+    <div class="col-md-3">
+        <div class="card small-card">
+            <img src="Pictures/placeholder.jpg" class="card-img-top" alt="Recipe 1">
+            <div class="card-body">
+                <h5 class="card-title small-card-title">Recipe Name 1</h5>
+                <p class="card-text small-card-text">
+                    <i class="fa fa-clock-o"></i> 25 mins &emsp;
+                    <i class="fa fa-user"></i> 2 people
+                </p>
+            </div>
+            <a href="italianR1.html" class="btn check-recipe-btn">Check Out Recipe</a>
+            <a href="#" class="btn heart-btn">♡</a>
+        </div>
+    </div>
+    <!-- 4th card -->
+    <div class="col-md-3">
+        <div class="card small-card">
+            <img src="Pictures/placeholder.jpg" class="card-img-top" alt="Recipe 1">
+            <div class="card-body">
+                <h5 class="card-title small-card-title">Recipe Name 1</h5>
+                <p class="card-text small-card-text">
+                    <i class="fa fa-clock-o"></i> 25 mins &emsp;
+                    <i class="fa fa-user"></i> 2 people
+                </p>
+            </div>
+            <a href="italianR1.html" class="btn check-recipe-btn">Check Out Recipe</a>
+            <a href="#" class="btn heart-btn">♡</a>
+        </div>
+    </div>
+</div>
+</div>
+<br>
+<br>
+<!--AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA-->
+ 
+<!--Start of Footer-->
+ <footer class="site-footer">
+    <div class="container">
+            <div class="footer-logo">
+                <img src="Pictures/logotran.png" alt="Logo" class="logo-img">
+
+                <p>Culinary Artisans</p>
+                <p>World Taste, Amazing Recipes, Unforgettable Flavors, Global Cuisine, Culinary Masterpieces.</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=61564199515388&mibextid=ZbWKwL"><i class="fab fa-facebook-f"></i></a>
+                    <a href="mailto:culinary.artisans.utar@gmail.com"><i class="fas fa-envelope"></i></a>
+                    <a href="https://www.instagram.com/culinary.artisans?igsh=OG5qbXI2OHgyMTZp"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+    </div>
+</footer>
+<!--End of Footer-->
+
+<!--Back to top-->
+<button onclick="backtotop()" id="BtnUp" title="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+    </span><p>Back to Top</p>
+</button>
+    <script src="backtotop.js"></script>
+    <script src="https://kit.fontawesome.com/7e002fabbc.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
