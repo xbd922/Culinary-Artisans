@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sushi</title>
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!--Own css-->
+    <link rel="stylesheet" href="headfoot.css">
+    <link rel="stylesheet" href="cuisine.css">
+</head>
+<body>
+    <!--Start of Header-->
+    <header class="site-header">
+        <div class="container-fluid d-flex flex-wrap justify-content-between align-item-center">
+            <div class="header-left">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <!--When screen small enough will appear-->
+                    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse menu-container" id="navbarNav">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item Cuisine"><p class="nav-link" >Cuisine</p>
+                                <div class="content">
+                                    <a class="cn nav-link" href="japanese.html">Japan</a>
+                                    <a class="cn nav-link" href="italian.html">Italy</a>
+                                    <a class="cn nav-link" href="#">Malaysia</a>
+                                    <a class="cn nav-link" href="#">Unknown</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Saved Recipe</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Comment</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+            </div>
+            <div class="header-center">
+                <div class="logo">
+                    <a href="homepage.html"><img src="Pictures/logoword.png" alt="Culinary Artisans"></a>
+                </div>
+
+            </div>
+
+            <div class="header-right">
+                <div class="search-container">
+                    <input type="text" placeholder="Search">
+                    <button type="submit" >Search</button>
+                </div>
+                <a href="#" class="btn login-btn"><i class="fa-duotone fa-solid fa-user"></i></a>
+            </div>
+        </div>
+    </header>
+    <!--End of Header-->
+    
+    <!--Start of main body-->
+    <main>
+        <div class="row">
+            <p id="path"><a href="homepage.html">Home</a> >> <a href="japanese.html">Japan</a> >> <a href="#">Sushi</a></p>
+            <button type="button" class="btn save">
+                <a href="#"><i class="fa-solid fa-bookmark" style="color: #000000;"></i></a>  
+            </button>
+            <button type="button" class="btn download">
+                <a href="#" download><i class="fa-solid fa-download" style="color:black"></i></a>  
+            </button>
+        </div>
+
+        <div class="row justify-content-center mb-3">
+            <img src="japanpic/cuisine1.jpg" alt="food">
+        </div>
+        <section class="rcontent">
+            <p class="description">
+                <span class="word"><i><b>Sushi</b></i></span> 
+                is a Japanese dish made with rice, cooked in vinegar, and served with raw or cooked seafood, and other ingredients as topping. 
+                Common types of sushi are sashimi, nigiri sushi, Maki, temaki, and so on. Although sashimi is a common ingredient paired with rice, 
+                people can still choose to pair it with other ingredients, such as tamagoyaki, chicken floss, cucumber, tuna, etc. 
+                Usually, people dip it in salty soy or sweet soy sauce, to give it a unique flavor.
+            </p>
+        </section>
+        <hr>
+        <section class="rcontent">
+            <h2>History of Sushi</h2>
+            <p class="history">When people think of Japanese cuisine, the first thing that usually comes to mind is sushi. 
+                In fact, the origin of sushi comes from China Mainland. The sushi we know today is completely different from the original sushi, 
+                which was originally invented to prevent fish from spoiling. At the time, people used fermented rice to store fish, 
+                but discarded the rice before eating and only the fish was eaten. That is the Chinese dish called "narezushi". 
+                In the absence of a refrigerator to freeze fish, ancient people could preserve fish in this way for up to a year.
+            </p>  
+            <p class="history">
+                The sushi we know today is "nigiri sushi", which was invented by Mr. Hanaya Yohei, who is known as the inventor of sushi in Edomae. 
+                In the past, since it took a few months to wait for narezushi to ferment, Mr. Yohei wanted to avoid taking too long to prepare sushi. 
+                He invented nigiri sushi, which is to mix rice with vinegar to make up for the shortcomings of narezushi but still has the same flavor as narezushi.
+            </p>
+        </section>
+        <hr>
+        <section class="rcontent">
+            <h2>Ingredient</h2>
+            <ul class="ingredient">
+                <b style="color:red">*Requirement：Sushi rolling mat</b>
+                <br>
+                For the Sushi Rice:
+                <li>100g Japanese rice</li>
+                <li>2 cups cold water</li>
+                <li>4 Tbsp Rice vinegar</li>
+                <li>2 Tbsp sugar</li>
+                <li>1 Tsp salt</li>
+                <li>1 sheet Nori (seaweed sheets)</li>
+                <br>
+                For the Fillings:
+                <li>Tuna</li>
+                <li>Salmon</li>
+                <li>Cucumber</li>
+                <li>Crab Stick</li>
+                <li>Chicken Floss</li>
+                <li>Prawns</li>
+                (Anything you want)<br>
+            </ul>
+        </section>
+        <hr>
+        <section class="rcontent">
+            <h2>Instruction</h2>
+            <ol class="instruction">
+                <li>Prepare Japanese rice
+                    <ol type="a">
+                        <li>Wash the rice until the water is clear</li>
+                        <li>Soak rice in clean water for 30 minutes</li>
+                        <li>Add water more than the rice</li>
+                        <li>Cook rice</li>
+                        <li>When done, mix with rice vinegar</li>
+                    </ol>
+                </li>
+                <li>Prepare your sushi rolling mat</li>
+                <li>Place a sheet of nori seaweed on the mat</li>
+                <li>Place sushi rice about two thirds on top of the nori seaweed </li>
+                <li>Add your fillings in a line on top of the rice in the center</li>
+                <li>Roll your sushi</li>
+                <li>Ready to serve</li>
+            </ol>
+        </section>
+        <!--References from [8][15][16]-->
+    </main>
+    <!--End of Main Body-->
+    
+    <!--Start of Footer-->
+    <footer class="site-footer">
+        <div class="container">
+                <div class="footer-logo">
+                    <img src="Pictures/logotran.png" alt="Logo" class="logo-img">
+
+                    <p>Culinary Artisans</p>
+                    <p>World Taste, Amazing Recipes, Unforgettable Flavors, Global Cuisine, Culinary Masterpieces.</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=61564199515388&mibextid=ZbWKwL"><i class="fab fa-facebook-f"></i></a>
+                        <a href="mailto:culinary.artisans.utar@gmail.com"><i class="fas fa-envelope"></i></a>
+                        <a href="https://www.instagram.com/culinary.artisans?igsh=OG5qbXI2OHgyMTZp"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+        </div>
+    </footer>
+    <!--End of Footer-->
+
+    <!--Back to top-->
+    <button onclick="backtotop()" id="Btn" title="Back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+        </span><p>Back to Top</p>
+    </button>
+
+        <script src="https://kit.fontawesome.com/7e002fabbc.js" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="js/backtotop.js"></script>
+</body>
+</html>

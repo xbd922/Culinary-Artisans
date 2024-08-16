@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Japan-Cuisine-Food</title>
+    <!--bootstrap-->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!--Custom css and js-->
+    <link rel="stylesheet" href="headfoot.css">
+    <link rel="stylesheet" href="cuisine.css">
+</head>
+<body>
+   <!--Start of Header-->
+   <header class="site-header">
+    <div class="container-fluid d-flex flex-wrap justify-content-between align-item-center">
+        <div class="header-left">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <!--When screen small enough will appear-->
+                <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+                <div class="collapse navbar-collapse menu-container" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item Cuisine"><p class="nav-link" >Cuisine</p>
+                            <div class="content">
+                                <a class="cn nav-link" href="japanese.html">Japan</a>
+                                <a class="cn nav-link" href="#">Italy</a>
+                                <a class="cn nav-link" href="#">Malaysia</a>
+                                <a class="cn nav-link" href="#">Unknown</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Saved Recipe</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Comment</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+        </div>
+        <div class="header-center">
+            <div class="logo">
+                <img src="Pictures/logoword.png" alt="Culinary Artisans">
+            </div>
+
+        </div>
+
+        <div class="header-right">
+            <div class="search-container">
+                <input type="text" placeholder="Search">
+                <button type="submit" >Search</button>
+            </div>
+            <a href="#" class="btn login-btn"><i class="fa-duotone fa-solid fa-user"></i></a>
+        </div>
+    </div>
+</header>
+<!--End of Header-->
+
+    <main>
+        <div class="row">
+            <p id="path"><a href="homepage.html">Home</a> >> <a href="japanese.html">Japan-Cuisine</a> >> <a href="#">Donburi</a></p>
+            <button type="button" class="btn save">
+                <a href="#"><i class="fa-solid fa-bookmark" style="color: #000000;"></i></a>  
+            </button>
+            <button type="button" class="btn download">
+                <a href="#" download><i class="fa-solid fa-download" style="color:black"></i></a>  
+            </button>
+        </div>
+
+        <div class="row justify-content-center mb-3">
+            <img src="japanpic/Unadon01s2100.jpg" alt="food">
+        </div>
+        <section class="rcontent">
+            <p class="description">
+                <span class="word"><i><b>Donburi</b></i></span> 
+                is a main course served with rice, made by putting various meats, fish, and vegetables in rice bowls and simmering them with sauce, 
+                which is called "don". Common types include Oyakodon(family bowl), unadon(grilled ell bowl), Gyudon(stewed beef bowl), Katsudon(pork cutlet bowl), etc. 
+                When serving, a small bowl is covered to isolate the heat from the food in the bowl and maintain the perfect temperature, making the donburi more flavorful.
+            </p>
+        </section>
+        <section class="rcontent">
+            <h2>History of Donburi</h2>
+            <p class="history">
+                Its origins can be traced back to the Muromachi period(1330-1570) when it was a vegetarian dish served in temples and was called "Houhan" at the time. 
+                The word donburi can be traced back to the Edo period when a restaurant called "Kendon-ya" specialized in serving this dish. 
+                The dish was called "Lendonburi-bachi" at the time and was later shortened to "donburi". The word "Donburi" can now be abbreviated to "Don", 
+                which means big bowl in Japanese. The reason why it is as popular as ramen is that this dish was deeply loved by locals in the Edo period. 
+                It has a large portion, a delicious taste, and is easy and quick to make. People can eat the rice and toppings in one go.
+            </p>  
+        </section>
+        <section class="rcontent">
+            <h2>Ingredient</h2>
+            <ul class="ingredient">
+                <li>Chicken thighs</li>
+                <li>Sake</li>
+                <li>Onion</li>
+                <li>Eggs</li>
+                <li>Seasonings -- Dashi, soy sauce, mirin, sugar</li>
+                <li>Japanese Rice</li>
+            </ul>
+        </section>
+        <section class="rcontent">
+            <h2>Instruction</h2>
+            <ol class="instruction">
+                <li>Prepare Ingredients</li>
+                <ol type="a">
+                    <li>Cut onion, chicken.</li>
+                    <li>Crack eggs.</li>
+                </ol>
+                <li>Steam rice</li>
+                <li>Cook the onion with seasoning mixture.</li>
+                <li>Add the chicken and cook until color changes.</li>
+                <li>Drizzle egg mixture at 2 separate times.</li>
+                <li>Spoon the prepared dish onto the steamed rice in the rice bowl.</li>
+                <li>Ready to serve.</li>
+            </ol>
+        </section>
+    </main>
+    <!--References from [8][21][23]-->
+
+
+    <!--Start of Footer-->
+    <footer class="site-footer">
+        <div class="container">
+                <div class="footer-logo">
+                    <img src="Pictures/logotran.png" alt="Logo" class="logo-img">
+
+                    <p>Culinary Artisans</p>
+                    <p>World Taste, Amazing Recipes, Unforgettable Flavors, Global Cuisine, Culinary Masterpieces.</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=61564199515388&mibextid=ZbWKwL"><i class="fab fa-facebook-f"></i></a>
+                        <a href="mailto:culinary.artisans.utar@gmail.com"><i class="fas fa-envelope"></i></a>
+                        <a href="https://www.instagram.com/culinary.artisans?igsh=OG5qbXI2OHgyMTZp"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+        </div>
+    </footer>
+    <!--End of Footer-->
+
+    <!--Back to top-->
+    <button onclick="backtotop()" id="Btn" title="Back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+        </span><p>Back to Top</p>
+    </button>
+
+
+    <script src="backtotop.js"></script>
+    <script src="https://kit.fontawesome.com/7e002fabbc.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

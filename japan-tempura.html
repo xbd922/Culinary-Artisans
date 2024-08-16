@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Japan-Cuisine-Food</title>
+    <!--bootstrap-->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!--Custom css and js-->
+    <link rel="stylesheet" href="headfoot.css">
+    <link rel="stylesheet" href="cuisine.css">
+</head>
+<body>
+   <!--Start of Header-->
+   <header class="site-header">
+    <div class="container-fluid d-flex flex-wrap justify-content-between align-item-center">
+        <div class="header-left">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <!--When screen small enough will appear-->
+                <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+                <div class="collapse navbar-collapse menu-container" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item Cuisine"><p class="nav-link" >Cuisine</p>
+                            <div class="content">
+                                <a class="cn nav-link" href="japanese.html">Japan</a>
+                                <a class="cn nav-link" href="italian.html">Italy</a>
+                                <a class="cn nav-link" href="#">Malaysia</a>
+                                <a class="cn nav-link" href="#">Korea</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Saved Recipe</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Comment</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+        </div>
+        <div class="header-center">
+            <div class="logo">
+                <a href="homepage.html"><img src="Pictures/logoword.png" alt="Culinary Artisans"></a>
+            </div>
+
+        </div>
+
+        <div class="header-right">
+            <div class="search-container">
+                <input type="text" placeholder="Search">
+                <button type="submit" >Search</button>
+            </div>
+            <a href="#" class="btn login-btn"><i class="fa-duotone fa-solid fa-user"></i></a>
+        </div>
+    </div>
+</header>
+<!--End of Header-->
+
+    <main>
+        <div class="row">
+            <p id="path"><a href="homepage.html">Home</a> >> <a href="japanese.html">Japan-Cuisine</a> >> <a href="#">Tempura</a></p>
+            <button type="button" class="btn save">
+                <a href="#"><i class="fa-solid fa-bookmark" style="color: #000000;"></i></a>  
+            </button>
+            <button type="button" class="btn download">
+                <a href="#" download><i class="fa-solid fa-download" style="color:black"></i></a>  
+            </button>
+        </div>
+
+        <div class="row justify-content-center mb-3">
+            <img src="japanpic/Tempura.jpg" alt="food">
+        </div>
+        <section class="rcontent">
+            <p class="description">
+                <span class="word"><i><b>Tempura</b></i></span> 
+                is a fried food in which fish, meat, and vegerables are coated in flour batter and then fried. 
+                Can be used as a topping for bento or udon. Common types include chicken tempura, fried shrimp tempura, 
+                and even tempura can be user as a filling for sushi.
+            </p>
+        </section>
+        <section class="rcontent">
+            <h2>History of Tempura</h2>
+            <p class="history">
+                Tempura frying technique may have arrived in Japan in the 16th century when Portuguese Catholic missionaries brought Western cooking methods, 
+                but the main style of Japanese tempura is a cuisine that originated as street food in the Edo period. 
+                In the past, various regions had different cooking methods. For example, the batter in the Kanto was made by mixing flour, eggs, and water, 
+                and the tempura was quickly fried in high-temperature sesame oil. When eating, the tempura was mixed with radish and it is eaten with mud and 
+                dipped in sauce. While in the Kansai, no eggs are used, and the tempura is fried slowly in low temperature salad oil and it is eaten with salt.
+            </p>  
+        </section>
+        <section class="rcontent">
+            <h2>Ingredient</h2>
+            <ul class="ingredient">
+                
+                <li>1.75 cup water</li>
+                <li>2 egg yolk</li>
+                <li>1.5 cup all-purpose flour</li>
+                <li>1-quart vegetable oil</li>
+                <li>Any vegetables or meat you want</li>
+                <br>
+                For dipping sauce:
+                <li>2 tbsp light soy sauce</li>
+                <li>2 tbsp mirin</li>
+                <li>Some dashi granules</li>
+            </ul>
+        </section>
+        <section class="rcontent">
+            <h2>Instruction</h2>
+            <ol class="instruction">
+                <li>Mix all dipping sauce ingredients in a bowl. Set aside</li>
+                <li>Mix water and egg yolk until well combined. Sift in flour and mix until the batter becomes a bit lumpy</li>
+                <li>Heat vegetable oil in pan until hot but not smoking</li>
+                <li>Dip ingredients one-by-one into batter and place into hot oil. Fry until the batter is golden-brown.</li>
+                <li>Remove from oil and drain on a paper towel.</li>
+                <li>Ready to serve</li>
+            </ol>
+        </section>
+    </main>
+    <!--References from [18][19][20][24]-->
+
+
+    <!--Start of Footer-->
+    <footer class="site-footer">
+        <div class="container">
+                <div class="footer-logo">
+                    <img src="Pictures/logotran.png" alt="Logo" class="logo-img">
+
+                    <p>Culinary Artisans</p>
+                    <p>World Taste, Amazing Recipes, Unforgettable Flavors, Global Cuisine, Culinary Masterpieces.</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=61564199515388&mibextid=ZbWKwL"><i class="fab fa-facebook-f"></i></a>
+                        <a href="mailto:culinary.artisans.utar@gmail.com"><i class="fas fa-envelope"></i></a>
+                        <a href="https://www.instagram.com/culinary.artisans?igsh=OG5qbXI2OHgyMTZp"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+        </div>
+    </footer>
+    <!--End of Footer-->
+
+    <!--Back to top-->
+    <button onclick="backtotop()" id="Btn" title="Back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+        </span><p>Back to Top</p>
+    </button>
+
+    <script src="backtotop.js"></script>
+    <script src="https://kit.fontawesome.com/7e002fabbc.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
