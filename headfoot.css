@@ -5,6 +5,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #F8EFE8;
+    overflow-x: none;
 }
 
 .site-header {
@@ -376,8 +377,9 @@ body {
     }
 
     .navbar-nav {
-        justify-content: center; /* Center navigation items */
-        flex-wrap: wrap; /* Wrap items to prevent overflow */
+        display: flex;
+        flex-direction: column; /* Stack navigation items vertically */
+        align-items: flex-start; /* Center align items */
     }
 
     .header-left,
@@ -392,6 +394,13 @@ body {
 
     .login-btn {
         display: none; /* Hides the "Log in" button */
+    }
+    .menu-container{
+        position: absolute;
+        top:100%;
+        background-color: white;
+        box-shadow: 0 0 10px black;
+        z-index:1000;
     }
 }
 
@@ -433,8 +442,9 @@ body {
     }
 
     .navbar-nav {
+        display: flex;
         flex-direction: column; /* Stack navigation items vertically */
-        align-items: center; /* Center align items */
+        align-items: flex-start; 
     }
 
     .header-left {
@@ -453,6 +463,14 @@ body {
 
     .login-btn {
         display: none; /* Hides the "Log in" button */
+    }
+
+    .menu-container{
+        position: absolute;
+        top:100%;
+        background-color: white;
+        box-shadow: 0 0 10px black;
+        z-index:1000;
     }
 }
 
