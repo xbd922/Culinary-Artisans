@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+html {scroll-behavior: smooth;}
 body {
     margin: 0;
     padding: 0;
@@ -11,6 +12,9 @@ body {
     padding: 20px 0;
     border-bottom: 1px solid #e0e0e0;
     font-family: "Poppins", sans-serif;
+    position: sticky;
+    top:0;
+    z-index: 1000;
 }
 
 .site-header img {
@@ -96,6 +100,10 @@ body {
 
 .nav-link :first-child{
     margin-top: 100px;
+}
+/*Over Write Bootstrap*/
+.Cuisine p{
+    margin:0;
 }
 
 .content a {
@@ -234,6 +242,23 @@ body {
     color: #8B3A3A;
 }
 
+#Btn{
+    position: fixed;
+    right: 20px;
+    bottom:0;
+    background-color: transparent;
+    border:none;
+    outline: none;
+}
+#Btn p{
+    display: none;
+    font-size: 12px;
+}
+#Btn:hover p{
+    display:block;
+    border:none;
+    outline: none;
+}
 /* Media Query for screens larger than 1200px (for extra large desktops) */
 @media (max-width: 1200px) {
     .site-footer {
