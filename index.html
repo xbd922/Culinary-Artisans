@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,20 +8,25 @@
     <!--Google Font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Calligraffitti&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Calligraffitti&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
     <!--bootstrap-->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <!-- Owl Carousel CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
     <!--Custom css-->
 
     <link rel="stylesheet" href="headfoot.css">
     <link rel="stylesheet" href="homepage.css">
-    
-    
+
+
 </head>
+
 <body>
     <!--Start of Header-->
     <header class="site-header">
@@ -28,13 +34,15 @@
             <div class="header-left">
                 <nav class="navbar navbar-expand-lg navbar-light">
                     <!--When screen small enough will appear-->
-                    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <i class="fa-solid fa-bars"></i>
                     </button>
 
                     <div class="collapse navbar-collapse menu-container" id="navbarNav">
                         <ul class="navbar-nav ml-auto">
-                            <li class="nav-item Cuisine"><p class="nav-link" >Cuisine</p>
+                            <li class="nav-item Cuisine">
+                                <p class="nav-link">Cuisine</p>
                                 <div class="content">
                                     <a class="cn nav-link" href="japanese.html">Japan</a>
                                     <a class="cn nav-link" href="italian.html">Italy</a>
@@ -66,23 +74,20 @@
             <div class="header-right">
                 <div class="search-container">
                     <input type="text" placeholder="Search">
-                    <button type="submit" >Search</button>
+                    <button type="submit">Search</button>
                 </div>
-                <div class="header-right">
-                    <div class="search-container">
-                        <input type="text" placeholder="Search">
-                        <button type="submit">Search</button>
-                    </div>
-                    <!-- Login Icon -->
-                    <a id="loginIcon" href="login.html" class="btn login-btn">
-                        <i class="fa-solid fa-user"></i>
-                    </a>
-                    <!-- Logout Icon (Initially hidden) -->
-                    <button id="logoutIcon" class="btn logout-btn" style="display: none;">
-                        <i class="fa-solid fa-sign-out-alt"></i>
-                    </button>
-                </div>
+                <!-- Login Icon -->
+                <a id="loginIcon" href="login.html" class="btn login-btn">
+                    <i class="fa-solid fa-user"></i>
+                </a>
+                <!-- Logout Icon (Initially hidden) -->
+                <button id="logoutIcon" class="btn logout-btn" style="display: none;">
+                    <i class="fa-solid fa-sign-out-alt"></i>                    
+                </button>
+                <!-- Placeholder for logged-in user's email -->
+                <p id="loggedUserEmail"></p>
             </div>
+        </div>
         </div>
     </header>
     <!--End of Header-->
@@ -93,7 +98,7 @@
             <div class="row title">
                 <div class="col-lg-6">
                     <h1 class="subtitle">
-                        Welcome to  
+                        Welcome to
                         <span>Culinary Artisans</span>
                     </h1>
                     <p class="subpara fade">Your Food Happiness Starts Here!</p>
@@ -101,134 +106,148 @@
                         <i class="fa-solid fa-bowl-food fa-bounce fa-2xl"></i>
                         <i class="fa-solid fa-bowl-food fa-bounce fa-2xl"></i>
                         <i class="fa-solid fa-bowl-food fa-bounce fa-2xl"></i>
-                    </div>  
+                    </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="title-image">
-                        <div id="target-place" class="title-image" style="background-image:url(Pictures/logotran.png) ;">
+                        <div id="target-place" class="title-image"
+                            style="background-image:url(Pictures/logotran.png) ;">
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <!--End of display welcome message-->
+            <!--End of display welcome message-->
 
-        <div class="spacing"></div>
-        <!--Start of Cuisine display section-->
-        <div class="Cuisines">
-            <h1 class="text-center cuisinetitle">Our Recommendation</h1>
-            <section class="fade cuisine-image" style="background-image:url(japanpic/2.jpg);">
-                <div class="container justify-content-center">
-                    <a href="japanese.html"><p>Japan</p></a>
-                </div>
-            </section>
-            <section class="fade cuisine-image" style="background-image:url(italypic/1.jpg);">
-                <div class="container justify-content-center">
-                    <a href="italianc.html"><p>Italy</p></a>
-                </div>
-            </section>
-            <section class="fade cuisine-image" style="background-image:url(malaysiapic/1.jpg);">
-                <div class="container justify-content-center">
-                    <a href="#"><p>Malaysia</p></a>
-                </div>
-            </section>
-            <section class="fade cuisine-image" style="background-image:url(koreapic/1.jpg);">
-                <div class="container justify-content-center">
-                    <a href="#"><p>Korea</p></a>
-                </div>
-            </section>
-        </div>
-        <!--End of Cuisine display section-->
-
-        <div class="spacing"></div>
-
-        <!--Start of Recipe display section-->
-        <div class="recipe ">
-            <div class="banner" style="background-image: url(randpic/cooking.png);">
-                <h2>Want to learn how to cook? </h2>
-                <h3>Click for more information !</h3>
-            </div>
-
-        <!-- Owl Carousel Structure -->
-        <div class="owl-carousel recipe-image fade">
-            <div><a href="japanese.html"><img src="japanpic/1.jpg"></a></div>  
-            <div><a href="italian.html"><img src="italypic/1.jpg"></a></div>
-            <div><a href="#"><img src="malaysiapic/1.jpg"></a></div>
-            <div><a href="#"><img src="koreapic/1.jpg"></a></div> 
-            <div><a href="japanese.html"><img src="japanpic/2.jpg"></a></div>
-            <div><a href="italian.html"><img src="italypic/2.jpg"></a></div> 
-            <div><a href="#"><img src="malaysiapic/2.jpg"></a></div>  
-            <div><a href="#"><img src="koreapic/2.jpg"></a></div> 
-            <div><a href="japanese.html"><img src="japanpic/3.jpg"></a></div> 
-            <div><a href="italian.html"><img src="italypic/3.png"></a></div> 
-            <div><a href="#"><img src="malaysiapic/3.png"></a></div> 
-            <div><a href="#"><img src="koreapic/3.jpg"></a></div> 
-        </div>
-        <!--End of Recipe display section-->
-
-        <div class="spacing"></div>
-
-        </div>
-
-        <!--Start of About us-->
-        <section class="AboutUs py-5 fade">
-            <div class="container-fluid">
-                <div class="row align-items-center">
-                    <div class="col-12 col-md-6 text-center">
-                        <img src="randpic/chef.png" class="img-fluid rounded" alt="About Us">
+            <div class="spacing"></div>
+            <!--Start of Cuisine display section-->
+            <div class="Cuisines">
+                <h1 class="text-center cuisinetitle">Our Recommendation</h1>
+                <section class="fade cuisine-image" style="background-image:url(japanpic/2.jpg);">
+                    <div class="container justify-content-center">
+                        <a href="japanese.html">
+                            <p>Japan</p>
+                        </a>
                     </div>
-                    <div class="textabout col-12 col-md-6">
-                        <h2>About Us</h2>
-                        <p>This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph.</p>
-                        <a class="btn text-center moreabout" href="aboutus.html">MORE ABOUT US</a>
+                </section>
+                <section class="fade cuisine-image" style="background-image:url(italypic/1.jpg);">
+                    <div class="container justify-content-center">
+                        <a href="italianc.html">
+                            <p>Italy</p>
+                        </a>
+                    </div>
+                </section>
+                <section class="fade cuisine-image" style="background-image:url(malaysiapic/1.jpg);">
+                    <div class="container justify-content-center">
+                        <a href="#">
+                            <p>Malaysia</p>
+                        </a>
+                    </div>
+                </section>
+                <section class="fade cuisine-image" style="background-image:url(koreapic/1.jpg);">
+                    <div class="container justify-content-center">
+                        <a href="#">
+                            <p>Korea</p>
+                        </a>
+                    </div>
+                </section>
+            </div>
+            <!--End of Cuisine display section-->
+
+            <div class="spacing"></div>
+
+            <!--Start of Recipe display section-->
+            <div class="recipe ">
+                <div class="banner" style="background-image: url(randpic/cooking.png);">
+                    <h2>Want to learn how to cook? </h2>
+                    <h3>Click for more information !</h3>
+                </div>
+
+                <!-- Owl Carousel Structure -->
+                <div class="owl-carousel recipe-image fade">
+                    <div><a href="japanese.html"><img src="japanpic/1.jpg"></a></div>
+                    <div><a href="italian.html"><img src="italypic/1.jpg"></a></div>
+                    <div><a href="#"><img src="malaysiapic/1.jpg"></a></div>
+                    <div><a href="#"><img src="koreapic/1.jpg"></a></div>
+                    <div><a href="japanese.html"><img src="japanpic/2.jpg"></a></div>
+                    <div><a href="italian.html"><img src="italypic/2.jpg"></a></div>
+                    <div><a href="#"><img src="malaysiapic/2.jpg"></a></div>
+                    <div><a href="#"><img src="koreapic/2.jpg"></a></div>
+                    <div><a href="japanese.html"><img src="japanpic/3.jpg"></a></div>
+                    <div><a href="italian.html"><img src="italypic/3.png"></a></div>
+                    <div><a href="#"><img src="malaysiapic/3.png"></a></div>
+                    <div><a href="#"><img src="koreapic/3.jpg"></a></div>
+                </div>
+                <!--End of Recipe display section-->
+
+                <div class="spacing"></div>
+
+            </div>
+
+            <!--Start of About us-->
+            <section class="AboutUs py-5 fade">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <div class="col-12 col-md-6 text-center">
+                            <img src="randpic/chef.png" class="img-fluid rounded" alt="About Us">
+                        </div>
+                        <div class="textabout col-12 col-md-6">
+                            <h2>About Us</h2>
+                            <p>This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This
+                                is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a
+                                paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a
+                                paragraph. This is a paragraph.</p>
+                            <a class="btn text-center moreabout" href="aboutus.html">MORE ABOUT US</a>
+                        </div>
                     </div>
                 </div>
+            </section>
+            <!--End of About us-->
+
+            <div class="spacing"></div>
+
+
+            <!--Banner-->
+            <div class="banner" style="background-color:bisque">
+                <h2>Discover more features! </h2>
+                <h3>What are you waiting for? Start cooking today!</h3>
             </div>
-        </section>
-        <!--End of About us-->
 
-        <div class="spacing"></div>
+            <div class="spacing"></div>
 
-
-        <!--Banner-->
-        <div class="banner" style="background-color:bisque">
-            <h2>Discover more features! </h2>
-            <h3>What are you waiting for? Start cooking today!</h3>
-        </div>
-
-        <div class="spacing"></div>
-
-        <!--Display cooking tips-->
-        <div class="banner" style="background-image: linear-gradient(#F8EFE8, #FCE8E0)">
-            <h2>Do you know?</h2>
-            <div class="owl-carousel cooking-tips">
-                <h3>When you don't know how to cook, just yell: "Mama!!!"</h3>
-                <h3>Read the entire recipe before start cooking.</h3>
-                <h3>Always taste and season.</h3>
-                <h3>A good chef always keep their knives sharp.</h3>
-                <h3>You must cut vegetables safely.</h3>
-                <h3>Use a timer will help you a lot.</h3>
+            <!--Display cooking tips-->
+            <div class="banner" style="background-image: linear-gradient(#F8EFE8, #FCE8E0)">
+                <h2>Do you know?</h2>
+                <div class="owl-carousel cooking-tips">
+                    <h3>When you don't know how to cook, just yell: "Mama!!!"</h3>
+                    <h3>Read the entire recipe before start cooking.</h3>
+                    <h3>Always taste and season.</h3>
+                    <h3>A good chef always keep their knives sharp.</h3>
+                    <h3>You must cut vegetables safely.</h3>
+                    <h3>Use a timer will help you a lot.</h3>
+                </div>
             </div>
-        </div>
-        <!--End of display cooking tips-->
+            <!--End of display cooking tips-->
 
-        
+
     </section>
     <!--End of Body-->
 
     <!--Start of Footer-->
     <footer class="site-footer">
         <div class="container">
-                <div class="footer-logo">
-                    <img src="Pictures/logotran.png" alt="Logo" class="logo-img">
+            <div class="footer-logo">
+                <img src="Pictures/logotran.png" alt="Logo" class="logo-img">
 
-                    <p>Culinary Artisans</p>
-                    <p>World Taste, Amazing Recipes, Unforgettable Flavors, Global Cuisine, Culinary Masterpieces.</p>
-                    <div class="social-icons">
-                        <a href="https://www.facebook.com/profile.php?id=61564199515388&mibextid=ZbWKwL"><i class="fab fa-facebook-f"></i></a>
-                        <a href="mailto:culinary.artisans.utar@gmail.com"><i class="fas fa-envelope"></i></a>
-                        <a href="https://www.instagram.com/culinary.artisans?igsh=OG5qbXI2OHgyMTZp"><i class="fab fa-instagram"></i></a>
-                    </div>
+                <p>Culinary Artisans</p>
+                <p>World Taste, Amazing Recipes, Unforgettable Flavors, Global Cuisine, Culinary Masterpieces.</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=61564199515388&mibextid=ZbWKwL"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="mailto:culinary.artisans.utar@gmail.com"><i class="fas fa-envelope"></i></a>
+                    <a href="https://www.instagram.com/culinary.artisans?igsh=OG5qbXI2OHgyMTZp"><i
+                            class="fab fa-instagram"></i></a>
                 </div>
+            </div>
         </div>
     </footer>
     <!--End of Footer-->
@@ -236,7 +255,8 @@
     <!--Back to top-->
     <button onclick="backtotop()" id="Btn" title="Back to top">
         <i class="fa-solid fa-arrow-up"></i>
-        </span><p>Back to Top</p>
+        </span>
+        <p>Back to Top</p>
     </button>
 
     <!--Icon online-->
@@ -258,4 +278,5 @@
     Login & Logout Functions
     <script type="module" src="js/index.js"></script>
 </body>
+
 </html>

@@ -174,6 +174,40 @@ body {
     border: 1px solid #1A281F;
 }
 
+#loggedUserEmail {
+    margin-top: 20px;
+    font-size: 0.8rem;
+    color: #444745;
+    text-decoration: underline;
+}
+
+#loggedUserEmail:hover {
+    margin-top: 20px;
+    font-size: 0.8rem;
+    color: #000000;
+    text-decoration: underline 2px;
+    cursor: pointer;
+}
+
+.logout-btn {
+    display: flex;
+    align-items: center;
+    padding: 5px 15px;
+    font-size: 17px;
+    color: #444745;
+    cursor: pointer;
+    text-align: left;
+}
+
+.logout-btn:hover {
+    color: #000000;
+}
+
+.logout-btn:hover p {
+    color: #524c4c;
+    text-decoration: underline 1.5px;
+}
+
 .header-link {
     text-decoration: none;
     color: #333;

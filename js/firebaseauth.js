@@ -32,6 +32,12 @@ function showMessage(message, divId) {
     }, 5000);
 }
 
+// Function to store session information
+function storeSession(email) {
+    sessionStorage.setItem('email', email);
+    sessionStorage.setItem('loggedIn', 'true');
+}
+
 const signUp = document.getElementById('submitSignUp');
 signUp.addEventListener('click', (event) => {
     event.preventDefault();
