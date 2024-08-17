@@ -22,7 +22,6 @@ const db = getFirestore(app);
 // Google Auth Provider
 const provider = new GoogleAuthProvider();
 
-//Show Message Function
 function showMessage(message, divId) {
     var messageDiv = document.getElementById(divId);
     messageDiv.style.display = "block";
@@ -34,18 +33,11 @@ function showMessage(message, divId) {
 }
 
 // Function to store session information
-function storeSession(user) {
-    sessionStorage.setItem('email', user.email);
-    sessionStorage.setItem('uid', user.uid);
+function storeSession(email) {
+    sessionStorage.setItem('email', email);
     sessionStorage.setItem('loggedIn', 'true');
 }
 
-// Function to clear session information
-function clearSession() {
-    sessionStorage.clear();
-}
-
-//Sign Up Event
 const signUp = document.getElementById('submitSignUp');
 signUp.addEventListener('click', (event) => {
     event.preventDefault();
@@ -73,7 +65,6 @@ signUp.addEventListener('click', (event) => {
         });
 });
 
-//Sign In Event
 const signIn = document.getElementById('submitSignIn');
 signIn.addEventListener('click', (event) => {
     event.preventDefault();
@@ -96,7 +87,33 @@ signIn.addEventListener('click', (event) => {
         });
 });
 
-// Google Sign-In Event
+// Google Sign-In Button
+// const googleSignInBtn = document.querySelector(".google-btn");
+// googleSignInBtn.addEventListener("click", () => {
+//     signInWithPopup(auth, provider)
+//         .then((result) => {
+//             const user = result.user;
+//             const userData = {
+//                 email: user.email,
+//                 displayName: user.displayName
+//             };
+//             const docRef = doc(db, "users", user.uid);
+//             return setDoc(docRef, userData);
+//         })
+//         .then(() => {
+//             window.location.href = 'index.html';
+//         })
+//         .catch((error) => {
+//             const errorCode = error.code;
+//             console.error("Error during sign-in: ", error.message);
+//             if (errorCode === 'auth/account-exists-with-different-credential') {
+//                 showMessage('Account exists with different credentials', 'signInMessage');
+//             } else {
+//                 showMessage('Google Sign-In failed', 'signInMessage');
+//             }
+//         });
+// });
+
 document.querySelectorAll('.google-btn').forEach(button => {
     button.addEventListener('click', () => {
         signInWithPopup(auth, provider)

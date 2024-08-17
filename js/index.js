@@ -23,15 +23,12 @@ const loginIcon = document.getElementById('loginIcon');
 const logoutIcon = document.getElementById('logoutIcon');
 const loggedUserEmail = document.getElementById('loggedUserEmail');
 
-// Initialize session on page load
+// Initialize session storage
 function initializeSession() {
-    const email = sessionStorage.getItem('email');
-    const uid = sessionStorage.getItem('uid');
-    const isLoggedIn = sessionStorage.getItem('loggedIn');
-
-    if (isLoggedIn === 'true' && uid) {
+    const loggedInUserId = sessionStorage.getItem('loggedInUserId');
+    if (loggedInUserId) {
         toggleIcons(true);
-        loadUserData(uid);
+        loadUserData(loggedInUserId);
     } else {
         toggleIcons(false);
     }
@@ -57,13 +54,11 @@ function loadUserData(userId) {
 // Listen for authentication state changes
 onAuthStateChanged(auth, (user) => {
     if (user) {
-        sessionStorage.setItem('email', user.email);
-        sessionStorage.setItem('uid', user.uid);
-        sessionStorage.setItem('loggedIn', 'true');
+        sessionStorage.setItem('loggedInUserId', user.uid);
         toggleIcons(true);
         loadUserData(user.uid);
     } else {
-        clearSession(); // Clear session if the user logs out
+        sessionStorage.removeItem('loggedInUserId');
         toggleIcons(false);
     }
 });
@@ -73,7 +68,6 @@ logoutIcon.addEventListener('click', () => {
     sessionStorage.removeItem('loggedInUserId');
     signOut(auth)
         .then(() => {
-            clearSession();
             window.location.href = 'login.html'; // Redirect to login page after logout
         })
         .catch((error) => {
@@ -91,11 +85,6 @@ function toggleIcons(isLoggedIn) {
         logoutIcon.style.display = 'none';
         loggedUserEmail.innerText = ''; // Clear email display when logged out
     }
-}
-
-// Function to clear session information
-function clearSession() {
-    sessionStorage.clear();
 }
 
 // Initialize session on page load
