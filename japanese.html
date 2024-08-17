@@ -15,7 +15,7 @@
 
 </head>
 <body>
-    <!--Start of Header-->
+    <!--Start of header-->
     <header class="site-header">
         <div class="container-fluid d-flex flex-wrap justify-content-between align-item-center">
             <div class="header-left">
@@ -31,18 +31,18 @@
                                 <div class="content">
                                     <a class="cn nav-link" href="japanese.html">Japan</a>
                                     <a class="cn nav-link" href="italian.html">Italy</a>
-                                    <a class="cn nav-link" href="#">Malaysia</a>
-                                    <a class="cn nav-link" href="#">Unknown</a>
+                                    <a class="cn nav-link" href="malaysian.html">Malaysia</a>
+                                    <a class="cn nav-link" href="korean.html">Korean</a>
                                 </div>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Saved Recipe</a>
+                                <a class="nav-link" href="savedrecipe.html">Saved Recipe</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="about.html">About Us</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Comment</a>
+                                <a class="nav-link" href="comment.html">Comment</a>
                             </li>
                         </ul>
                     </div>
@@ -61,16 +61,16 @@
                     <input type="text" placeholder="Search">
                     <button type="submit" >Search</button>
                 </div>
-                <a href="#" class="btn login-btn"><i class="fa-duotone fa-solid fa-user"></i></a>
+                <a href="login.html" class="btn login-btn"><i class="fa-duotone fa-solid fa-user"></i></a>
             </div>
         </div>
     </header>
     <!--End of Header-->
-
+    
     <div class="jumbotron text-center">
         <h1>Japanese</h1>
     </div>
-    <p id="path"><a href="index.html">Home</a> >> <a href="italian.html">Japanese</a></p>
+    <p id="path"><a href="homepage.html">Home</a> >> <a href="japanese.html">Japanese</a></p>
    
 <!--AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA-->
 <br>
@@ -93,7 +93,7 @@
                 <!-- Content for the first page -->
                 <div class="col-md-3">
                     <div class="card small-card">
-                        <img src="japanpic/sushireciple.jpg" class="card-img-top" alt="Recipe 1">
+                        <img src="Pictures/frsushireciple.jpg" class="card-img-top" alt="Recipe 1">
                         <div class="card-body">
                             <h5 class="card-title small-card-title">Sushi</h5>
                             <p class="card-text small-card-text">
@@ -102,13 +102,15 @@
                             </p>
                         </div>
                         <a href="japan-sushi.html" class="btn check-recipe-btn">Check Out Recipe</a>
-                        <a href="#" class="btn heart-btn">♡</a>
+                        <button type="button" class="btn saveb heart-btn " onclick="saveRecipe('Sushi','japan-sushi.html','Pictures/srcuisine1.jpg')">
+                            ♡
+                        </button>
                     </div>
                 </div>
                 <!-- 2nd card -->
                 <div class="col-md-3">
                     <div class="card small-card">
-                        <img src="japanpic/ramenrecipe.jpg" class="card-img-top" alt="Recipe 1">
+                        <img src="Pictures/frramenrecipe.jpg" class="card-img-top" alt="Recipe 2">
                         <div class="card-body">
                             <h5 class="card-title small-card-title">Ramen</h5>
                             <p class="card-text small-card-text">
@@ -117,13 +119,15 @@
                             </p>
                         </div>
                         <a href="japan-ramen.html" class="btn check-recipe-btn">Check Out Recipe</a>
-                        <a href="#" class="btn heart-btn">♡</a>
+                        <button type="button" class="btn saveb heart-btn " onclick="saveRecipe('Ramen','japan-ramen.html','Pictures/srramen.jpg')">
+                            ♡
+                        </button>
                     </div>
                 </div>
                 <!-- 3rd card -->
                 <div class="col-md-3">
                     <div class="card small-card">
-                        <img src="japanpic/donburirecipe.jpg" class="card-img-top" alt="Recipe 1">
+                        <img src="Pictures/frdonburi1.jpg" class="card-img-top" alt="Recipe 1">
                         <div class="card-body">
                             <h5 class="card-title small-card-title">Donburi</h5>
                             <p class="card-text small-card-text">
@@ -132,13 +136,15 @@
                             </p>
                         </div>
                         <a href="japan-donburi.html" class="btn check-recipe-btn">Check Out Recipe</a>
-                        <a href="#" class="btn heart-btn">♡</a>
+                        <button type="button" class="btn saveb heart-btn " onclick="saveRecipe('Donburi','japan-donburi.html','Pictures/srdonburirecipe.jpg')">
+                            ♡
+                        </button>
                     </div>
                 </div>
                 <!-- 4th card -->
                 <div class="col-md-3">
                     <div class="card small-card">
-                        <img src="japanpic/currykatsu.jpg" class="card-img-top" alt="Recipe 1">
+                        <img src="Pictures/frcurrykatsu.jpg" class="card-img-top" alt="Recipe 1">
                         <div class="card-body">
                             <h5 class="card-title small-card-title">Curry Katsu</h5>
                             <p class="card-text small-card-text">
@@ -147,7 +153,9 @@
                             </p>
                         </div>
                         <a href="japan-currykatsu.html" class="btn check-recipe-btn">Check Out Recipe</a>
-                        <a href="#" class="btn heart-btn">♡</a>
+                        <button type="button" class="btn saveb heart-btn " onclick="saveRecipe('Curry Katsu','japan-currykatsu.html','Pictures/srChicken-Katsu-Curry.jpg')">
+                            ♡
+                        </button>
                     </div>
                 </div>
             </div>
@@ -159,7 +167,7 @@
                 <!-- Content for the second page -->
                 <div class="col-md-3">
                     <div class="card small-card">
-                        <img src="japanpic/gyozarecipe.jpg" class="card-img-top" alt="Recipe 1">
+                        <img src="Pictures/frgyozarecipe.jpg" class="card-img-top" alt="Recipe 1">
                         <div class="card-body">
                             <h5 class="card-title small-card-title">Gyoza</h5>
                             <p class="card-text small-card-text">
@@ -168,12 +176,14 @@
                             </p>
                         </div>
                         <a href="japan-gyoza.html" class="btn check-recipe-btn">Check Out Recipe</a>
-                        <a href="#" class="btn heart-btn">♡</a>
+                        <button type="button" class="btn saveb heart-btn " onclick="saveRecipe('Gyoza','japan-gyoza.html','Pictures/srchicken-gyoza.jpg')">
+                            ♡
+                        </button>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="card small-card">
-                        <img src="japanpic/shrimp_tempurarecipe.jpg" class="card-img-top" alt="Recipe 1">
+                        <img src="Pictures/frshrimp_tempurarecipe.jpg" class="card-img-top" alt="Recipe 1">
                         <div class="card-body">
                             <h5 class="card-title small-card-title">Tempura</h5>
                             <p class="card-text small-card-text">
@@ -182,7 +192,9 @@
                             </p>
                         </div>
                         <a href="japan-tempura.html" class="btn check-recipe-btn">Check Out Recipe</a>
-                        <a href="#" class="btn heart-btn">♡</a>
+                        <button type="button" class="btn saveb heart-btn " onclick="saveRecipe('Tempura','japan-tempura.html','Pictures/srTempura.jpg')">
+                            ♡
+                        </button>
                     </div>
                 </div>
                 <!-- Add more columns here as needed -->
@@ -240,7 +252,7 @@
                 </p>
             </div>
             <a href="Pictures/placeholder.jpg" class="btn check-recipe-btn">Check Out Recipe</a>
-            <aclass="btn heart-btn">♡</a>
+            <a class="btn heart-btn">♡</a>
         </div>
     </div>
     <!-- 2nd card -->
@@ -313,11 +325,13 @@
 <!--End of Footer-->
 
 <!--Back to top-->
-<button onclick="backtotop()" id="BtnUp" title="Back to top">
+<button onclick="backtotop()" id="Btn" title="Back to top">
     <i class="fa-solid fa-arrow-up"></i>
     </span><p>Back to Top</p>
 </button>
-    <script src="backtotop.js"></script>
+
+    <script src="js/savedrecipe.js"></script>
+    <script src="js/backtotop.js"></script>
     <script src="https://kit.fontawesome.com/7e002fabbc.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
