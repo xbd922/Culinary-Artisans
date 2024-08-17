@@ -11,10 +11,6 @@ body {
     padding: 20px 0;
     border-bottom: 1px solid #e0e0e0;
     font-family: "Poppins", sans-serif;
-    /*let header always display at the top of webpage*/
-    position: sticky;
-    top:0;
-    z-index: 1000;
 }
 
 .site-header img {
@@ -102,9 +98,6 @@ body {
     margin-top: 100px;
 }
 
-.Cuisine p{
-    margin:0;
-}
 .content a {
     color: black;
     padding: 10px 16px;
@@ -141,8 +134,8 @@ body {
 
 .search-container button {
     padding: 5px 15px;
-    background-color: #1A281F;
-    border: 1px solid #1A281F;
+    background-color: #8B3A3A;
+    border: 1px solid #8B3A3A;
     border-radius: 15px;
     color: whitesmoke;
     cursor: pointer;
@@ -153,15 +146,15 @@ body {
 
 .search-container button:hover {
     background-color: whitesmoke;
-    color: #1A281F;
-    border: 1px solid #1A281F;
+    color: #8B3A3A;
+    border: 1px solid #8B3A3A;
 }
 
 .login-btn {
     padding: 5px 15px;
     font-size: 14px;
-    background-color: #1A281F;
-    border: 1px solid #1A281F;
+    background-color: #8B3A3A;
+    border: 1px solid #8B3A3A;
     border-radius: 15px;
     color: whitesmoke;
     cursor: pointer;
@@ -170,42 +163,8 @@ body {
 
 .login-btn:hover {
     background-color: whitesmoke;
-    color: #1A281F;
-    border: 1px solid #1A281F;
-}
-
-#loggedUserEmail {
-    margin-top: 20px;
-    font-size: 0.8rem;
-    color: #444745;
-    text-decoration: underline;
-}
-
-#loggedUserEmail:hover {
-    margin-top: 20px;
-    font-size: 0.8rem;
-    color: #000000;
-    text-decoration: underline 2px;
-    cursor: pointer;
-}
-
-.logout-btn {
-    display: flex;
-    align-items: center;
-    padding: 5px 15px;
-    font-size: 17px;
-    color: #444745;
-    cursor: pointer;
-    text-align: left;
-}
-
-.logout-btn:hover {
-    color: #000000;
-}
-
-.logout-btn:hover p {
-    color: #524c4c;
-    text-decoration: underline 1.5px;
+    color: #8B3A3A;
+    border: 1px solid #8B3A3A;
 }
 
 .header-link {
@@ -273,24 +232,6 @@ body {
 
 .social-icons a:hover {
     color: #8B3A3A;
-}
-
-#Btn{
-    position: fixed;
-    right: 20px;
-    bottom:0;
-    background-color: transparent;
-    border:none;
-    outline: none;
-}
-#Btn p{
-    display: none;
-    font-size: 12px;
-}
-#Btn:hover p{
-    display:block;
-    border:none;
-    outline: none;
 }
 
 /* Media Query for screens larger than 1200px (for extra large desktops) */
