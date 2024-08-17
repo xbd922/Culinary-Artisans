@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="cuisine.css">
 </head>
 <body>
-   <!--Start of Header-->
+   <!--Start of header-->
    <header class="site-header">
     <div class="container-fluid d-flex flex-wrap justify-content-between align-item-center">
         <div class="header-left">
@@ -26,19 +26,19 @@
                         <li class="nav-item Cuisine"><p class="nav-link" >Cuisine</p>
                             <div class="content">
                                 <a class="cn nav-link" href="japanese.html">Japan</a>
-                                <a class="cn nav-link" href="#">Italy</a>
-                                <a class="cn nav-link" href="#">Malaysia</a>
-                                <a class="cn nav-link" href="#">Unknown</a>
+                                <a class="cn nav-link" href="italian.html">Italy</a>
+                                <a class="cn nav-link" href="malaysian.html">Malaysia</a>
+                                <a class="cn nav-link" href="korean.html">Korean</a>
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Saved Recipe</a>
+                            <a class="nav-link" href="savedrecipe.html">Saved Recipe</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">About Us</a>
+                            <a class="nav-link" href="about.html">About Us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Comment</a>
+                            <a class="nav-link" href="comment.html">Comment</a>
                         </li>
                     </ul>
                 </div>
@@ -47,7 +47,7 @@
         </div>
         <div class="header-center">
             <div class="logo">
-                <img src="Pictures/logoword.png" alt="Culinary Artisans">
+                <a href="homepage.html"><img src="Pictures/logoword.png" alt="Culinary Artisans"></a>
             </div>
 
         </div>
@@ -57,17 +57,18 @@
                 <input type="text" placeholder="Search">
                 <button type="submit" >Search</button>
             </div>
-            <a href="#" class="btn login-btn"><i class="fa-duotone fa-solid fa-user"></i></a>
+            <a href="login.html" class="btn login-btn"><i class="fa-duotone fa-solid fa-user"></i></a>
         </div>
     </div>
 </header>
 <!--End of Header-->
 
+<!--Start of Main Body-->
     <main>
         <div class="row">
-            <p id="path"><a href="homepage.html">Home</a> >> <a href="japanese.html">Japan-Cuisine</a> >> <a href="#">Donburi</a></p>
-            <button type="button" class="btn save">
-                <a href="#"><i class="fa-solid fa-bookmark" style="color: #000000;"></i></a>  
+            <p id="path"><a href="homepage.html">Home</a> >> <a href="japanese.html">Japan</a> >> <a href="#">Donburi</a></p>
+            <button type="button" class="btn save" onclick="saveRecipe('Donburi','japan-donburi.html','Pictures/srdonburirecipe.jpg')">
+                <i class="fa-solid fa-bookmark" style="color: #000000;"></i>  
             </button>
             <button type="button" class="btn download">
                 <a href="#" download><i class="fa-solid fa-download" style="color:black"></i></a>  
@@ -75,7 +76,7 @@
         </div>
 
         <div class="row justify-content-center mb-3">
-            <img src="japanpic/Unadon01s2100.jpg" alt="food">
+            <img src="Pictures/srdonburirecipe.jpg" alt="food">
         </div>
         <section class="rcontent">
             <p class="description">
@@ -150,7 +151,7 @@
         </span><p>Back to Top</p>
     </button>
 
-
+    <script src="js/savedrecipe.js"></script>
     <script src="backtotop.js"></script>
     <script src="https://kit.fontawesome.com/7e002fabbc.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
