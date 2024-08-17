@@ -68,7 +68,20 @@
                     <input type="text" placeholder="Search">
                     <button type="submit" >Search</button>
                 </div>
-                <a href="#" class="btn login-btn"><i class="fa-duotone fa-solid fa-user"></i></a>
+                <div class="header-right">
+                    <div class="search-container">
+                        <input type="text" placeholder="Search">
+                        <button type="submit">Search</button>
+                    </div>
+                    <!-- Login Icon -->
+                    <a id="loginIcon" href="login.html" class="btn login-btn">
+                        <i class="fa-solid fa-user"></i>
+                    </a>
+                    <!-- Logout Icon (Initially hidden) -->
+                    <button id="logoutIcon" class="btn logout-btn" style="display: none;">
+                        <i class="fa-solid fa-sign-out-alt"></i>
+                    </button>
+                </div>
             </div>
         </div>
     </header>
@@ -242,5 +255,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <!--Bootstrap Java Script-->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    Login & Logout Functions
+    <script type="module" src="js/index.js"></script>
 </body>
 </html>

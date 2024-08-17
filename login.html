@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/login.css" />
+    <script src="https://kit.fontawesome.com/9d20a863a0.js" crossorigin="anonymous"></script>
+    <title>Culinary Artisans | Login & Sign Up</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="forms-container">
+            <div class="signin-signup">
+                <!-- Sign In Form -->
+                <form method="post" action="#" class="sign-in-form">
+                    <h2 class="title">Sign in</h2>
+                    <div id="signInMessage" class="messageDiv" style="display:none;"></div>
+                    <div class="input-field">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="email" placeholder="email" id="email" required />
+                    </div>
+                    <div class="input-field">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" placeholder="password" id="password" required />
+                    </div>
+                    <input type="submit" value="Login" class="btn solid" id="submitSignIn" />
+                    <div class="divider">
+                        <hr class="line">
+                        <span class="txt">Or</span>
+                        <hr class="line">
+                    </div>
+                    <div class="google-sign-in">
+                        <button type="button" class="google-btn">
+                            <i class="fa-brands fa-google"></i>
+                            Sign in with Google
+                        </button>
+                    </div>
+                </form>
+
+                <!-- Sign Up Form -->
+                <form method="post" action="#" class="sign-up-form" id="signup">
+                    <h2 class="title">Sign up</h2>
+                    <div id="signUpMessage" class="messageDiv" style="display:none;"></div>
+                    <div class="input-field">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="email" placeholder="email" id="rEmail" required />
+                    </div>
+                    <div class="input-field">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" placeholder="password" id="rPassword" required />
+                    </div>
+                    <input type="submit" value="Sign up" class="btn solid" id="submitSignUp" />
+                    <div class="divider">
+                        <hr class="line">
+                        <span class="txt">Or</span>
+                        <hr class="line">
+                    </div>
+                    <div class="google-sign-up">
+                        <button type="button" class="google-btn">
+                            <i class="fa-brands fa-google"></i>
+                            Continue with Google
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="panels-container">
+            <div class="panel left-panel">
+                <div class="topleft">
+                    <button class="back-btn" onclick="closePage()">
+                        <i class="fa-solid fa-house"></i>
+                    </button>
+                </div>
+                <div class="content">
+                    <h3>Don't have an account yet?</h3>
+                    <p>
+                        Sign up to explore global cuisines and recipes!
+                    </p>
+                    <button class="btn transparent" id="signUpButton">
+                        Sign up
+                    </button>
+                </div>
+                <img src="Pictures/loginPg(1).png" class="image" alt="" />
+            </div>
+            <div class="panel right-panel">
+                <div class="topleft">
+                    <button class="back-btn" onclick="closePage()">
+                        <i class="fa-solid fa-house"></i>
+                    </button>
+                </div>
+                <div class="content">
+                    <h3>Already have an account?</h3>
+                    <p>
+                        Log in to explore global cuisine in Culinary Artisans!
+                    </p>
+                    <button class="btn transparent" id="signInButton">
+                        Sign in
+                    </button>
+                </div>
+                <img src="Pictures/loginPg(2).png" class="image" alt="" />
+                <img src="" class="image1" alt="" />
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script type="module" src="js/firebaseauth.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
