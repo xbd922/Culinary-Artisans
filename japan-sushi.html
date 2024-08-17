@@ -12,64 +12,64 @@
     <link rel="stylesheet" href="cuisine.css">
 </head>
 <body>
-    <!--Start of Header-->
-    <header class="site-header">
-        <div class="container-fluid d-flex flex-wrap justify-content-between align-item-center">
-            <div class="header-left">
-                <nav class="navbar navbar-expand-lg navbar-light">
-                    <!--When screen small enough will appear-->
-                    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <i class="fa-solid fa-bars"></i>
-                    </button>
+  <!--Start of header-->
+  <header class="site-header">
+    <div class="container-fluid d-flex flex-wrap justify-content-between align-item-center">
+        <div class="header-left">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <!--When screen small enough will appear-->
+                <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
 
-                    <div class="collapse navbar-collapse menu-container" id="navbarNav">
-                        <ul class="navbar-nav ml-auto">
-                            <li class="nav-item Cuisine"><p class="nav-link" >Cuisine</p>
-                                <div class="content">
-                                    <a class="cn nav-link" href="japanese.html">Japan</a>
-                                    <a class="cn nav-link" href="italian.html">Italy</a>
-                                    <a class="cn nav-link" href="#">Malaysia</a>
-                                    <a class="cn nav-link" href="#">Unknown</a>
-                                </div>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Saved Recipe</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="about.html">About Us</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Comment</a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-
-            </div>
-            <div class="header-center">
-                <div class="logo">
-                    <a href="homepage.html"><img src="Pictures/logoword.png" alt="Culinary Artisans"></a>
+                <div class="collapse navbar-collapse menu-container" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item Cuisine"><p class="nav-link" >Cuisine</p>
+                            <div class="content">
+                                <a class="cn nav-link" href="japanese.html">Japan</a>
+                                <a class="cn nav-link" href="italian.html">Italy</a>
+                                <a class="cn nav-link" href="malaysian.html">Malaysia</a>
+                                <a class="cn nav-link" href="korean.html">Korean</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="savedrecipe.html">Saved Recipe</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="comment.html">Comment</a>
+                        </li>
+                    </ul>
                 </div>
+            </nav>
 
-            </div>
-
-            <div class="header-right">
-                <div class="search-container">
-                    <input type="text" placeholder="Search">
-                    <button type="submit" >Search</button>
-                </div>
-                <a href="#" class="btn login-btn"><i class="fa-duotone fa-solid fa-user"></i></a>
-            </div>
         </div>
-    </header>
-    <!--End of Header-->
+        <div class="header-center">
+            <div class="logo">
+                <a href="homepage.html"><img src="Pictures/logoword.png" alt="Culinary Artisans"></a>
+            </div>
+
+        </div>
+
+        <div class="header-right">
+            <div class="search-container">
+                <input type="text" placeholder="Search">
+                <button type="submit" >Search</button>
+            </div>
+            <a href="login.html" class="btn login-btn"><i class="fa-duotone fa-solid fa-user"></i></a>
+        </div>
+    </div>
+</header>
+<!--End of Header-->
     
     <!--Start of main body-->
     <main>
         <div class="row">
             <p id="path"><a href="homepage.html">Home</a> >> <a href="japanese.html">Japan</a> >> <a href="#">Sushi</a></p>
-            <button type="button" class="btn save">
-                <a href="#"><i class="fa-solid fa-bookmark" style="color: #000000;"></i></a>  
+            <button type="button" class="btn save" onclick="saveRecipe('Sushi','japan-sushi.html','Pictures/srcuisine1.jpg')">
+                <i class="fa-solid fa-bookmark" style="color: #000000;"></i>  
             </button>
             <button type="button" class="btn download">
                 <a href="#" download><i class="fa-solid fa-download" style="color:black"></i></a>  
@@ -77,7 +77,7 @@
         </div>
 
         <div class="row justify-content-center mb-3">
-            <img src="japanpic/cuisine1.jpg" alt="food">
+            <img src="Pictures/srcuisine1.jpg" alt="food">
         </div>
         <section class="rcontent">
             <p class="description">
@@ -176,10 +176,12 @@
         </span><p>Back to Top</p>
     </button>
 
-        <script src="https://kit.fontawesome.com/7e002fabbc.js" crossorigin="anonymous"></script>
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-        <script src="js/backtotop.js"></script>
+    <script src="https://kit.fontawesome.com/7e002fabbc.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!---->
+    <script src="js/savedrecipe.js"></script>
+    <script src="js/backtotop.js"></script>
 </body>
 </html>
