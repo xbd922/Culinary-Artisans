@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Pictures/tab.png" type="image/png">
+    <title>Tteokbokki</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/headfoot.css">
+    <link rel="stylesheet" href="css/cuisine.css">
+</head>
+<body>
+    <!--Start of Header-->
+    <header class="site-header">
+        <div class="container-fluid d-flex flex-wrap justify-content-between align-item-center">
+            <div class="header-left">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <!--When screen small enough will appear-->
+                    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse menu-container" id="navbarNav">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item Cuisine"><p class="nav-link">Cuisine</p>
+                                <div class="content">
+                                    <a class="cn nav-link" href="japanese.html">Japan</a>
+                                    <a class="cn nav-link" href="italian.html">Italy</a>
+                                    <a class="cn nav-link" href="malaysian.html">Malaysia</a>
+                                    <a class="cn nav-link" href="korean.html">Korean</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Saved Recipe</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Comment</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <div class="header-center">
+                <div class="logo">
+                    <a href="homepage.html"><img src="Pictures/logoword.png" alt="Culinary Artisans"></a>
+                </div>
+            </div>
+            <div class="header-right">
+                <div class="search-container">
+                    <input type="text" placeholder="Search">
+                    <button type="submit" >Search</button>
+                </div>
+                <!-- Login Icon -->
+                <a id="loginIcon" href="login.html" class="btn login-btn">
+                    <i class="fa-solid fa-user"></i>
+                </a>
+                <!-- Logout Icon (Initially hidden) -->
+                <button id="logoutIcon" class="btn logout-btn" style="display: none;">
+                    <i class="fa-solid fa-sign-out-alt"></i>                    
+                </button>
+                <!-- Placeholder for logged-in user's email -->
+                <p id="loggedUserEmail"></p>
+            </div>
+        </div>
+    </header>
+    <!--End of Header-->
+    
+    <!--Start of main body-->
+    <main>
+        <div class="row">
+            <p id="path"><a href="index.html">Home</a> >> <a href="korean.html">Korean</a> >> <a href="#">Tteokbokki</a></p>
+            <button type="button" class="btn save" onclick="saveRecipe('Tteokbokki','koreanC5.html','Pictures/tteokbokki.jpg')">
+                <i class="fa-solid fa-bookmark" style="color: #000000;"></i>  
+            </button>
+            <button type="button" class="btn download">
+                <a href="Recipe/Tteokbokki.pdf" download><i class="fa-solid fa-download" style="color:black"></i></a>  
+            </button>
+        </div>
+
+        <div class="row justify-content-center mb-3">
+            <img src="Pictures/tteokbokki.jpg" alt="food">
+        </div>
+
+        <!--References from [5] -->
+        <section class="rcontent">
+            <p class="description">
+                <span class="word"><i><b>Tteokbokki</b></i></span> 
+                 is a flavorful Korean dish made with chewy rice cakes (tteok) that are stir-fried in a spicy and sweet sauce. The dish is often garnished with fish cakes, green onions, and boiled eggs, adding various textures and flavors. Tteokbokki is known for its addictive taste, combining the heat of gochujang with the sweetness of sugar and the savory notes from ingredients like soy sauce. It is commonly enjoyed as a street food or comfort food in Korea, especially during cold weather.</p>
+        </section>
+        <section class="rcontent">
+            <h2>History of Tteokbokki</h2>5
+            <p class="history">Tteokbokki, a popular Korean street food, dates back to the Joseon Dynasty (1392-1910). Originally known as "tteok jjim," it was a dish made from steamed rice cakes simmered in a soy sauce-based broth. During the 1950s, the dish evolved into the spicy and sweet tteokbokki we know today, with the addition of gochujang (Korean red chili paste) and other ingredients. This transformation turned tteokbokki into a beloved comfort food and street snack in modern Korea.
+            </p>  
+        </section>
+        <section class="rcontent">
+            <h2>Ingredients</h2>
+            <ul class="ingredient-list">
+                <li>1 pound (450 grams) of tteok (Korean rice cakes), sliced into 2-inch pieces</li>
+                <li>5 cups water</li>
+                <li>2 tablespoons gochujang (Korean red chili paste)</li>
+                <li>2 tablespoons soy sauce</li>
+                <li>2 tablespoons sugar</li>
+                <li>1 tablespoon sesame oil</li>
+                <li>1/2 teaspoon black pepper</li>
+                <li>1/2 cup fish cakes, sliced (optional)</li>
+                <li>1/2 cup chopped green onions</li>
+                <li>1-2 boiled eggs, peeled (optional)</li>
+                <li>1 tablespoon sesame seeds (for garnish)</li>
+            </ul>
+        </section>
+        <section class="rcontent">
+            <h2>Instructions</h2>
+            <ol class="instruction-list">
+                <li>If the tteok is hard or refrigerated, soak it in water for 10-15 minutes to soften.</li>
+                <li>In a large pan, combine the water, gochujang, soy sauce, and sugar. Stir until the gochujang and sugar are fully dissolved.</li>
+                <li>Add the softened rice cakes to the pan with the sauce. Bring the mixture to a boil over medium-high heat, then reduce the heat to medium-low. Simmer, stirring occasionally, for about 10-15 minutes, or until the rice cakes are tender and the sauce has thickened.</li>
+                <li>Add the sliced fish cakes and chopped green onions to the pan. Continue to cook for an additional 5 minutes, allowing the fish cakes to heat through and the flavors to meld.</li>
+                <li>Transfer the tteokbokki to a serving plate. Garnish with sesame seeds and, if using, add the boiled eggs. Enjoy hot.</li>
+            </ol>
+        </section>
+
+        <!--Video Player-->
+       <script>
+        var tag = document.createElement('script');
+        tag.src = "https://www.youtube.com/player_api";
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+        var player;
+        function onYouTubePlayerAPIReady() {
+            player = new YT.Player('ytplayer', {
+                videoId: 'UxpWM7ISoUM'
+            });
+        }
+        </script>
+        <br><br>
+        <div id="ytplayer" class="ytvid" justify-content-center></div>
+        <!--End of Video Player-->
+
+    </main>
+    <!--End of Main Body-->
+
+    <!--Start of Footer-->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-logo">
+                <img src="Pictures/logotran.png" alt="Logo" class="logo-img">
+                <p>Culinary Artisans</p>
+                <p>World Taste, Amazing Recipes, Unforgettable Flavors, Global Cuisine, Culinary Masterpieces.</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=61564199515388&mibextid=ZbWKwL"><i class="fab fa-facebook-f"></i></a>
+                    <a href="mailto:culinary.artisans.utar@gmail.com"><i class="fas fa-envelope"></i></a>
+                    <a href="https://www.instagram.com/culinary.artisans?igsh=OG5qbXI2OHgyMTZp"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--End of Footer-->
+
+    <!--Back to top-->
+    <button onclick="backtotop()" id="Btn" title="Back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+        <p>Back to Top</p>
+    </button>
+<!--Own JS for Login/out-->
+<script type="module" src="js/index.js"></script>
+    <script src="https://kit.fontawesome.com/7e002fabbc.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/savedrecipe.js"></script>
+    <script src="js/backtotop.js"></script>
+</body>
+</html>
