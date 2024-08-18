@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malaysian | Cuisine | Nasi Lemak</title>
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <!--bootstrap-->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!--Custom css and js-->
+    <link rel="stylesheet" href="headfoot.css">
+    <link rel="stylesheet" href="cuisine.css">
+</head>
+
+<body>
+    <!--Start of Header-->
+    <header class="site-header">
+        <div class="container-fluid d-flex flex-wrap justify-content-between align-item-center">
+            <div class="header-left">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <!--When screen small enough will appear-->
+                    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse menu-container" id="navbarNav">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item Cuisine">
+                                <p class="nav-link">Cuisine</p>
+                                <div class="content">
+                                    <a class="cn nav-link" href="japanese.html">Japan</a>
+                                    <a class="cn nav-link" href="italian.html">Italy</a>
+                                    <a class="cn nav-link" href="malaysian.html">Malaysia</a>
+                                    <a class="cn nav-link" href="korean.html">Korea</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="savedrecipe.html">Saved Recipe</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="comment.html">Comment</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+            </div>
+            <div class="header-center">
+                <div class="logo">
+                    <img src="Pictures/logoword.png" alt="Culinary Artisans">
+                </div>
+
+            </div>
+
+            <div class="header-right">
+                <div class="search-container">
+                    <input type="text" placeholder="Search">
+                    <button type="submit">Search</button>
+                </div>
+                <a href="#" class="btn login-btn"><i class="fa-duotone fa-solid fa-user"></i></a>
+            </div>
+        </div>
+    </header>
+    <!--End of Header-->
+
+    <main>
+        <div class="row">
+            <p id="path"><a href="homepage.html">Home</a> >> <a href="malaysian.html">Malaysia</a> >> <a
+                    href="mls-nasilemak.html">Nasi Lemak</a></p>
+            <button type="button" class="btn save"
+                onclick="saveRecipe('Nasi Lemak','mls-nasilemak.html','Pictures/mlspic/c1.jpg')">
+                <i class="fa-solid fa-bookmark" style="color: #000000;"></i>
+            </button>
+            <button type="button" class="btn download">
+                <a href="Recipe/Nasi Lemak.pdf" download><i class="fa-solid fa-download" style="color:black"></i></a>
+            </button>
+        </div>
+
+        <div class="row justify-content-center mb-3">
+            <img src="Pictures/mlspic/c1.jpg" alt="food">
+        </div>
+        <section class="rcontent">
+            <p class="description">
+                <span class="word"><i><b>Nasi Lemak</b></i></span>
+                is a meal that consists of rice cooked in coconut milk served with sambal and garnishes
+                that often include hard-boiled eggs, pickled vegetables, and crispy fried anchovies. Nasi
+                lemak is considered a national dish of Malaysia.
+            </p>
+        </section>
+        <section class="rcontent">
+            <h2>History of Nasi Lemak</h2>
+            <p class="history">The first comes from the 15th century in Malacca, just outside of Kuala Lumpur.
+                A daughter accidentally spilled coconut milk into a pot of boiling rice. When her mother, named
+                Mak, came home from work she asked her daughter what was that fragrant smell. The daughter
+                responded, “Nasi le, Mak!” meaning, “Rice, mother!” Hence, the possible origin and name for nasi lemak.
+                <br /><br />
+                Another possible history of the dish comes from farmers where they made a cheap, filling and complete
+                dish full of carbs and the country's seafood and coconuts. The dish gave them energy and sufficient fats
+                to be able to work the fields all day.
+                <br /><br />
+                While origins of the dish could trace back centuries earlier, the first written evidence of nasi lemak
+                was seen in 1909 from a British administrator who noted that the rice made with coconut cream instead of
+                water was served at weddings and local festivals.
+                <br /><br />
+                After World War II, the dish further popularized as a workers meal who feasted on the hearty plate for
+                breakfast. On their
+                plates was the creamy rice, fried fish or fried prawns, and kangkung, or the water spinach.
+                <br /><br />
+                In the 1970s, nasi lemak for breakfast became a thing as it was neatly all packed in banana leaves as
+                sold as cheap as 30 cents.
+                <br /><br />
+                For the next decades, as the dish spread and varied throughout the country, it was eaten beyond
+                breakfast and proudly by every Malaysian.
+            </p>
+        </section>
+        <section class="rcontent">
+            <h2>Ingredient</h2>
+            <ul class="ingredient">
+                <li>2 cups basmati rice, or other long-grain rice</li>
+                <li>1 pandan leaf</li>
+                <li>1 stalk lemongrass, white portion only</li>
+                <li>1/2 leaf makrut lime leaf, optional</li>
+                <li>1 (13.5-ounce can) coconut milk</li>
+                <li>Sambal, hard-boiled egg halves, sliced cucumber, crispy fried anchovies, peanuts, for garnish</li>
+                <br />
+                Sambal:
+                <li>3 garlic clove(s)</li>
+                <li>3 fresh chillies (red)</li>
+                <li>15 chilli peppers (dried)</li>
+                <li>20g dried anchovies</li>
+                <li>100ml oil</li>
+                <li>1 shallot(s)</li>
+                <li>125ml water</li>
+                <li>1 tbsp coconut milk</li>
+                <li>1 tsp tamarind paste</li>
+            </ul>
+        </section>
+        <section class="rcontent">
+            <h2>Instruction</h2>
+            <ol class="instruction">
+                <li>Gather the ingredients.</li>
+                <li>Rinse the rice and drain.</li>
+                <li>Tie the pandan leaf into a knot.</li>
+                <li>Lightly pound the lemongrass stalk.</li>
+                <li>Drop the pandan leaf, lemongrass, and makrut lime leaf (if using) into the pot (alternatively you
+                    can use a rice cooker).</li>
+                <li>Pour in the rice followed by the coconut milk, bring to a boil, cover with a lid and cook for 20
+                    minutes.</li>
+                <li>Halfway through cooking, remove the lid and stir the rice briefly with a fork. Continue cooking
+                    until done.</li>
+                <li>Prepare the Sambal:</li>
+                <ol type="a">
+                    <li>Optionally, remove seeds and membranes of chillies to reduce the spiciness. Soak the dried
+                        chilli to ease seeds and membranes removal process. </li>
+                    <li>Blend garlic, fresh/dried chillies and half of the anchovies.</li>
+                    <li>Sauté the remaining anchovies until crispy over medium heat.</li>
+                    <li>Remove them from pan.</li>
+                    <li>Add the blended ingredients and stir-fry until it changes to a darker shade of red.</li>
+                </ol>
+                <li>To serve, place a mound of coconut rice at the center of a plate. Top with a heaping tablespoon of
+                    sambal. Arrange the garnishes around the rice and serve.</li>
+            </ol>
+        </section>
+    </main>
+    <!--References from [39][40][41]-->
+
+
+    <!--Start of Footer-->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-logo">
+                <img src="Pictures/logotran.png" alt="Logo" class="logo-img">
+
+                <p>Culinary Artisans</p>
+                <p>World Taste, Amazing Recipes, Unforgettable Flavors, Global Cuisine, Culinary Masterpieces.</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=61564199515388&mibextid=ZbWKwL"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="mailto:culinary.artisans.utar@gmail.com"><i class="fas fa-envelope"></i></a>
+                    <a href="https://www.instagram.com/culinary.artisans?igsh=OG5qbXI2OHgyMTZp"><i
+                            class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--End of Footer-->
+
+    <!--Back to top-->
+    <button onclick="backtotop()" id="Btn" title="Back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+        </span>
+        <p>Back to Top</p>
+    </button>
+
+    <!-- jQuery (required for Owl Carousel) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://kit.fontawesome.com/7e002fabbc.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!---->
+    <script src="js/savedrecipe.js"></script>
+    <script src="js/backtotop.js"></script>
+</body>
+
+</html>

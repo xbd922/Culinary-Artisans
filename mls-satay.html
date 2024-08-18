@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malaysian | Cuisine | Satay</title>
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <!--bootstrap-->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!--Custom css and js-->
+    <link rel="stylesheet" href="headfoot.css">
+    <link rel="stylesheet" href="cuisine.css">
+</head>
+
+<body>
+    <!--Start of Header-->
+    <header class="site-header">
+        <div class="container-fluid d-flex flex-wrap justify-content-between align-item-center">
+            <div class="header-left">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <!--When screen small enough will appear-->
+                    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse menu-container" id="navbarNav">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item Cuisine">
+                                <p class="nav-link">Cuisine</p>
+                                <div class="content">
+                                    <a class="cn nav-link" href="japanese.html">Japan</a>
+                                    <a class="cn nav-link" href="italian.html">Italy</a>
+                                    <a class="cn nav-link" href="malaysian.html">Malaysia</a>
+                                    <a class="cn nav-link" href="korean.html">Korea</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="savedrecipe.html">Saved Recipe</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="comment.html">Comment</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+            </div>
+            <div class="header-center">
+                <div class="logo">
+                    <img src="Pictures/logoword.png" alt="Culinary Artisans">
+                </div>
+
+            </div>
+
+            <div class="header-right">
+                <div class="search-container">
+                    <input type="text" placeholder="Search">
+                    <button type="submit">Search</button>
+                </div>
+                <a href="#" class="btn login-btn"><i class="fa-duotone fa-solid fa-user"></i></a>
+            </div>
+        </div>
+    </header>
+    <!--End of Header-->
+
+    <main>
+        <div class="row">
+            <p id="path"><a href="homepage.html">Home</a> >> <a href="malaysian.html">Malaysia</a> >> <a
+                    href="mls-satay.html">Satay</a></p>
+            <button type="button" class="btn save"
+                onclick="saveRecipe('Satay','mls-satay.html','Pictures/mlspic/c3.jpeg')">
+                <i class="fa-solid fa-bookmark" style="color: #000000;"></i>
+            </button>
+            <button type="button" class="btn download">
+                <a href="Recipe/Satay.pdf" download><i class="fa-solid fa-download" style="color:black"></i></a>
+            </button>
+        </div>
+
+        <div class="row justify-content-center mb-3">
+            <img src="Pictures/mlspic/c3.jpeg" alt="food">
+        </div>
+        <section class="rcontent">
+            <p class="description">
+                <span class="word"><i><b>Satay</b></i></span>
+                is juicy, tender chicken skewers soaked in a flavorful marinade, cooked on the grill, and served with a
+                rich and spicy peanut satay sauce.
+            </p>
+        </section>
+        <section class="rcontent">
+            <h2>History of Satay</h2>
+            <p class="history">Satay has a rich history that can be traced back to the vibrant street food culture of
+                Malaysia. It is believed to have originated from Indonesian influence, particularly the Javanese kebabs.
+                It is a dish that showcases the influence of Indonesian and Malay cooking. Over time, Malaysian chefs
+                infused their own unique touch, resulting in the delectable satay we know today. Initially, it was
+                popularized as a dish made with beef or chicken, but now it includes a wide range of proteins, such as
+                lamb, pork, and even seafood.
+            </p>
+        </section>
+        <section class="rcontent">
+            <h2>Ingredient</h2>
+            <ul class="ingredient">
+                Satay:
+                <li>500g chicken breast or thigh, cut into small cubes</li>
+                <li>2 tablespoons soy sauce</li>
+                <li>2 tablespoons peanut oil</li>
+                <li>1 tablespoon turmeric powder</li>
+                <li>1 tablespoon ground coriander</li>
+                <li>1 teaspoon ground cumin</li>
+                <li>1 tablespoon brown sugar</li>
+                <li>2 garlic cloves, minced</li>
+                <li>1 teaspoon ginger, minced</li>
+                <li>Skewers (soak in water if wooden)</li>
+                <br />
+                Peanut Sauce:
+                <li>1/2 cup peanut butter (smooth or chunky)</li>
+                <li>1/2 cup coconut milk</li>
+                <li>1 tablespoon soy sauce</li>
+                <li>1 tablespoon brown sugar</li>
+                <li>1 tablespoon lime juice</li>
+                <li>1-2 teaspoons red curry paste (adjust to taste)</li>
+                <li>Water to thin, if necessary</li>
+            </ul>
+        </section>
+        <section class="rcontent">
+            <h2>Instruction</h2>
+            <ol class="instruction">
+                <li>Marinate the Chicken:</li>
+                <ol type="a">
+                    <li>In a bowl, combine soy sauce, peanut oil, turmeric, coriander, cumin, brown sugar, garlic, and
+                        ginger.</li>
+                    <li>Add the chicken pieces and toss to coat.</li>
+                    <li>Cover and refrigerate for at least 1 hour, preferably overnight, to allow the flavours to
+                        penetrate the meat.</li>
+                </ol>
+                <li>Prepare the Peanut Sauce:</li>
+                <ol type="a">
+                    <li>In a small saucepan, combine peanut butter, coconut milk, soy sauce, brown sugar, lime juice,
+                        and red curry paste.</li>
+                    <li>Cook over medium heat, stirring frequently, until the sauce is smooth and heated through. Add
+                        water to thin if the sauce is too thick. Set aside.</li>
+                </ol>
+                <li>Cook the Satay:</li>
+                <ol type="a">
+                    <li>Thread the marinated chicken pieces onto the skewers.</li>
+                    <li>Grill the skewers on a barbecue, grill pan, or under a broiler, turning occasionally, until the
+                        chicken is cooked through and slightly charred, about 10-15 minutes.</li>
+                </ol>
+                <li>Serve:</li>
+                <ol type="a">
+                    <li>Serve the chicken satay hot with peanut sauce on the side for dipping. Optionally, serve with
+                        sliced cucumber and red onion.</li>
+                </ol>
+            </ol>
+        </section>
+    </main>
+    <!--References from [44][45][46]-->
+
+
+    <!--Start of Footer-->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-logo">
+                <img src="Pictures/logotran.png" alt="Logo" class="logo-img">
+
+                <p>Culinary Artisans</p>
+                <p>World Taste, Amazing Recipes, Unforgettable Flavors, Global Cuisine, Culinary Masterpieces.</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=61564199515388&mibextid=ZbWKwL"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="mailto:culinary.artisans.utar@gmail.com"><i class="fas fa-envelope"></i></a>
+                    <a href="https://www.instagram.com/culinary.artisans?igsh=OG5qbXI2OHgyMTZp"><i
+                            class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--End of Footer-->
+
+    <!--Back to top-->
+    <button onclick="backtotop()" id="Btn" title="Back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+        </span>
+        <p>Back to Top</p>
+    </button>
+
+    <!-- jQuery (required for Owl Carousel) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://kit.fontawesome.com/7e002fabbc.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!---->
+    <script src="js/savedrecipe.js"></script>
+    <script src="js/backtotop.js"></script>
+</body>
+
+</html>

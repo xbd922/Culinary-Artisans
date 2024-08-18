@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malaysian | Cuisine | Cendol</title>
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <!--bootstrap-->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!--Custom css and js-->
+    <link rel="stylesheet" href="headfoot.css">
+    <link rel="stylesheet" href="cuisine.css">
+</head>
+
+<body>
+    <!--Start of Header-->
+    <header class="site-header">
+        <div class="container-fluid d-flex flex-wrap justify-content-between align-item-center">
+            <div class="header-left">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <!--When screen small enough will appear-->
+                    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse menu-container" id="navbarNav">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item Cuisine">
+                                <p class="nav-link">Cuisine</p>
+                                <div class="content">
+                                    <a class="cn nav-link" href="japanese.html">Japan</a>
+                                    <a class="cn nav-link" href="italian.html">Italy</a>
+                                    <a class="cn nav-link" href="malaysian.html">Malaysia</a>
+                                    <a class="cn nav-link" href="korean.html">Korea</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="savedrecipe.html">Saved Recipe</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="comment.html">Comment</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+            </div>
+            <div class="header-center">
+                <div class="logo">
+                    <img src="Pictures/logoword.png" alt="Culinary Artisans">
+                </div>
+
+            </div>
+
+            <div class="header-right">
+                <div class="search-container">
+                    <input type="text" placeholder="Search">
+                    <button type="submit">Search</button>
+                </div>
+                <a href="#" class="btn login-btn"><i class="fa-duotone fa-solid fa-user"></i></a>
+            </div>
+        </div>
+    </header>
+    <!--End of Header-->
+
+    <main>
+        <div class="row">
+            <p id="path"><a href="homepage.html">Home</a> >> <a href="malaysian.html">Malaysia</a> >> <a
+                    href="mls-cendol.html">Cendol</a></p>
+            <button type="button" class="btn save"
+                onclick="saveRecipe('Cendol','mls-cendol.html','Pictures/mlspic/c4.jpg')">
+                <i class="fa-solid fa-bookmark" style="color: #000000;"></i>
+            </button>
+            <button type="button" class="btn download">
+                <a href="Recipe/Cendol.pdf" download><i class="fa-solid fa-download" style="color:black"></i></a>
+            </button>
+        </div>
+
+        <div class="row justify-content-center mb-3">
+            <img src="Pictures/mlspic/c4.jpg" alt="food">
+        </div>
+        <section class="rcontent">
+            <p class="description">
+                <span class="word"><i><b>Cendol</b></i></span>
+                is a popular dessert in Malaysia, made with a mixture of shaved ice, coconut milk, palm sugar, and green
+                jelly noodles. It is a delicious and refreshing treat that is perfect for the hot and humid weather in
+                Malaysia.
+            </p>
+        </section>
+        <section class="rcontent">
+            <h2>History of Cendol</h2>
+            <p class="history">The origins of Cendol can be traced back to Southeast Asia, specifically Indonesia and
+                Malaysia. The word “cendol” is believed to have originated from the Indonesian word “jendol,” which
+                means bump or protrusion, referring to the shape of the jelly noodles. It is said that the dish was
+                brought to Malaysia by Javanese traders in the 19th century and has since become a staple dessert in
+                Malaysian cuisine.
+            </p>
+        </section>
+        <section class="rcontent">
+            <h2>Ingredient</h2>
+            <ul class="ingredient">
+                Cendol:
+                <li>5 tbsp green bean flour</li>
+                <li>1 tbsp tapioca flour</li>
+                <li>4 tbsp rice flour</li>
+                <li>½ tsp salt</li>
+                <li>2 tbsp sugar</li>
+                <li>350ml water</li>
+                <li>A few drops of pandan concentrate</li>
+                <li>Potato ricer or colander</li>
+                <br />
+                Palm Sugar Syrup:
+                <li>100g palm sugar</li>
+                <li>A pinch of salt</li>
+                <li>2 pandan leaves (knotted)</li>
+                <li>100ml water</li>
+                <br />
+                Coconut Milk:
+                <li>2 tbsp white sugar</li>
+                <li>250ml coconut milk</li>
+                <li>2 pandan leaves (knotted)</li>
+                <br />
+                Shaved Ice:
+                <li>8 cups shaved ice</li>
+                <li>4 cups ice cubes</li>
+                <br />
+                Optional Topping:
+                <li>Kidney beans (in a can)</li>
+                <li>Creamed corn (in a can)</li>
+                <li>1 cup glutinous rice (steamed)</li>
+            </ul>
+
+        </section>
+        <section class="rcontent">
+            <h2>Instruction</h2>
+            <ol class="instruction">
+                <li>For Cendol:</li>
+                <ol type="a">
+                    <li>Combine all the ingredients and mix well.</li>
+                    <li>Cook the mixture on low heat, stirring constantly until batter thickens and turns into
+                        translucent
+                        green.</li>
+                    <li>Have a big bowl filled with water and ice.</li>
+                    <li>Put a small amount of batter into a potato ricer or colander and squeeze into iced water. Repeat
+                        until
+                        all the batter is used up.</li>
+                    <li>Drain cendol and transfer into a container and set aside.</li>
+                </ol>
+                <li>For Palm Sugar Syrup:</li>
+                <ol type="a">
+                    <li>Place palm sugar, pandan leaves, salt, and water in a small pot and let it simmer until all the
+                        palm
+                        sugar has dissolved.</li>
+                    <li>Remove from heat, discard pandan leaves, and set aside.</li>
+                    <li>Boil the coconut milk with pandan leaves and salt. Once boiled, discard the pandan leaves and
+                        set aside
+                        to cool.</li>
+                </ol>
+                <li>To Serve:</li>
+                <ol type="a">
+                    <li>In a small bowl, layer the gula melaka first, then pack the bowl with crushed ice.</li>
+                    <li>Add glutinous rice (optional), coconut milk, and top with creamed corn and kidney beans
+                        (optional).</li>
+                    <li>Drizzle with more palm sugar syrup and serve immediately.</li>
+                </ol>
+            </ol>
+        </section>
+    </main>
+    <!--References from [47][48]-->
+
+
+    <!--Start of Footer-->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-logo">
+                <img src="Pictures/logotran.png" alt="Logo" class="logo-img">
+
+                <p>Culinary Artisans</p>
+                <p>World Taste, Amazing Recipes, Unforgettable Flavors, Global Cuisine, Culinary Masterpieces.</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=61564199515388&mibextid=ZbWKwL"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="mailto:culinary.artisans.utar@gmail.com"><i class="fas fa-envelope"></i></a>
+                    <a href="https://www.instagram.com/culinary.artisans?igsh=OG5qbXI2OHgyMTZp"><i
+                            class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--End of Footer-->
+
+    <!--Back to top-->
+    <button onclick="backtotop()" id="Btn" title="Back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+        </span>
+        <p>Back to Top</p>
+    </button>
+
+    <!-- jQuery (required for Owl Carousel) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://kit.fontawesome.com/7e002fabbc.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!---->
+    <script src="js/savedrecipe.js"></script>
+    <script src="js/backtotop.js"></script>
+</body>
+
+</html>

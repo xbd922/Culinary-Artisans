@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malaysian | Cuisine | Asam Laksa</title>
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <!--bootstrap-->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!--Custom css and js-->
+    <link rel="stylesheet" href="headfoot.css">
+    <link rel="stylesheet" href="cuisine.css">
+</head>
+
+<body>
+    <!--Start of Header-->
+    <header class="site-header">
+        <div class="container-fluid d-flex flex-wrap justify-content-between align-item-center">
+            <div class="header-left">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <!--When screen small enough will appear-->
+                    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse menu-container" id="navbarNav">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item Cuisine">
+                                <p class="nav-link">Cuisine</p>
+                                <div class="content">
+                                    <a class="cn nav-link" href="japanese.html">Japan</a>
+                                    <a class="cn nav-link" href="italian.html">Italy</a>
+                                    <a class="cn nav-link" href="malaysian.html">Malaysia</a>
+                                    <a class="cn nav-link" href="korean.html">Korea</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="savedrecipe.html">Saved Recipe</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="comment.html">Comment</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+            </div>
+            <div class="header-center">
+                <div class="logo">
+                    <img src="Pictures/logoword.png" alt="Culinary Artisans">
+                </div>
+
+            </div>
+
+            <div class="header-right">
+                <div class="search-container">
+                    <input type="text" placeholder="Search">
+                    <button type="submit">Search</button>
+                </div>
+                <a href="#" class="btn login-btn"><i class="fa-duotone fa-solid fa-user"></i></a>
+            </div>
+        </div>
+    </header>
+    <!--End of Header-->
+
+    <main>
+        <div class="row">
+            <p id="path"><a href="homepage.html">Home</a> >> <a href="malaysian.html">Malaysia</a> >> <a
+                    href="mls-asamlaksa.html">Asam Laksa</a></p>
+            <button type="button" class="btn save" onclick="saveRecipe('N','mls-.html','Pictures/mlspic/c5.jpg')">
+                <i class="fa-solid fa-bookmark" style="color: #000000;"></i>
+            </button>
+            <button type="button" class="btn download">
+                <a href="Recipe/Asam Laksa.pdf" download><i class="fa-solid fa-download" style="color:black"></i></a>
+            </button>
+        </div>
+
+        <div class="row justify-content-center mb-3">
+            <img src="Pictures/mlspic/c5.jpg" alt="food">
+        </div>
+        <section class="rcontent">
+            <p class="description">
+                <span class="word"><i><b>Asam Laksa</b></i></span>
+                is a popular Malaysian dish that is known for its tangy and sour taste. It is a noodle soup that is made
+                with a flavorful fish broth, tamarind paste, and a variety of herbs and spices. Assam laksa is a dish
+                that is enjoyed throughout Malaysia, but it is particularly popular in the state of Penang, where it is
+                considered a local specialty.
+            </p>
+        </section>
+        <section class="rcontent">
+            <h2>History of Asam Laksa</h2>
+            <p class="history">The origins of assam laksa can be traced back to the 15th century, when the region now
+                known as Malaysia was ruled by the Malacca Sultanate. The dish is believed to have been brought to
+                Malaysia by Chinese traders, who were known for their use of sour and tangy flavours in their cooking.
+                Over time, the dish evolved to include local ingredients and techniques, such as the use of tamarind
+                paste and shrimp paste.
+            </p>
+        </section>
+        <section class="rcontent">
+            <h2>Ingredient</h2>
+            <ul class="ingredient">
+                <li>500g mackerel fish (ikan kembung)</li>
+                <li>1 litter water</li>
+                <li>200g tamarind paste</li>
+                <li>2 stalks lemongrass, bruised</li>
+                <li>5 pieces dried tamarind slices (asam keping)</li>
+                <li>1 large onion, sliced</li>
+                <li>5 cloves garlic, chopped</li>
+                <li>3 pieces dried chilies, soaked and blended</li>
+                <li>1 cucumber, julienned</li>
+                <li>1 red onion, thinly sliced</li>
+                <li>2 stalks torch ginger flower (bunga kantan), sliced</li>
+                <li>1 bunch mint leaves</li>
+                <li>1 bunch polygonum leaves (daun kesum)</li>
+                <li>200g rice noodles (laksa noodles)</li>
+                <li>Salt to taste</li>
+            </ul>
+        </section>
+        <section class="rcontent">
+            <h2>Instruction</h2>
+            <ol class="instruction">
+                <li>Prepare the Fish Broth:</li>
+                <ol type="a">
+                    <li>Boil the mackerel in water until cooked. Remove the fish, debone it, and flake the flesh. Set
+                        aside.</li>
+                    <li>Return the fish bones to the pot and continue boiling to make a rich broth. Strain the broth.
+                    </li>
+                </ol>
+
+                <li>Make the Soup Base:</li>
+                <ol type="a">
+                    <li>In the strained broth, add tamarind paste, lemongrass, dried tamarind slices, onion, garlic, and
+                        blended dried chilies.</li>
+                    <li>Let the mixture simmer for about 30 minutes, allowing the flavours to infuse.</li>
+                    <li>Add the flaked fish back into the pot, and season with salt to taste.</li>
+                </ol>
+
+                <li>Prepare the Noodles and Garnish:</li>
+                <ol type="a">
+                    <li>Cook the rice noodles according to the package instructions. Drain and set aside.</li>
+                    <li>Prepare the garnishes: cucumber, red onion, torch ginger flower, mint leaves, and polygonum
+                        leaves.</li>
+                </ol>
+
+                <li>Assemble the Laksa:</li>
+                <ol type="a">
+                    <li>In a serving bowl, place the cooked noodles. Ladle the hot soup over the noodles.</li>
+                    <li>Top with the prepared garnishes. Serve hot.</li>
+                </ol>
+            </ol>
+        </section>
+    </main>
+    <!--References from [49][50]-->
+
+
+    <!--Start of Footer-->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-logo">
+                <img src="Pictures/logotran.png" alt="Logo" class="logo-img">
+
+                <p>Culinary Artisans</p>
+                <p>World Taste, Amazing Recipes, Unforgettable Flavors, Global Cuisine, Culinary Masterpieces.</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=61564199515388&mibextid=ZbWKwL"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="mailto:culinary.artisans.utar@gmail.com"><i class="fas fa-envelope"></i></a>
+                    <a href="https://www.instagram.com/culinary.artisans?igsh=OG5qbXI2OHgyMTZp"><i
+                            class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--End of Footer-->
+
+    <!--Back to top-->
+    <button onclick="backtotop()" id="Btn" title="Back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+        </span>
+        <p>Back to Top</p>
+    </button>
+
+    <!-- jQuery (required for Owl Carousel) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://kit.fontawesome.com/7e002fabbc.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!---->
+    <script src="js/savedrecipe.js"></script>
+    <script src="js/backtotop.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malaysian | Cuisine | Curry Puff</title>
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <!--bootstrap-->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!--Custom css and js-->
+    <link rel="stylesheet" href="headfoot.css">
+    <link rel="stylesheet" href="cuisine.css">
+</head>
+
+<body>
+    <!--Start of Header-->
+    <header class="site-header">
+        <div class="container-fluid d-flex flex-wrap justify-content-between align-item-center">
+            <div class="header-left">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <!--When screen small enough will appear-->
+                    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse menu-container" id="navbarNav">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item Cuisine">
+                                <p class="nav-link">Cuisine</p>
+                                <div class="content">
+                                    <a class="cn nav-link" href="japanese.html">Japan</a>
+                                    <a class="cn nav-link" href="italian.html">Italy</a>
+                                    <a class="cn nav-link" href="malaysian.html">Malaysia</a>
+                                    <a class="cn nav-link" href="korean.html">Korea</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="savedrecipe.html">Saved Recipe</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="comment.html">Comment</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+            </div>
+            <div class="header-center">
+                <div class="logo">
+                    <img src="Pictures/logoword.png" alt="Culinary Artisans">
+                </div>
+
+            </div>
+
+            <div class="header-right">
+                <div class="search-container">
+                    <input type="text" placeholder="Search">
+                    <button type="submit">Search</button>
+                </div>
+                <a href="#" class="btn login-btn"><i class="fa-duotone fa-solid fa-user"></i></a>
+            </div>
+        </div>
+    </header>
+    <!--End of Header-->
+
+    <main>
+        <div class="row">
+            <p id="path"><a href="homepage.html">Home</a> >> <a href="malaysian.html">Malaysia</a> >> <a href="mls-currypuff.html">Curry
+                    Puff</a></p>
+            <button type="button" class="btn save"
+                onclick="saveRecipe('Curry Puff','mls-currypuff.html','Pictures/mlspic/c2.jpg')">
+                <i class="fa-solid fa-bookmark" style="color: #000000;"></i>
+            </button>
+            <button type="button" class="btn download">
+                <a href="Recipe/Curry Puff.pdf" download><i class="fa-solid fa-download" style="color:black"></i></a>
+            </button>
+        </div>
+
+        <div class="row justify-content-center mb-3">
+            <img src="Pictures/mlspic/c2.jpg" alt="food">
+        </div>
+        <section class="rcontent">
+            <p class="description">
+                <span class="word"><i><b>Curry Puff</b></i></span>
+                Curry puffs come with a variety of fillings, including eggs, meat, root vegetables, onions, and even
+                sweet variants. The curry filling is made to a thick consistency, to stop it leaking out when frying.
+            </p>
+        </section>
+        <section class="rcontent">
+            <h2>History of Curry Puff</h2>
+            <p class="history">The name karipap comes from a mixture of the Malay word for curry, “kari,” and from the
+                Hokkien “pap,” which means to bubble, blister or puff. It's been likened to the British Cornish pasty,
+                the Portuguese empanada, and the Indian samosa, all of which were introduced to the Malaysian peninsula
+                and maritime Southeast Asia during the colonial period.
+            </p>
+        </section>
+        <section class="rcontent">
+            <h2>Ingredient</h2>
+            <ul class="ingredient">
+                <li>Neutral oil: like vegetable oil, avocado oil or any scentless oil with a high smoke point.</li>
+                <br />
+                Filling:
+                <li>Chicken thighs: recommend thigh meat as it's juicier and more flavourful than chicken breast meat
+                </li>
+                <li>Potatoes: yellow russet or yukon gold are good potatoes for this recipe</li>
+                <li>Small onion</li>
+                <li>Curry powder</li>
+                <li>Turmeric powder</li>
+                <li>Salt</li>
+                <li>Bay leaves</li>
+                <br />
+                Wrapper:
+                <li>All-purpose flour: this recipe has not been tested with gluten free flour</li>
+                <li>Salt</li>
+                <li>Water</li>
+                <li>Hot neutral oil</li>
+            </ul>
+        </section>
+        <section class="rcontent">
+            <h2>Instruction</h2>
+            <ol class="instruction">
+                <li>Cook Filling</li>
+                <ol type="a">
+                    <li>Heat 1 teaspoon of vegetable oil in a large pan on medium heat. </li>
+                    <li>Fry your chicken until 80% cooked.</li>
+                    <li>Add onions and potatoes, followed by curry powder, salt, turmeric (optional) and bay leaves.
+                    </li>
+                    <li>Cover and let this cook until potatoes are forking tender.</li>
+                    <li>Remove filling from pan and let it cool completely.</li>
+                </ol>
+                <li>Create Dough</li>
+                <ol type="a">
+                    <li>In a large mixing bowl, add all-purpose flour and salt. Whisk together. Make a well in the
+                        middle.</li>
+                    <li>In a small saucepan, heat ⅓ cup + 3 tablespoon vegetable oil on high heat.</li>
+                    <li>Place a chopstick or a wooden stick to check if the oil bubbles. </li>
+                    <li>Once it bubbles, carefully pour the hot oil into the flour well. Allow this to bubble for 1
+                        minute. </li>
+                    <li>Then mix the flour and oil together. Add water and mix everything together with your hands and
+                        knead it together. You should form a very oiled ball of dough.</li>
+                </ol>
+                <li>Divide Dough & Roll into Balls</li>
+                <ol type="a">
+                    <li>On a floured surface, roll your dough into a long log.</li>
+                    <li> Slice the tube of dough into 26 pieces.</li>
+                    <li>Roll each piece into a ball.</li>
+                </ol>
+            </ol>
+        </section>
+    </main>
+    <!--References from [42][43]-->
+
+
+    <!--Start of Footer-->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-logo">
+                <img src="Pictures/logotran.png" alt="Logo" class="logo-img">
+
+                <p>Culinary Artisans</p>
+                <p>World Taste, Amazing Recipes, Unforgettable Flavors, Global Cuisine, Culinary Masterpieces.</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=61564199515388&mibextid=ZbWKwL"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="mailto:culinary.artisans.utar@gmail.com"><i class="fas fa-envelope"></i></a>
+                    <a href="https://www.instagram.com/culinary.artisans?igsh=OG5qbXI2OHgyMTZp"><i
+                            class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--End of Footer-->
+
+    <!--Back to top-->
+    <button onclick="backtotop()" id="Btn" title="Back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+        </span>
+        <p>Back to Top</p>
+    </button>
+
+    <!-- jQuery (required for Owl Carousel) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://kit.fontawesome.com/7e002fabbc.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!---->
+    <script src="js/savedrecipe.js"></script>
+    <script src="js/backtotop.js"></script>
+</body>
+
+</html>
