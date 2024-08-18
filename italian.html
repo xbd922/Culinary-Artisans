@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Pictures/tab.png" type="image/png">
+    <title>Italian Cuisine</title>
+    <!--bootstrap-->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!--Custom css-->
+    <link rel="stylesheet" href="italian.css">
+    <link rel="stylesheet" href="headfoot.css">
+    <!-- <link rel="javascript" href="italian.js"> -->
+</head>
+<body>
+        <!--Start of Header-->
+        <header class="site-header">
+            <div class="container-fluid d-flex flex-wrap justify-content-between align-item-center">
+                <div class="header-left">
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <!--When screen small enough will appear-->
+                        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="fa-solid fa-bars"></i>
+                        </button>
+    
+                        <div class="collapse navbar-collapse menu-container" id="navbarNav">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item Cuisine"><p class="nav-link" >Cuisine</p>
+                                    <div class="content">
+                                        <a class="cn nav-link" href="japanese.html">Japan</a>
+                                        <a class="cn nav-link" href="italian.html">Italy</a>
+                                        <a class="cn nav-link" href="malaysian.html">Malaysia</a>
+                                        <a class="cn nav-link" href="korean.html">Korean</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="savedrecipe.html">Saved Recipe</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="about.html">About Us</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="comment.html">Comment</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+    
+                </div>
+                <div class="header-center">
+                    <div class="logo">
+                        <a href="homepage.html"><img src="Pictures/wordlogo.png" alt="Culinary Artisans"></a>
+                    </div>
+    
+                </div>
+    
+                <div class="header-right">
+                    <div class="search-container">
+                        <input type="text" placeholder="Search">
+                        <button type="submit" >Search</button>
+                    </div>
+                    <a href="login.html" class="btn login-btn"><i class="fa-duotone fa-solid fa-user"></i></a>
+                </div>
+            </div>
+        </header>
+        <!--End of Header-->
+
+    <div class="jumbotron text-center">
+        <h1>Italian</h1>
+    </div>
+   
+<!--AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA-->
+<br>
+<br>
+<h2 class="title-with-underline">Popular Recipes</h2>
+
+<div id="myCarousel" class="carousel slide">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <!--PAGE ONE-->
+            <div class="row">
+                <!-- Content for the first page -->
+                <div class="col-md-3">
+                    <div class="card small-card">
+                        <img src="Pictures/abbacchio.jpg" class="card-img-top" alt="Abbacchio alla Romana">
+                        <div class="card-body">
+                            <h5 class="card-title small-card-title">Abbacchio alla Romana | Roman Roast Lamb</h5>
+                            <p class="card-text small-card-text">
+                                <i class="fa fa-clock-o"></i> 20-25 mins &emsp;
+                                <i class="fa fa-user"></i> 4 people
+                            </p>
+                        </div>
+                        <a href="italian-abbacchio.html" class="btn check-recipe-btn">Check Out Recipe</a>
+                        <button type="button" class="btn saveb heart-btn " onclick="saveRecipe('Abbacchio alla Romana','italian-abbacchio.html','Pictures/abbacchio2.jpg')">♡</a>
+                    </div>
+                </div>
+                <!-- 2nd card -->
+                <div class="col-md-3">
+                    <div class="card small-card">
+                        <img src="Pictures/buccellati.jpg" class="card-img-top" alt="Buccellati">
+                        <div class="card-body">
+                            <h5 class="card-title small-card-title">Buccellati | Fig Cookie</h5>
+                            <p class="card-text small-card-text">
+                                <i class="fa fa-clock-o"></i> 60 mins &emsp;
+                                <i class="fa fa-user"></i> 24-30 cookies
+                            </p>
+                        </div>
+                        <a href="italian-buccellati.html" class="btn check-recipe-btn">Check Out Recipe</a>
+                        <button type="button" class="btn saveb heart-btn " onclick="saveRecipe('Buccellati','italian-buccellati.html','Pictures/buccellati2.jpg')">♡</a>
+                    </div>
+                </div>
+                <!-- 3rd card -->
+                <div class="col-md-3">
+                    <div class="card small-card">
+                        <img src="Pictures/mista.jpg" class="card-img-top" alt="Insalata Mista">
+                        <div class="card-body">
+                            <h5 class="card-title small-card-title">Insalata Mista | Mixed Salad</h5>
+                            <p class="card-text small-card-text">
+                                <i class="fa fa-clock-o"></i> 10 mins &emsp;
+                                <i class="fa fa-user"></i> 4 people
+                            </p>
+                        </div>
+                        <a href="italian-mista.html" class="btn check-recipe-btn">Check Out Recipe</a>
+                        <button type="button" class="btn saveb heart-btn " onclick="saveRecipe('Insalata Mista','italian-mista.html','Pictures/mista2.jpg')">♡</a>
+                    </div>
+                </div>
+                <!-- 4th card -->
+                <div class="col-md-3">
+                    <div class="card small-card">
+                        <img src="Pictures/diavolo.jpg" class="card-img-top" alt="Pasta Fra Diavolo">
+                        <div class="card-body">
+                            <h5 class="card-title small-card-title">Pasta Fra Diavolo | Spicy Pasta</h5>
+                            <p class="card-text small-card-text">
+                                <i class="fa fa-clock-o"></i> 35-40 mins &emsp;
+                                <i class="fa fa-user"></i> 4 people
+                            </p>
+                        </div>
+                        <a href="italian-diavolo.html" class="btn check-recipe-btn">Check Out Recipe</a>
+                        <button type="button" class="btn saveb heart-btn " onclick="saveRecipe('Pasta Fra Diavolo','italian-diavolo.html','Pictures/diavolo2.jpg')">♡</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <!--PAGE TWO-->
+            <div class="row">
+                <!-- Content for the second page -->
+                <div class="col-md-3">
+                    <div class="card small-card">
+                        <img src="Pictures/risotto.jpg" class="card-img-top" alt="Risotto al Nero">
+                        <div class="card-body">
+                            <h5 class="card-title small-card-title">Risotto al Nero | Squid Ink Risotto</h5>
+                            <p class="card-text small-card-text">
+                                <i class="fa fa-clock-o"></i> 50 mins &emsp;
+                                <i class="fa fa-user"></i> 4-6 people
+                            </p>
+                        </div>
+                        <a href="italian-risotto.html" class="btn check-recipe-btn">Check Out Recipe</a>
+                        <button type="button" class="btn saveb heart-btn " onclick="saveRecipe('Risotto al Nero','italian-risotto.html','Pictures/risotto2.jpg')">♡</a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card small-card">
+                        <img src="Pictures/pannacotta.jpg" class="card-img-top" alt="Panna Cotta Fugo">
+                        <div class="card-body">
+                            <h5 class="card-title small-card-title">Panna Cotta Fugo | Strawberry Panna Cotta</h5>
+                            <p class="card-text small-card-text">
+                                <i class="fa fa-clock-o"></i> 4 hours 20 mins &emsp;
+                                <i class="fa fa-user"></i> 6-8 people
+                            </p>
+                        </div>
+                        <a href="italian-fugo.html" class="btn check-recipe-btn">Check Out Recipe</a>
+                        <button type="button" class="btn saveb heart-btn " onclick="saveRecipe('Panna Cotta Fugo','italian-pannacotta.html','Pictures/pannacotta2.jpg')">♡</a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card small-card">
+                        <img src="Pictures/pesce.jpg" class="card-img-top" alt="Zuppa di Pesce">
+                        <div class="card-body">
+                            <h5 class="card-title small-card-title">Zuppa di Pesce | Fish Soup</h5>
+                            <p class="card-text small-card-text">
+                                <i class="fa fa-clock-o"></i> 45-50 mins &emsp;
+                                <i class="fa fa-user"></i> 4-6 people
+                            </p>
+                        </div>
+                        <a href="italian-pesce.html" class="btn check-recipe-btn">Check Out Recipe</a>
+                        <button type="button" class="btn saveb heart-btn " onclick="saveRecipe('Zuppa di Pesce','italian-pesce.html','Pictures/pesce2.jpg')">♡</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Controls -->
+    <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+
+<br>
+<br>
+<!--NO CAROUSELL SECTION-->
+<h2 class="title-with-underline">Other Recipes</h2>
+<div class="row">
+    <!-- Content for the first page -->
+    <div class="col-md-3">
+        <div class="card small-card">
+            <img src="Pictures/japanpic/ramenrecipe.jpg" class="card-img-top" alt="Ramen">
+            <div class="card-body">
+                <h5 class="card-title small-card-title">Ramen</h5>
+                <p class="card-text small-card-text">
+                    <i class="fa fa-clock-o"></i> 25 mins &emsp;
+                    <i class="fa fa-user"></i> 1 person
+                </p>
+            </div>
+            <a href="japan-ramen.html" class="btn check-recipe-btn">Check Out Recipe</a>
+            <button type="button" class="btn saveb heart-btn " onclick="saveRecipe('Ramen','japan-ramen.html','Pictures/japanpic/ramen.jpg')">♡</a>
+        </div>
+    </div>
+    <!-- 2nd card -->
+    <div class="col-md-3">
+        <div class="card small-card">
+            <img src="koreanpic/tteokbokki.jpg" class="card-img-top" alt="Tteokbokki">
+            <div class="card-body">
+                <h5 class="card-title small-card-title">Tteokbokki</h5>
+                <p class="card-text small-card-text">
+                    <i class="fa fa-clock-o"></i> 25 mins &emsp;
+                    <i class="fa fa-user"></i> 2 people
+                </p>
+            </div>
+            <a href="koreanC5.html" class="btn check-recipe-btn">Check Out Recipe</a>
+            <button type="button" class="btn saveb heart-btn " onclick="saveRecipe('Tteokbokki','koreanC5.html','Pictures/tteokbokki.jpg')">♡</a>
+        </div>
+    </div>
+    <!-- 3rd card -->
+    <div class="col-md-3">
+        <div class="card small-card">
+            <img src="Pictures/japanpic/gyozarecipe.jpg" class="card-img-top" alt="Gyoza">
+            <div class="card-body">
+                <h5 class="card-title small-card-title">Gyoza</h5>
+                <p class="card-text small-card-text">
+                    <i class="fa fa-clock-o"></i> 25 mins &emsp;
+                    <i class="fa fa-user"></i> 2 people
+                </p>
+            </div>
+            <a href="japan-gyoza.html" class="btn check-recipe-btn">Check Out Recipe</a>
+            <button type="button" class="btn saveb heart-btn " onclick="saveRecipe('Gyoza','japan-gyoza.html','Pictures/japanpic/chicken-gyoza.jpg')">♡</a>
+        </div>
+    </div>
+    <!-- 4th card -->
+    <div class="col-md-3">
+        <div class="card small-card">
+            <img src="Pictures/mlspic/c4.jpg" class="card-img-top" alt="Cendol">
+            <div class="card-body">
+                <h5 class="card-title small-card-title">Cendol</h5>
+                <p class="card-text small-card-text">
+                    <i class="fa fa-clock-o"></i> 25 mins &emsp;
+                    <i class="fa fa-user"></i> 4 people
+                </p>
+            </div>
+            <a href="mls-cendol.html" class="btn check-recipe-btn">Check Out Recipe</a>
+            <button type="button" class="btn saveb heart-btn " onclick="saveRecipe('Cendol','mls-cendol.html','Pictures/mlspic/c4.jpg')">♡</a>
+        </div>
+    </div>
+</div>
+</div>
+<br>
+<br>
+<!--AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA-->
+    
+<footer class="site-footer">
+    <div class="container">
+            <div class="footer-logo">
+                <img src="Pictures/logotran.png" alt="Logo" class="logo-img">
+
+                <p>Culinary Artisans</p>
+                <p>World Taste, Amazing Recipes, Unforgettable Flavors, Global Cuisine, Culinary Masterpieces.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fas fa-envelope"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+    </div>
+</footer>
+<!--End of Footer-->
+    <script src="js/savedrecipe.js"></script>
+    <script src="js/backtotop.js"></script>
+    <script src="https://kit.fontawesome.com/7e002fabbc.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
