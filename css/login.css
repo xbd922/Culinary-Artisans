@@ -146,9 +146,9 @@ form.sign-in-form {
     background:
         linear-gradient(to right, rgba(75, 59, 48, 0.4), rgba(75, 59, 48, 0.4)),
         /* Overlay for both images */
-        url('/Pictures/loginPg(1).png') left center / 40% no-repeat,
+        url('../Pictures/loginPg(1).png') left center / 40% no-repeat,
         /* Left image */
-        url('/Pictures/loginPg(2).png') right center / 40% no-repeat;
+        url('../Pictures/loginPg(2).png') right center / 40% no-repeat;
     /* Right image */
     transition: 1.8s ease-in-out;
     border-radius: 50%;
