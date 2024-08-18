@@ -362,3 +362,14 @@
 .fade{
     opacity: 0; 
 }
+
+.gallery {
+    display: block;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+
+.gallery:hover{
+    filter:brightness(80%);
+}

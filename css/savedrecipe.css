@@ -28,6 +28,12 @@
     #username{
         font-size: 24px;
     }
+    #change{
+        font-size: 8px;
+        position:absolute;
+        left:10%;
+        top:50%;
+    }
 }
 /*Small devices*/
 @media only screen and (min-width: 576px) and (max-width: 768px) {
@@ -57,6 +63,11 @@
     #username{
         font-size: 24px;
     }
+    #change{
+        position:absolute;
+        left:9%;
+        top:50%;
+    }
 }
 /*Large devices*/
 @media only screen and (min-width: 768px) and (max-width:992px) {
@@ -85,6 +96,11 @@
     }
     #username{
         font-size: 24px;
+    }
+    #change{
+        position:absolute;
+        left:10%;
+        top:50%;
     }
 }
 /*Very large devices*/
@@ -118,6 +134,11 @@
     #username{
         font-size: 40px;
     }
+    #change{
+        position:absolute;
+        left:15%;
+        top:50%;
+    }
 }
 /*Extra large devices*/
 @media only screen and (min-width: 1200px) {
@@ -144,11 +165,17 @@
     }
     .userinfo{
         position: absolute;
-        left:30%;
+        left:25%;
         bottom:10%;
     }
     #username{
         font-size: 40px;
+    }
+
+    #change{
+        position:absolute;
+        left:15%;
+        top:50%;
     }
 }
 
@@ -209,4 +236,17 @@
 
 .row{
     flex-wrap:nowrap;
+}
+
+#pfp:hover{
+    filter:brightness(80%);
+}
+
+#change{
+    color:white;
+    font-weight: bold;
+    display: none;
+}
+.userpic:hover #change{
+    display:inline-block;
 }
