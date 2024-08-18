@@ -63,7 +63,7 @@
             <div class="header-right">
                 <div class="search-container">
                     <input type="text" placeholder="Search">
-                    <button type="submit" >Search</button>
+                    <button type="submit">Search</button>
                 </div>
                 <!-- Login Icon -->
                 <a id="loginIcon" href="login.html" class="btn login-btn">
@@ -71,7 +71,7 @@
                 </a>
                 <!-- Logout Icon (Initially hidden) -->
                 <button id="logoutIcon" class="btn logout-btn" style="display: none;">
-                    <i class="fa-solid fa-sign-out-alt"></i>                    
+                    <i class="fa-solid fa-sign-out-alt"></i>
                 </button>
                 <!-- Placeholder for logged-in user's email -->
                 <p id="loggedUserEmail"></p>
@@ -165,6 +165,22 @@
                     <li>Top with the prepared garnishes. Serve hot.</li>
                 </ol>
             </ol>
+
+            <script>
+                var tag = document.createElement('script');
+                tag.src = "https://www.youtube.com/player_api";
+                var firstScriptTag = document.getElementsByTagName('script')[0];
+                firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+                var player;
+                function onYouTubePlayerAPIReady() {
+                    player = new YT.Player('ytplayer', {
+                        videoId: '8Iijx1RX4wk'
+                    });
+                }
+            </script>
+            <br><br>
+            <div id="ytplayer" class="ytvid" justify-content-center></div>
         </section>
     </main>
     <!--References from [49][50]-->

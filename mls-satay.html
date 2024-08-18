@@ -168,6 +168,22 @@
                         sliced cucumber and red onion.</li>
                 </ol>
             </ol>
+
+            <script>
+                var tag = document.createElement('script');
+                tag.src = "https://www.youtube.com/player_api";
+                var firstScriptTag = document.getElementsByTagName('script')[0];
+                firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+                var player;
+                function onYouTubePlayerAPIReady() {
+                    player = new YT.Player('ytplayer', {
+                        videoId: 'K8EeUis3pjo'
+                    });
+                }
+            </script>
+            <br><br>
+            <div id="ytplayer" class="ytvid" justify-content-center></div>
         </section>
     </main>
     <!--References from [44][45][46]-->
