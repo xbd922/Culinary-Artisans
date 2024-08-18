@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
     <link rel="stylesheet" href="css/headfoot.css">
     <link rel="stylesheet" href="css/cuisine.css">
 </head>
+
 <body>
     <!--Start of Header-->
     <header class="site-header">
@@ -16,18 +18,20 @@
             <div class="header-left">
                 <nav class="navbar navbar-expand-lg navbar-light">
                     <!--When screen small enough will appear-->
-                    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <i class="fa-solid fa-bars"></i>
                     </button>
 
                     <div class="collapse navbar-collapse menu-container" id="navbarNav">
                         <ul class="navbar-nav ml-auto">
-                            <li class="nav-item Cuisine"><p class="nav-link">Cuisine</p>
+                            <li class="nav-item Cuisine">
+                                <p class="nav-link">Cuisine</p>
                                 <div class="content">
-                                    <a class="cn nav-link" href="#">Japan</a>
+                                    <a class="cn nav-link" href="japanese.html">Japan</a>
                                     <a class="cn nav-link" href="italian.html">Italy</a>
-                                    <a class="cn nav-link" href="#">Malaysia</a>
-                                    <a class="cn nav-link" href="#">Unknown</a>
+                                    <a class="cn nav-link" href="malaysian.html">Malaysia</a>
+                                    <a class="cn nav-link" href="korean.html">Korean</a>
                                 </div>
                             </li>
                             <li class="nav-item">
@@ -58,41 +62,49 @@
         </div>
     </header>
     <!--End of Header-->
-    
+
     <!--Start of main body-->
     <main>
         <div class="row">
             <p id="path"><a href="index.html">Home</a> >> <a href="korean.html">Korean</a> >> <a href="#">Kimchi</a></p>
             <button type="button" class="btn save" onclick="saveRecipe('Kimchi','koreanC2.html','Pictures/kimchi.jpg')">
-                <i class="fa-solid fa-bookmark" style="color: #000000;"></i>  
+                <i class="fa-solid fa-bookmark" style="color: #000000;"></i>
             </button>
             <button type="button" class="btn download">
-                <a href="Recipe/Kimchi.pdf" download><i class="fa-solid fa-download" style="color:black"></i></a>  
+                <a href="Recipe/Kimchi.pdf" download><i class="fa-solid fa-download" style="color:black"></i></a>
             </button>
         </div>
 
         <div class="row justify-content-center mb-3">
             <img src="Pictures/kimchi.jpg" alt="food">
         </div>
-        
+
         <!--References from [2] -->
         <section class="rcontent">
             <p class="description">
-                <span class="word"><i><b>Kimchi</b></i></span> 
-                 is a vibrant and flavorful Korean side dish made from whole Napa cabbage that is stuffed with a spicy, tangy mixture of radish, 
-                garlic, ginger, and Korean chili flakes. This kimchi is characterized by its crunchy texture and robust flavor, thanks to the fermentation process 
-                which enhances the spices and ingredients. The whole cabbage method allows for a thorough absorption of flavors, making each bite a delightful combination 
-                of spicy, tangy, and umami tastes. Tongbaechu Kimchi is often served as a side dish with meals and is a staple in Korean cuisine.
+                <span class="word"><i><b>Kimchi</b></i></span>
+                is a vibrant and flavorful Korean side dish made from whole Napa cabbage that is stuffed with a spicy,
+                tangy mixture of radish,
+                garlic, ginger, and Korean chili flakes. This kimchi is characterized by its crunchy texture and robust
+                flavor, thanks to the fermentation process
+                which enhances the spices and ingredients. The whole cabbage method allows for a thorough absorption of
+                flavors, making each bite a delightful combination
+                of spicy, tangy, and umami tastes. Tongbaechu Kimchi is often served as a side dish with meals and is a
+                staple in Korean cuisine.
             </p>
         </section>
         <section class="rcontent">
             <h2>History of Kimchi</h2>
             <p class="history">
-                Kimchi, a type of kimchi made with whole Napa cabbage, has been a traditional Korean dish for centuries. It is believed to have originated during the 
-                Joseon Dynasty (1392–1897) when kimchi evolved from simple pickled vegetables to more complex fermented dishes. Kimchi is especially popular in 
-                the winter months when fermented dishes are a staple of Korean cuisine due to their ability to be stored for long periods. The whole 
-                cabbage method is considered a classic way of preparing kimchi, reflecting the traditional approach to this iconic Korean side dish.
-            </p>  
+                Kimchi, a type of kimchi made with whole Napa cabbage, has been a traditional Korean dish for centuries.
+                It is believed to have originated during the
+                Joseon Dynasty (1392–1897) when kimchi evolved from simple pickled vegetables to more complex fermented
+                dishes. Kimchi is especially popular in
+                the winter months when fermented dishes are a staple of Korean cuisine due to their ability to be stored
+                for long periods. The whole
+                cabbage method is considered a classic way of preparing kimchi, reflecting the traditional approach to
+                this iconic Korean side dish.
+            </p>
         </section>
         <section class="rcontent">
             <h2>Ingredients</h2>
@@ -114,17 +126,26 @@
         <section class="rcontent">
             <h2>Instructions</h2>
             <ol class="instruction-list">
-                <li>Cut the Napa cabbage in half lengthwise and then into quarters. Remove the core and cut each quarter into smaller sections if needed. Dissolve the sea salt in water and soak the cabbage pieces in the saltwater for 1-2 hours, turning occasionally to ensure even salting. After soaking, rinse the cabbage thoroughly and drain.</li>
-                <li>In a large bowl, combine the Korean chili flakes, minced garlic, grated ginger, fish sauce, sugar, and fermented shrimp (if using). Mix well to form a thick paste.</li>
-                <li>Add the julienned radish, chopped green onions, and carrot (if using) to the kimchi paste. Mix thoroughly.</li>
-                <li>Gently separate the cabbage leaves and spread the kimchi paste mixture between the layers. Ensure that each leaf is well coated with the paste.</li>
-                <li>Pack the stuffed cabbage tightly into a clean jar or container. Press down firmly to remove air pockets and ensure the kimchi is submerged in its juices.</li>
-                <li>Leave the jar at room temperature for 1-2 days to ferment, depending on your preference for tanginess. After fermenting, store the kimchi in the refrigerator where it will continue to develop flavor over time.‌</li>
+                <li>Cut the Napa cabbage in half lengthwise and then into quarters. Remove the core and cut each quarter
+                    into smaller sections if needed. Dissolve the sea salt in water and soak the cabbage pieces in the
+                    saltwater for 1-2 hours, turning occasionally to ensure even salting. After soaking, rinse the
+                    cabbage thoroughly and drain.</li>
+                <li>In a large bowl, combine the Korean chili flakes, minced garlic, grated ginger, fish sauce, sugar,
+                    and fermented shrimp (if using). Mix well to form a thick paste.</li>
+                <li>Add the julienned radish, chopped green onions, and carrot (if using) to the kimchi paste. Mix
+                    thoroughly.</li>
+                <li>Gently separate the cabbage leaves and spread the kimchi paste mixture between the layers. Ensure
+                    that each leaf is well coated with the paste.</li>
+                <li>Pack the stuffed cabbage tightly into a clean jar or container. Press down firmly to remove air
+                    pockets and ensure the kimchi is submerged in its juices.</li>
+                <li>Leave the jar at room temperature for 1-2 days to ferment, depending on your preference for
+                    tanginess. After fermenting, store the kimchi in the refrigerator where it will continue to develop
+                    flavor over time.‌</li>
             </ol>
         </section>
     </main>
     <!--End of Main Body-->
-    
+
     <!--Start of Footer-->
     <footer class="site-footer">
         <div class="container">
@@ -133,9 +154,11 @@
                 <p>Culinary Artisans</p>
                 <p>World Taste, Amazing Recipes, Unforgettable Flavors, Global Cuisine, Culinary Masterpieces.</p>
                 <div class="social-icons">
-                    <a href="https://www.facebook.com/profile.php?id=61564199515388&mibextid=ZbWKwL"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=61564199515388&mibextid=ZbWKwL"><i
+                            class="fab fa-facebook-f"></i></a>
                     <a href="mailto:culinary.artisans.utar@gmail.com"><i class="fas fa-envelope"></i></a>
-                    <a href="https://www.instagram.com/culinary.artisans?igsh=OG5qbXI2OHgyMTZp"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.instagram.com/culinary.artisans?igsh=OG5qbXI2OHgyMTZp"><i
+                            class="fab fa-instagram"></i></a>
                 </div>
             </div>
         </div>
@@ -155,4 +178,5 @@
     <script src="js/savedrecipe.js"></script>
     <script src="js/backtotop.js"></script>
 </body>
+
 </html>
