@@ -8,6 +8,11 @@ body {
     overflow-x: none;
 }
 
+::selection {
+    background-color: #8B3A3A;
+    color: #fff;
+}
+
 .site-header {
     background-color: #FCE8E0;
     padding: 20px 0;
@@ -509,4 +514,3 @@ body {
         z-index:1000;
     }
 }
-
