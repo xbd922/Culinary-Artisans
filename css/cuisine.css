@@ -136,6 +136,75 @@
         right:180px;
     }
 }
+/*Special for Ipad*/
+@media only screen
+  and (min-device-width : 768px)
+  and (max-device-width : 1024px)
+  and (orientation:landscape) 
+{
+    main{
+        padding:20px;
+    }
+    main img{
+        width:700px;
+        height:auto;
+        background-size: cover;
+        box-sizing: border-box;
+        box-shadow: 0 0 10px #000;
+        border-radius: 8px;
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+    .rcontent h2{
+        text-align: center;
+        font-weight: bold;
+        font-size: 44px;
+    }
+    main .rcontent p{
+        font-size: 24px;
+    }
+    .download{
+        right:150px;
+    }
+    .save{
+        right:180px;
+    }
+}
+/*Special for Ipad*/
+@media only screen
+  and (min-device-width : 768px)
+  and (max-device-width : 1024px)
+  and (orientation:portrait) 
+{
+    main{
+        padding:20px;
+    }
+    main img{
+        width:700px;
+        height:auto;
+        background-size: cover;
+        box-sizing: border-box;
+        box-shadow: 0 0 10px #000;
+        border-radius: 8px;
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+    .rcontent h2{
+        text-align: center;
+        font-weight: bold;
+        font-size: 44px;
+    }
+    main .rcontent p{
+        font-size: 24px;
+    }
+    .download{
+        right:150px;
+    }
+    .save{
+        right:180px;
+    }
+}
+
 #path{
     text-decoration: none;
     color:rgb(80, 80, 80);
