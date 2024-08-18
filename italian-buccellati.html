@@ -8,12 +8,12 @@
     <!--bootstrap-->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <!--Custom css and js-->
-    <link rel="stylesheet" href="css/headfoot.css">
-    <link rel="stylesheet" href="css/cuisine.css">
+    <link rel="stylesheet" href="headfoot.css">
+    <link rel="stylesheet" href="cuisine.css">
 </head>
 <body>
-     <!--Start of header-->
-     <header class="site-header">
+    <!--Start of Header-->
+    <header class="site-header">
         <div class="container-fluid d-flex flex-wrap justify-content-between align-item-center">
             <div class="header-left">
                 <nav class="navbar navbar-expand-lg navbar-light">
@@ -48,7 +48,7 @@
             </div>
             <div class="header-center">
                 <div class="logo">
-                    <a href="index.html"><img src="Pictures/logoword.png" alt="Culinary Artisans"></a>
+                    <a href="homepage.html"><img src="Pictures/wordlogo.png" alt="Culinary Artisans"></a>
                 </div>
 
             </div>
@@ -58,28 +58,20 @@
                     <input type="text" placeholder="Search">
                     <button type="submit" >Search</button>
                 </div>
-                <!-- Login Icon -->
-                <a id="loginIcon" href="login.html" class="btn login-btn">
-                    <i class="fa-solid fa-user"></i>
-                </a>
-                <!-- Logout Icon (Initially hidden) -->
-                <button id="logoutIcon" class="btn logout-btn" style="display: none;">
-                    <i class="fa-solid fa-sign-out-alt"></i>                    
-                </button>
-                <!-- Placeholder for logged-in user's email -->
-                <p id="loggedUserEmail"></p>
+                <a href="login.html" class="btn login-btn"><i class="fa-duotone fa-solid fa-user"></i></a>
             </div>
         </div>
     </header>
     <!--End of Header-->
+
     <main>
         <div class="row">
-            <p id="path"><a href="index.html">Home</a> >> <a href="italian.html">Italian</a> >> <a href="#">Buccellati</a></p>
+            <p id="path"><a href="homepage.html">Home</a> >> <a href="italian.html">Italian</a> >> <a href="#">Buccellati</a></p>
             <button type="button" class="btn save">
                 <a href="#"><i class="fa-solid fa-bookmark" style="color: #000000;"></i></a>  
             </button>
             <button type="button" class="btn download">
-                <a href="#" download><i class="fa-solid fa-download" style="color:black"></i></a>  
+                <a href="#" download><i class="fa-solid fa-download fa-bounce" style="color:black"></i></a>  
             </button>
         </div>
 
@@ -161,7 +153,21 @@
                 <li>Once cookies are completely cool, cover with icing and colored sprinkles, or brush with orange marmalade and top with rainbow sprinkles and candied cherries.</li>
                 <li>Dry the cookies on a tray for at least a day before serving or packaging them as gifts. Store in a tin box for long-term storage.</li>
             </ol>
-                      
+            <script>
+                var tag = document.createElement('script');
+                tag.src = "https://www.youtube.com/player_api";
+                var firstScriptTag = document.getElementsByTagName('script')[0];
+                firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+                var player;
+                function onYouTubePlayerAPIReady() {
+                    player = new YT.Player('ytplayer', {
+                        videoId: 'Jr89RV8dCSk'
+                    });
+                }
+            </script>
+            <br><br>
+            <div id="ytplayer" class="ytvid" justify-content-center></div>   
         </section>
     </main>
     <!--References from [27]-->
@@ -188,11 +194,9 @@
     <!--Back to top-->
     <button onclick="backtotop()" id="Btn" title="Back to top">
         <i class="fa-solid fa-arrow-up"></i>
-        <p>Back to Top</p>
+        </span><p>Back to Top</p>
     </button>
-
-     <!--Own JS for Login/out-->
-     <script type="module" src="js/index.js"></script>
+    
     <script src="backtotop.js"></script>
     <script src="https://kit.fontawesome.com/7e002fabbc.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
