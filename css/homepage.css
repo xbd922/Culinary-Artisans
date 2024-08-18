@@ -57,6 +57,12 @@
     .gallery{
         height:100px;
     }
+    #contactustitle{
+        font-size:25px;
+    }
+    .contactcontent{
+        font-size: 20px;
+    }
 }
 /*Small devices*/
 @media only screen and (min-width: 576px) and (max-width: 768px) {
@@ -118,6 +124,12 @@
     }
     .gallery{
         height: 200px;
+    }
+    #contactustitle{
+        font-size:30x;
+    }
+    .contactcontent{
+        font-size: 20px;
     }
 }
 /*Large devices*/
@@ -181,6 +193,12 @@
     }
     .gallery{
        height:200px;
+    }
+    #contactustitle{
+        font-size:44px;
+    }
+    .contactcontent{
+        font-size: 28px;
     }
 }
 /*Extra large devices*/
@@ -247,6 +265,12 @@
     }
     .gallery{
         height: 300px;
+    }
+    .contactcontent{
+        font-size: 30px;
+    }
+    #contactustitle{
+        font-size:44px;
     }
 }
 /* iPad landscape style here */
@@ -318,6 +342,9 @@
     .gallery{
         height: 300px;
     }
+    #contactustitle{
+        font-size:44px;
+    }
 
 }
     /* iPad portrait style here */
@@ -385,6 +412,9 @@
     }
     .gallery{
         height: 300px;
+    }
+    #contactustitle{
+        font-size:44px;
     }
 }
 *{
@@ -525,4 +555,19 @@
 
 .gallery:hover{
     filter:brightness(80%);
+}
+
+#contactustitle{
+    display:flex;
+    justify-content: center;
+}
+.contactcontent{
+    display:flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.contactus{
+    box-shadow: 0 0 10px black;
+    padding:10px;
 }
