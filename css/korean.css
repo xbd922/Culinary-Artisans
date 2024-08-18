@@ -45,7 +45,7 @@ body .jumbotron h1, h4{
     display: block;
     width: 80%;
     height: 4px;
-    background-color: #BFBFBF; /* A soft grey color that can complement a Korean theme */
+    background-color: #8B3A3A; 
     position: absolute;
     left: 10%;
     bottom: -10px;
@@ -106,8 +106,8 @@ body .jumbotron h1, h4{
     transform: translateX(-50%);
     padding: 5px 15px;
     background-color: white;
-    border-color: #BFBFBF; /* Matches the title underline */
-    color: #BFBFBF;
+    border-color: #8B3A3A; /* Matches the title underline */
+    color: #8B3A3A;
     border-radius: 15px;
     font-size: 14px;
     text-align: center;
@@ -119,8 +119,8 @@ body .jumbotron h1, h4{
     height: 40px;
     border-radius: 50%;
     background-color: white;
-    border-color: #BFBFBF;
-    color: #BFBFBF;
+    border-color: #8B3A3A;
+    color: #8B3A3A;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -137,7 +137,7 @@ body .jumbotron h1, h4{
 }
 
 .heart-btn:hover{
-    background-color: #A87C65;
+    background-color: #8B3A3A;
     color: whitesmoke;
 }
 
@@ -147,7 +147,7 @@ body .jumbotron h1, h4{
 }
 
 .check-recipe-btn:hover {
-    background-color: #A87C65;
+    background-color: #8B3A3A;
     color: whitesmoke;
 }
 
