@@ -63,9 +63,18 @@
             <div class="header-right">
                 <div class="search-container">
                     <input type="text" placeholder="Search">
-                    <button type="submit">Search</button>
+                    <button type="submit" >Search</button>
                 </div>
-                <a href="#" class="btn login-btn"><i class="fa-duotone fa-solid fa-user"></i></a>
+                <!-- Login Icon -->
+                <a id="loginIcon" href="login.html" class="btn login-btn">
+                    <i class="fa-solid fa-user"></i>
+                </a>
+                <!-- Logout Icon (Initially hidden) -->
+                <button id="logoutIcon" class="btn logout-btn" style="display: none;">
+                    <i class="fa-solid fa-sign-out-alt"></i>                    
+                </button>
+                <!-- Placeholder for logged-in user's email -->
+                <p id="loggedUserEmail"></p>
             </div>
         </div>
     </header>
@@ -197,6 +206,8 @@
     <!---->
     <script src="js/savedrecipe.js"></script>
     <script src="js/backtotop.js"></script>
+    <!--Own JS for Login/out-->
+    <script type="module" src="js/index.js"></script>
 </body>
 
 </html>
