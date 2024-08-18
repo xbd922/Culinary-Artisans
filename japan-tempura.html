@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Japan-Cuisine-Food</title>
+    <title>Tempura</title>
     <!--bootstrap-->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <!--Custom css and js-->
-    <link rel="stylesheet" href="headfoot.css">
-    <link rel="stylesheet" href="cuisine.css">
+    <link rel="stylesheet" href="css/headfoot.css">
+    <link rel="stylesheet" href="css/cuisine.css">
 </head>
 <body>
    <!--Start of header-->
@@ -47,7 +47,7 @@
         </div>
         <div class="header-center">
             <div class="logo">
-                <a href="homepage.html"><img src="Pictures/logoword.png" alt="Culinary Artisans"></a>
+                <a href="index.html"><img src="Pictures/logoword.png" alt="Culinary Artisans"></a>
             </div>
 
         </div>
@@ -65,12 +65,12 @@
 
     <main>
         <div class="row">
-            <p id="path"><a href="homepage.html">Home</a> >> <a href="japanese.html">Japan</a> >> <a href="#">Tempura</a></p>
+            <p id="path"><a href="index.html">Home</a> >> <a href="japanese.html">Japan</a> >> <a href="#">Tempura</a></p>
             <button type="button" class="btn save" onclick="saveRecipe('Tempura','japan-tempura.html','Pictures/srTempura.jpg')">
                 <i class="fa-solid fa-bookmark" style="color: #000000;"></i>  
             </button>
             <button type="button" class="btn download">
-                <a href="#" download><i class="fa-solid fa-download" style="color:black"></i></a>  
+                <a href="Recipe/Tempura.pdf" download><i class="fa-solid fa-download" style="color:black"></i></a>  
             </button>
         </div>
 
@@ -95,6 +95,7 @@
                 dipped in sauce. While in the Kansai, no eggs are used, and the tempura is fried slowly in low temperature salad oil and it is eaten with salt.
             </p>  
         </section>
+        <hr>
         <section class="rcontent">
             <h2>Ingredient</h2>
             <ul class="ingredient">
@@ -111,6 +112,7 @@
                 <li>Some dashi granules</li>
             </ul>
         </section>
+        <hr>
         <section class="rcontent">
             <h2>Instruction</h2>
             <ol class="instruction">
@@ -147,7 +149,7 @@
     <!--Back to top-->
     <button onclick="backtotop()" id="Btn" title="Back to top">
         <i class="fa-solid fa-arrow-up"></i>
-        </span><p>Back to Top</p>
+        <p>Back to Top</p>
     </button>
 
     <script src="js/savedrecipe.js"></script>

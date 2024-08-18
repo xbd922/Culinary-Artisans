@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comment</title>
+    <!-- Bootstrap -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/comment.css">
+    <link rel="stylesheet" href="css/headfoot.css">
+</head>
+<body>  
+    <header class="site-header">
+        <div class="container-fluid d-flex flex-wrap justify-content-between align-item-center">
+            <div class="header-left">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <!--When screen small enough will appear-->
+                    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse menu-container" id="navbarNav">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item Cuisine"><p class="nav-link" >Cuisine</p>
+                                <div class="content">
+                                    <a class="cn nav-link" href="japanese.html">Japan</a>
+                                    <a class="cn nav-link" href="italian.html">Italy</a>
+                                    <a class="cn nav-link" href="malaysian.html">Malaysia</a>
+                                    <a class="cn nav-link" href="korean.html">Korean</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="savedrecipe.html">Saved Recipe</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="comment.html">Comment</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+            </div>
+            <div class="header-center">
+                <div class="logo">
+                    <a href="index.html"><img src="Pictures/logoword.png" alt="Culinary Artisans"></a>
+                </div>
+
+            </div>
+
+            <div class="header-right">
+                <div class="search-container">
+                    <input type="text" placeholder="Search">
+                    <button type="submit" >Search</button>
+                </div>
+                <a href="login.html" class="btn login-btn"><i class="fa-duotone fa-solid fa-user"></i></a>
+            </div>
+        </div>
+    </header>
+    <!--End of Header-->
+    
+
+    <main>
+        <p id="path"><a href="index.html">Home</a> >> <a href="comment.html">Comment</a></p>
+
+        <!-- Comment Section -->
+        <section class="comment-section">
+            <h3>Write a Comment</h3>
+            <hr>
+            <form id="comment-form">
+                <div class="form-group">
+                    <label for="nickname">Your Nickname:</label>
+                    <input type="text" class="form-control" id="nickname" name="nickname" placeholder="Enter your nickname" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea class="form-control" id="message" name="message" rows="4" placeholder="Enter your message" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+            <hr>
+            
+            <!-- Display Comments -->
+            <div class="comments-display">
+                <h4>Comments</h4>
+                <div class="comment-container">
+                    <!-- Example of a Comment -->
+                    <div class="comment">
+                        <div class="comment-header d-flex align-items-center">
+                            <img src="Pictures/login_icon.png" alt="Login Icon" class="login-icon mr-2" >
+                            <div>
+                                <strong class="nickname-display">Nickname</strong>
+                                <div class="comment-date-time">Date & Time</div>
+                            </div>
+                        </div>
+                        <div class="comment-message-container mt-3 p-3 border rounded bg-light">
+                            <p class="comment-message">User's comment message will be displayed here.</p>
+                        </div>
+                    </div>
+
+                    <!-- Additional comments would be dynamically added here -->
+                </div>
+            </div>
+        </section>  <!-- End Comment Section -->
+        
+    </main>
+    
+    <!--Start of Footer-->
+    <footer class="site-footer">
+        <div class="container">
+                <div class="footer-logo">
+                    <img src="Pictures/logotran.png" alt="Logo" class="logo-img">
+
+                    <p>Culinary Artisans</p>
+                    <p>World Taste, Amazing Recipes, Unforgettable Flavors, Global Cuisine, Culinary Masterpieces.</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=61564199515388&mibextid=ZbWKwL"><i class="fab fa-facebook-f"></i></a>
+                        <a href="mailto:culinary.artisans.utar@gmail.com"><i class="fas fa-envelope"></i></a>
+                        <a href="https://www.instagram.com/culinary.artisans?igsh=OG5qbXI2OHgyMTZp"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+        </div>
+    </footer>
+    <!--End of Footer-->
+
+     <!--Back to top-->
+     <button onclick="backtotop()" id="Btn" title="Back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+        <p>Back to Top</p>
+    </button>
+    
+    <!-- Scripts -->
+    <script src="js/backtotop.js"></script>
+    <script src="https://kit.fontawesome.com/7e002fabbc.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script> 
+        $(function () {
+            $("form#comment-form").submit(function (event) {
+                event.preventDefault();
+
+                var comment = $("#message").val();
+                var nickname = $("#nickname").val();
+                var dateTime = new Date().toLocaleString();
+
+                var commentData = {
+                    nickname: nickname,
+                    comment: comment,
+                    dateTime: dateTime
+                };
+
+                if (typeof (Storage) !== "undefined") {
+                    var comments = JSON.parse(localStorage.getItem("comments")) || [];
+                    comments.push(commentData);
+                    localStorage.setItem("comments", JSON.stringify(comments));
+                }
+
+                alert("Comment received. Thank you for your response!");
+
+                // Optionally, refresh the page to display the new comment.
+                location.reload();
+            });
+
+            // Display saved comments
+            if (typeof (Storage) !== "undefined") {
+                var comments = JSON.parse(localStorage.getItem("comments")) || [];
+                var commentsHtml = '';
+
+                comments.forEach(function(comment) {
+                    commentsHtml += `
+                    <div class="comment">
+                        <div class="comment-header d-flex align-items-center">
+                            <img src="Pictures/login_icon.png" alt="Login Icon" class="login-icon mr-2">
+                            <div>
+                                <strong class="nickname-display">${comment.nickname}</strong>
+                                <div class="comment-date-time">${comment.dateTime}</div>
+                            </div>
+                        </div>
+                        <div class="comment-message-container mt-3 p-3 border rounded bg-light">
+                            <p class="comment-message">${comment.comment}</p>
+                        </div>
+                    </div>`;
+                });
+
+                $(".comments-display .comment-container").html(commentsHtml);
+            }
+        });
+    </script>
+</body>
+</html>

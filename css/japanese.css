@@ -1,0 +1,215 @@
+
+html {scroll-behavior: smooth;}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.jumbotron {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 100px 25px;
+    font-family: Montserrat, sans-serif;
+    font-style: white;
+}
+
+#path{
+    text-decoration: none;
+    color:rgb(80, 80, 80);
+    position:relative;
+    left:5%;
+}
+
+#path a{
+    color:rgb(158, 157, 157);
+}
+
+body .jumbotron h1, h4{
+    color: whitesmoke;
+}
+
+.title-with-underline {
+    display: inline-block;
+    font-weight: bold;
+    position: relative;
+    font-size: 30px;
+    color: #333;
+    margin-bottom: 50px;
+    margin-left: 25px;
+}
+
+.title-with-underline::after {
+    content: '';
+    display: block;
+    width: 80%;
+    height: 4px;
+    background-color: #A57F60;
+    position: absolute;
+    left: 10%;
+    bottom: -10px;
+    border-radius: 100px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.small-card {
+    width: 90%;
+    height: 350px;
+    border-radius: 5px;
+    border-color: transparent;
+    overflow: hidden;
+    background-color: transparent;
+    position: relative;
+    margin-left: 25px;
+    margin-right: 200px;
+}
+
+.card-body{
+    margin: 0;
+    padding-left:0;
+    padding-top:10px;
+}
+
+.small-card img {
+    height: 250px;
+    object-fit: cover;
+    margin: 10;
+    padding:0;
+}
+
+.small-card-title {
+    font-size: 16px;
+    margin-bottom: 8px;
+    margin-left: 0;
+    padding-left: 0;
+    text-align: left;
+}
+
+.small-card-text {
+    font-size: 12px;
+    color: #555;
+    text-align: left;
+}
+
+.check-recipe-btn {
+    display: none;
+    position: absolute;
+    bottom: 105px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 5px 15px;
+    background-color: white;
+    border-color: #A87C65;
+    color: #A87C65;
+    border-radius: 15px;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.heart-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: white;
+    border-color: #A87C65;
+    color: #A87C65;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.heart-btn i {
+    font-size: inherit;
+}
+
+.heart-btn:hover{
+    background-color: #A87C65;
+    color: whitesmoke;
+}
+
+.heart-btn.clicked {
+    background-color: #8B3A3A;
+    color: whitesmoke;
+}
+
+.check-recipe-btn:hover {
+    background-color: #A87C65;
+    color: whitesmoke;
+}
+
+.small-card:hover .check-recipe-btn {
+    display: block;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 40px;
+    height: 40px;
+    background-color: #1A281F;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    transform: translateY(-210%);
+}
+
+.carousel-control-prev {
+    left: 1610px;
+    bottom: 500px;
+}
+
+.carousel-control-next {
+    right: 40px;
+    bottom: 500px;
+}
+
+@media (max-width: 1200px) {
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 35px; /* Slightly smaller buttons */
+        height: 35px;
+    }
+
+    .carousel-control-prev {
+        left: auto;
+        right: 80px;
+        bottom: 40%;
+    }
+
+    .carousel-control-next {
+        right: 40px;
+        bottom: 40%;
+    }
+}
+
+@media (max-width: 768px) {
+    .carousel-control-prev,
+    .carousel-control-next {
+        top: 100%;
+        margin-top: 50px;
+    }
+    .carousel-control-prev {
+        left: 50px;
+    }
+    .check-recipe-btn {
+        display: none;
+    }
+    
+}

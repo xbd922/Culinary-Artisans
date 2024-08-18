@@ -8,12 +8,12 @@
     <!--bootstrap-->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <!--Custom css and js-->
-    <link rel="stylesheet" href="headfoot.css">
-    <link rel="stylesheet" href="cuisine.css">
+    <link rel="stylesheet" href="css/headfoot.css">
+    <link rel="stylesheet" href="css/cuisine.css">
 </head>
 <body>
-    <!--Start of Header-->
-    <header class="site-header">
+     <!--Start of header-->
+     <header class="site-header">
         <div class="container-fluid d-flex flex-wrap justify-content-between align-item-center">
             <div class="header-left">
                 <nav class="navbar navbar-expand-lg navbar-light">
@@ -27,19 +27,19 @@
                             <li class="nav-item Cuisine"><p class="nav-link" >Cuisine</p>
                                 <div class="content">
                                     <a class="cn nav-link" href="japanese.html">Japan</a>
-                                    <a class="cn nav-link" href="#">Italy</a>
-                                    <a class="cn nav-link" href="#">Malaysia</a>
-                                    <a class="cn nav-link" href="#">Korean</a>
+                                    <a class="cn nav-link" href="italian.html">Italy</a>
+                                    <a class="cn nav-link" href="malaysian.html">Malaysia</a>
+                                    <a class="cn nav-link" href="korean.html">Korean</a>
                                 </div>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Saved Recipe</a>
+                                <a class="nav-link" href="savedrecipe.html">Saved Recipe</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">About Us</a>
+                                <a class="nav-link" href="about.html">About Us</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Comment</a>
+                                <a class="nav-link" href="comment.html">Comment</a>
                             </li>
                         </ul>
                     </div>
@@ -48,7 +48,7 @@
             </div>
             <div class="header-center">
                 <div class="logo">
-                    <img src="Pictures/logoword.png" alt="Culinary Artisans">
+                    <a href="index.html"><img src="Pictures/logoword.png" alt="Culinary Artisans"></a>
                 </div>
 
             </div>
@@ -58,7 +58,7 @@
                     <input type="text" placeholder="Search">
                     <button type="submit" >Search</button>
                 </div>
-                <a href="#" class="btn login-btn"><i class="fa-duotone fa-solid fa-user"></i></a>
+                <a href="login.html" class="btn login-btn"><i class="fa-duotone fa-solid fa-user"></i></a>
             </div>
         </div>
     </header>
@@ -66,12 +66,12 @@
 
     <main>
         <div class="row">
-            <p id="path"><a href="homepage.html">Home</a> >> <a href="italian.html">Italian</a> >> <a href="#">Insalata Mista</a></p>
+            <p id="path"><a href="index.html">Home</a> >> <a href="italian.html">Italian</a> >> <a href="#">Insalata Mista</a></p>
             <button type="button" class="btn save">
                 <a href="#"><i class="fa-solid fa-bookmark" style="color: #000000;"></i></a>  
             </button>
             <button type="button" class="btn download">
-                <a href="#" download><i class="fa-solid fa-download fa-bounce" style="color:black"></i></a>  
+                <a href="#" download><i class="fa-solid fa-download" style="color:black"></i></a>  
             </button>
         </div>
 
@@ -170,7 +170,7 @@
     <!--Back to top-->
     <button onclick="backtotop()" id="Btn" title="Back to top">
         <i class="fa-solid fa-arrow-up"></i>
-        </span><p>Back to Top</p>
+        <p>Back to Top</p>
     </button>
     
     <script src="backtotop.js"></script>

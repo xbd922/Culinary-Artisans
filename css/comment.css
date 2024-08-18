@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+@media only screen and (max-width: 768px) {
+    header,main {
+        padding-left:15px;
+        padding-right:15px;
+        padding-top: 4px;
+        padding-bottom:2px;
+    }
+    .navbar-brand img {
+        width: 100px;
+        height: 100px;
+    }
+    .login{
+        visibility: hidden;
+    }
+    .follow{
+        visibility: hidden;
+    }
+    .search{
+        visibility: hidden;
+    }
+    .end{
+        text-align: center;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+    header,main{
+        padding-left:75px;
+        padding-right:75px;
+        padding-top: 20px;
+        padding-bottom:10px;
+    }
+    .navbar-brand img {
+        width: 200px;
+        height: 200px;
+    }
+    .navbar-light .navbar-nav .nav-link {
+        font-size: 20px;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    header, main{
+        padding-left:150px;
+        padding-right:150px;
+        padding-top: 40px;
+        padding-bottom:20px;
+    }
+    .navbar-brand img {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+#path{
+    text-decoration: none;
+    color:rgb(80, 80, 80);
+    position:relative;
+    left:5%;
+}
+
+#path a{
+    color:rgb(158, 157, 157);
+}
+
+
+
+
+/* General styling for the comment section */
+.comment-section {
+    margin: 40px 0;
+}
+
+.comment-section h3 {
+    font-size: 36px;
+    font-weight: bold;
+    font-family: "Josefin Sans", sans-serif;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.comment-section hr {
+    margin-bottom: 20px;
+    border-color: #A79277;
+}
+
+/* Form styling */
+#comment-form .form-group {
+    margin-bottom: 20px;
+}
+
+#comment-form .form-control {
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    padding: 10px;
+}
+
+#comment-form button {
+    background-color: #A79277;
+    border-color: #A79277;
+    border-radius: 5px;
+    color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+}
+
+#comment-form button:hover {
+    background-color: #856B60;
+    border-color: #856B60;
+}
+
+/* Comments display styling */
+.comments-display h4 {
+    font-size: 28px;
+    font-weight: bold;
+    font-family: "Josefin Sans", sans-serif;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.comment-container {
+    margin-top: 20px;
+}
+
+/* Individual comment styling */
+.comment {
+    margin-bottom: 30px;
+    padding: 15px;
+    border-bottom: 1px solid #e9ecef;
+    background-color: #FFF2EB;
+    border-radius: 10px;
+}
+
+.comment-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.login-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.nickname-display {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 5px;
+}
+
+.comment-date-time {
+    font-size: 14px;
+    color: #6c757d;
+    font-family: "Poppins", sans-serif;
+}
+
+.comment-message-container {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #e9ecef;
+    font-family: "Poppins", sans-serif;
+}
+
+.comment-message {
+    margin: 0;
+    font-size: 16px;
+    color: #212529;
+}
+
+/* Media Queries for responsiveness */
+@media only screen and (max-width: 768px) {
+    .comment-section h3 {
+        font-size: 28px;
+    }
+
+    .comments-display h4 {
+        font-size: 24px;
+    }
+
+    #comment-form .form-control {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    #comment-form button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .login-icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .nickname-display {
+        font-size: 16px;
+    }
+
+    .comment-message {
+        font-size: 14px;
+    }
+}

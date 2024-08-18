@@ -7,13 +7,23 @@ html {scroll-behavior: smooth;}
 }
 
 .jumbotron {
-    background-image : linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(Pictures/korea.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     padding: 100px 25px;
     font-family: Montserrat, sans-serif;
     font-style: white;
+}
+
+#path{
+    text-decoration: none;
+    color:rgb(80, 80, 80);
+    position:relative;
+    left:5%;
+}
+
+#path a{
+    color:rgb(158, 157, 157);
 }
 
 body .jumbotron h1, h4{
@@ -127,17 +137,17 @@ body .jumbotron h1, h4{
 }
 
 .heart-btn:hover{
-    background-color: #BFBFBF;
+    background-color: #A87C65;
     color: whitesmoke;
 }
 
-.heart-btn:clicked{
-    background-color: #BFBFBF;
+.heart-btn.clicked {
+    background-color: #8B3A3A;
     color: whitesmoke;
 }
 
 .check-recipe-btn:hover {
-    background-color: #BFBFBF;
+    background-color: #A87C65;
     color: whitesmoke;
 }
 

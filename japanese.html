@@ -10,8 +10,8 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <!--Custom css-->
-    <link rel="stylesheet" href="headfoot.css">
-    <link rel="stylesheet" href="japanese.css"> 
+    <link rel="stylesheet" href="css/headfoot.css">
+    <link rel="stylesheet" href="css/japanese.css"> 
 
 </head>
 <body>
@@ -51,7 +51,7 @@
             </div>
             <div class="header-center">
                 <div class="logo">
-                    <a href="homepage.html"><img src="Pictures/logoword.png" alt="Culinary Artisans"></a>
+                    <a href="index.html"><img src="Pictures/logoword.png" alt="Culinary Artisans"></a>
                 </div>
 
             </div>
@@ -67,10 +67,10 @@
     </header>
     <!--End of Header-->
     
-    <div class="jumbotron text-center">
+    <div class="jumbotron text-center" style="background-image : linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(Pictures/japancr.jpg);">
         <h1>Japanese</h1>
     </div>
-    <p id="path"><a href="homepage.html">Home</a> >> <a href="japanese.html">Japanese</a></p>
+    <p id="path"><a href="index.html">Home</a> >> <a href="japanese.html">Japanese</a></p>
    
 <!--AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA-->
 <br>
@@ -197,29 +197,6 @@
                         </button>
                     </div>
                 </div>
-                <!-- Add more columns here as needed -->
-            </div>
-        </div>
-
-        <div class="carousel-item">
-            <!--PAGE THREE-->
-            <div class="row">
-                <!-- Content for the third page -->
-                <div class="col-md-3">
-                    <div class="card small-card">
-                        <img src="Pictures/abbacchio.jpg" class="card-img-top" alt="Recipe 3">
-                        <div class="card-body">
-                            <h5 class="card-title small-card-title">Recipe Name 3</h5>
-                            <p class="card-text small-card-text">
-                                <i class="fa fa-clock-o"></i> 25 mins &emsp;
-                                <i class="fa fa-user"></i> 2 people
-                            </p>
-                        </div>
-                        <a href="recipe3.html" class="btn check-recipe-btn">Check Out Recipe</a>
-                        <a href="#" class="btn heart-btn">♡</a>
-                    </div>
-                </div>
-                <!-- Add more columns here as needed -->
             </div>
         </div>
     </div>
@@ -237,6 +214,7 @@
 
 <br>
 <br>
+
 <!--NO CAROUSELL SECTION-->
 <h2 class="title-with-underline">Other Recipes</h2>
 <div class="row">
@@ -327,7 +305,7 @@
 <!--Back to top-->
 <button onclick="backtotop()" id="Btn" title="Back to top">
     <i class="fa-solid fa-arrow-up"></i>
-    </span><p>Back to Top</p>
+    <p>Back to Top</p>
 </button>
 
     <script src="js/savedrecipe.js"></script>

@@ -1,0 +1,212 @@
+/*Extra small devices*/
+@media only screen and (max-width: 576px) {
+    #pfp {
+        width: 100px;
+        height: 100px;
+    }
+    #save-recipe-item a img{
+        height:300px;
+        width:300px;
+    }
+    .banner{
+        min-height:200px;
+    }
+    .banner a{
+        font-size: 24px;
+    }
+    .banner h3{
+        font-size: 18px;
+    }
+    #pfp{
+        margin-top: 15px;
+    }
+    .userinfo{
+        position: absolute;
+        left:30%;
+        bottom:0;
+    }
+    #username{
+        font-size: 24px;
+    }
+}
+/*Small devices*/
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+    #pfp {
+        margin-top: 15px;
+        width: 200px;
+        height: 200px;
+    }
+    #save-recipe-item a img{
+        height:400px;
+        width:400px;
+    }
+    .banner{
+        min-height:400px;
+    }
+    .banner a{
+        font-size: 44px;
+    }
+    .banner h3{
+        font-size: 30px;
+    }
+    .userinfo{
+        position: absolute;
+        left:40%;
+        bottom:15%;
+    }
+    #username{
+        font-size: 24px;
+    }
+}
+/*Large devices*/
+@media only screen and (min-width: 768px) and (max-width:992px) {
+    #pfp {
+        margin-top:20px;
+        width: 250px;
+        height: 250px;
+    }
+    #save-recipe-item a img{
+        height:400px;
+        width:400px;
+    }
+    .banner{
+        min-height:400px;
+    }
+    .banner a{
+        font-size: 44px;
+    }
+    .banner h3{
+        font-size: 30px;
+    }
+    .userinfo{
+        position: absolute;
+        left:35%;
+        bottom:15%;
+    }
+    #username{
+        font-size: 24px;
+    }
+}
+/*Very large devices*/
+@media only screen and (min-width: 992px) and (max-width:1200px){
+
+    #pfp {
+        margin-top:30px;
+        margin-left: 30px;
+        width: 300px;
+        height: 300px;
+    }
+    #save-recipe-item a img{
+        height:400px;
+        width:400px;
+    }
+    .banner a{
+        font-size: 44px;
+    }
+    .banner{
+        min-height:400px;
+    }
+    .banner h3{
+        font-size: 30px;
+        
+    }
+    .userinfo{
+        position: absolute;
+        left:40%;
+        bottom:10%;
+    }
+    #username{
+        font-size: 40px;
+    }
+}
+/*Extra large devices*/
+@media only screen and (min-width: 1200px) {
+
+    #pfp {
+        margin-top:30px;
+        margin-left: 30px;
+        width: 300px;
+        height: 300px;
+    }
+    #save-recipe-item a img{
+        height:400px;
+        width:400px;
+    }
+    .banner a{
+        font-size: 44px;
+    }
+    .banner{
+        min-height:400px;
+    }
+    .banner h3{
+        font-size: 30px;
+        
+    }
+    .userinfo{
+        position: absolute;
+        left:30%;
+        bottom:10%;
+    }
+    #username{
+        font-size: 40px;
+    }
+}
+
+.userprofile{
+    display: grid;
+    position: relative;
+}
+#pfp{
+    border-radius: 150px;
+}
+
+.spacing{
+    padding:20px;
+    margin-bottom:80px;
+}
+
+#username,#bio{
+    background-color: transparent;
+    border:none;
+}
+
+#save-recipe-item{
+    margin-top:20px;
+    display: grid;
+    box-shadow: 0 0 10px black;
+    border-radius: 5px;
+    justify-content: center;
+}
+
+#save-recipe-item a h3{
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
+.banner{
+    background-position: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.banner a{
+    color:black;
+    text-align: center;
+    font-family:"Josefin Sans", sans-serif;
+    font-weight: bold;
+    z-index:2;
+}
+.banner h3{
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    z-index: 2;
+}
+
+.row{
+    flex-wrap:nowrap;
+}

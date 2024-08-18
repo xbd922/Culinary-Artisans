@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sundubu-Jjigae</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="headfoot.css">
-    <link rel="stylesheet" href="cuisine.css">
+    <link rel="stylesheet" href="css/headfoot.css">
+    <link rel="stylesheet" href="css/cuisine.css">
 </head>
 <body>
     <!--Start of Header-->
@@ -45,7 +45,7 @@
             </div>
             <div class="header-center">
                 <div class="logo">
-                    <a href="homepage.html"><img src="Pictures/logoword.png" alt="Culinary Artisans"></a>
+                    <a href="index.html"><img src="Pictures/logoword.png" alt="Culinary Artisans"></a>
                 </div>
             </div>
             <div class="header-right">
@@ -62,14 +62,17 @@
     <!--Start of main body-->
     <main>
         <div class="row">
-            <p id="path"><a href="homepage.html">Home</a> >> <a href="korean.html">Korean</a> >> <a href="#">Sundubu-Jjigae</a></p>
+            <p id="path"><a href="index.html">Home</a> >> <a href="korean.html">Korean</a> >> <a href="#">Sundubu-Jjigae</a></p>
+            <button type="button" class="btn save" onclick="saveRecipe('Sundubu-Jjigae','koreanC6.html','Pictures/sundubuJjigae.jpg')">
+                <i class="fa-solid fa-bookmark" style="color: #000000;"></i>  
+            </button>
             <button type="button" class="btn download">
-                <a href="#" download><i class="fa-solid fa-download fa-bounce"></i></a>  
+                <a href="Recipe/Sundubu-Jjigae.pdf" download><i class="fa-solid fa-download" style="color:black"></i></a>  
             </button>
         </div>
 
         <div class="row justify-content-center mb-3">
-            <img src="koreanpic/sundubuJjigae.jpg" alt="food">
+            <img src="Pictures/sundubuJjigae.jpg" alt="food">
         </div>
 
         <!--References from [6] -->
@@ -143,6 +146,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/savedrecipe.js"></script>
     <script src="js/backtotop.js"></script>
 </body>
 </html>

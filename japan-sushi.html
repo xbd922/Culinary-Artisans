@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <!--Own css-->
-    <link rel="stylesheet" href="headfoot.css">
-    <link rel="stylesheet" href="cuisine.css">
+    <link rel="stylesheet" href="css/headfoot.css">
+    <link rel="stylesheet" href="css/cuisine.css">
 </head>
 <body>
   <!--Start of header-->
@@ -48,7 +48,7 @@
         </div>
         <div class="header-center">
             <div class="logo">
-                <a href="homepage.html"><img src="Pictures/logoword.png" alt="Culinary Artisans"></a>
+                <a href="index.html"><img src="Pictures/logoword.png" alt="Culinary Artisans"></a>
             </div>
 
         </div>
@@ -67,12 +67,12 @@
     <!--Start of main body-->
     <main>
         <div class="row">
-            <p id="path"><a href="homepage.html">Home</a> >> <a href="japanese.html">Japan</a> >> <a href="#">Sushi</a></p>
+            <p id="path"><a href="index.html">Home</a> >> <a href="japanese.html">Japan</a> >> <a href="#">Sushi</a></p>
             <button type="button" class="btn save" onclick="saveRecipe('Sushi','japan-sushi.html','Pictures/srcuisine1.jpg')">
                 <i class="fa-solid fa-bookmark" style="color: #000000;"></i>  
             </button>
             <button type="button" class="btn download">
-                <a href="#" download><i class="fa-solid fa-download" style="color:black"></i></a>  
+                <a href="Recipe/Sushi.pdf" download><i class="fa-solid fa-download" style="color:black"></i></a>  
             </button>
         </div>
 
@@ -88,7 +88,6 @@
                 Usually, people dip it in salty soy or sweet soy sauce, to give it a unique flavor.
             </p>
         </section>
-        <hr>
         <section class="rcontent">
             <h2>History of Sushi</h2>
             <p class="history">When people think of Japanese cuisine, the first thing that usually comes to mind is sushi. 
@@ -173,7 +172,7 @@
     <!--Back to top-->
     <button onclick="backtotop()" id="Btn" title="Back to top">
         <i class="fa-solid fa-arrow-up"></i>
-        </span><p>Back to Top</p>
+        <p>Back to Top</p>
     </button>
 
     <script src="https://kit.fontawesome.com/7e002fabbc.js" crossorigin="anonymous"></script>
