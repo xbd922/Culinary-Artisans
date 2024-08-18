@@ -219,7 +219,10 @@ body {
 .header-link:hover {
     color: #8B3A3A;
 }
-
+/*Search*/
+#searchitem li{
+    text-decoration: none;
+}
 /* Footer Styles */
 .site-footer {
     background-color: #FCE8E0;

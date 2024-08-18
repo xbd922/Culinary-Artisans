@@ -53,20 +53,6 @@
     }
 }
 
-#path{
-    text-decoration: none;
-    color:rgb(80, 80, 80);
-    position:relative;
-    left:5%;
-}
-
-#path a{
-    color:rgb(158, 157, 157);
-}
-
-
-
-
 /* General styling for the comment section */
 .comment-section {
     margin: 40px 0;
