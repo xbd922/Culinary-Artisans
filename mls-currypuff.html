@@ -64,7 +64,7 @@
             <div class="header-right">
                 <div class="search-container">
                     <input type="text" placeholder="Search">
-                    <button type="submit" >Search</button>
+                    <button type="submit">Search</button>
                 </div>
                 <!-- Login Icon -->
                 <a id="loginIcon" href="login.html" class="btn login-btn">
@@ -72,7 +72,7 @@
                 </a>
                 <!-- Logout Icon (Initially hidden) -->
                 <button id="logoutIcon" class="btn logout-btn" style="display: none;">
-                    <i class="fa-solid fa-sign-out-alt"></i>                    
+                    <i class="fa-solid fa-sign-out-alt"></i>
                 </button>
                 <!-- Placeholder for logged-in user's email -->
                 <p id="loggedUserEmail"></p>
@@ -83,7 +83,8 @@
 
     <main>
         <div class="row">
-            <p id="path"><a href="homepage.html">Home</a> >> <a href="malaysian.html">Malaysia</a> >> <a href="mls-currypuff.html">Curry
+            <p id="path"><a href="homepage.html">Home</a> >> <a href="malaysian.html">Malaysia</a> >> <a
+                    href="mls-currypuff.html">Curry
                     Puff</a></p>
             <button type="button" class="btn save"
                 onclick="saveRecipe('Curry Puff','mls-currypuff.html','Pictures/mlspic/c2.jpg')">
@@ -164,7 +165,7 @@
                     <li>Roll each piece into a ball.</li>
                 </ol>
             </ol>
-
+            <!--Video Player-->
             <script>
                 var tag = document.createElement('script');
                 tag.src = "https://www.youtube.com/player_api";
@@ -180,7 +181,16 @@
             </script>
             <br><br>
             <div id="ytplayer" class="ytvid" justify-content-center></div>
+            <!--End of Video Player-->
         </section>
+
+        <!-- Facebook Like Button -->
+        <div class="fb-like" data-href="https://www.yourwebsite.com/japan-currykatsu.html" data-width=""
+            data-layout="standard" data-action="like" data-size="small" data-share="true">
+        </div>
+
+        <!-- Google Sign-In Button -->
+        <div class="g-signin2" data-onsuccess="onSignIn"></div>
     </main>
     <!--References from [42][43]-->
 
@@ -212,6 +222,8 @@
         <p>Back to Top</p>
     </button>
 
+    <!--Own JS for Login/out-->
+    <script type="module" src="js/index.js"></script>
     <!-- jQuery (required for Owl Carousel) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!-- Owl Carousel JS -->
@@ -220,11 +232,15 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <!---->
+    <!--Own JS-->
     <script src="js/savedrecipe.js"></script>
     <script src="js/backtotop.js"></script>
-    <!--Own JS for Login/out-->
-    <script type="module" src="js/index.js"></script>
+    <script src="js/social.js"></script>
+    <!-- Facebook SDK -->
+    <script async defer crossorigin="anonymous"
+        src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v10.0"></script>
+    <!-- Google Platform Library -->
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
 </body>
 
 </html>
