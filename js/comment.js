@@ -1,7 +1,7 @@
 function displaycomment(recipeName, recipeUrl, recipeImage) {
     $.ajax({
-        url: 'https://xbd922.github.io/Culinary-Artisans/api/comment.html',  // Replace with your actual API endpoint
-        type: 'POST',
+        url: 'https://xbd922.github.io/Culinary-Artisans/comment.html',  // Replace with your actual API endpoint
+        type: 'GET',
         data: JSON.stringify({
             name: recipeName,
             url: recipeUrl,
